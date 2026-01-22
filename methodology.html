@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology — Divan-e Kabir Translation Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Naskh+Arabic:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1a1a1a;
+            --paper: #faf8f5;
+            --gold: #b8924c;
+            --gold-soft: #d4b87a;
+            --mist: #e8e4de;
+            --shadow: rgba(26, 26, 26, 0.08);
+            --code-bg: #f5f2ed;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--paper);
+            border-bottom: 1px solid var(--mist);
+            padding: 1rem 2rem;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--ink);
+            text-decoration: none;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .nav-logo {
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            border-bottom: 1px solid var(--mist);
+        }
+
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 400;
+            letter-spacing: 0.08em;
+            margin-bottom: 1rem;
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.04em;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--gold);
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        /* Pipeline Diagram */
+        .pipeline-diagram {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 2px;
+            box-shadow: 0 2px 20px var(--shadow);
+            overflow-x: auto;
+        }
+
+        .pipeline-steps {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            min-width: 600px;
+        }
+
+        .pipeline-step {
+            flex: 1;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: var(--paper);
+            border: 1px solid var(--mist);
+            position: relative;
+        }
+
+        .pipeline-step::after {
+            content: '→';
+            position: absolute;
+            right: -1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+
+        .pipeline-step:last-child::after {
+            display: none;
+        }
+
+        .step-number {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--gold);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-name {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-desc {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* Terminology Table */
+        .terminology-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .terminology-table th,
+        .terminology-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--mist);
+        }
+
+        .terminology-table th {
+            font-weight: 600;
+            color: #333;
+            background: var(--code-bg);
+        }
+
+        .terminology-table .persian {
+            font-family: 'Noto Naskh Arabic', serif;
+            font-size: 1.1rem;
+            direction: rtl;
+        }
+
+        .terminology-table .transliteration {
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--mist);
+            vertical-align: top;
+        }
+
+        .comparison-table th {
+            font-weight: 600;
+            background: var(--code-bg);
+        }
+
+        .comparison-table .approach {
+            font-weight: 500;
+        }
+
+        .check {
+            color: #4a7c4e;
+        }
+
+        .cross {
+            color: #a54a4a;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: white;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            border-left: 3px solid var(--gold);
+            box-shadow: 0 2px 15px var(--shadow);
+        }
+
+        .info-box h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--gold);
+        }
+
+        .info-box p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Code/Technical */
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85em;
+            background: var(--code-bg);
+            padding: 0.15em 0.4em;
+            border-radius: 2px;
+        }
+
+        /* Example Block */
+        .example-block {
+            background: white;
+            margin: 2rem 0;
+            box-shadow: 0 2px 20px var(--shadow);
+        }
+
+        .example-header {
+            background: var(--code-bg);
+            padding: 1rem 1.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--mist);
+        }
+
+        .example-content {
+            padding: 1.5rem;
+        }
+
+        .example-content .label {
+            font-size: 0.8rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .example-content .persian-text {
+            font-family: 'Noto Naskh Arabic', serif;
+            direction: rtl;
+            font-size: 1.1rem;
+            padding: 1rem;
+            background: var(--paper);
+            margin-bottom: 1rem;
+        }
+
+        .example-content .translation {
+            font-style: italic;
+            padding: 1rem;
+            background: var(--paper);
+        }
+
+        .example-content .avoid {
+            color: #a54a4a;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        .example-content .prefer {
+            color: #4a7c4e;
+        }
+
+        /* Principles List */
+        .principles-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .principles-list li {
+            padding: 1rem 0 1rem 2rem;
+            position: relative;
+            border-bottom: 1px solid var(--mist);
+        }
+
+        .principles-list li:last-child {
+            border-bottom: none;
+        }
+
+        .principles-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1.4rem;
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+
+        .principles-list strong {
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        /* Links Section */
+        .links-section {
+            background: white;
+            padding: 2rem;
+            margin: 3rem 0;
+            box-shadow: 0 2px 20px var(--shadow);
+        }
+
+        .links-section h3 {
+            margin-top: 0;
+        }
+
+        .links-section ul {
+            list-style: none;
+            margin: 1rem 0 0;
+        }
+
+        .links-section li {
+            padding: 0.5rem 0;
+        }
+
+        .links-section a {
+            color: var(--ink);
+            text-decoration: none;
+            border-bottom: 1px solid var(--gold-soft);
+            transition: border-color 0.2s;
+        }
+
+        .links-section a:hover {
+            border-color: var(--gold);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid var(--mist);
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+
+            header {
+                padding: 7rem 1.5rem 3rem;
+            }
+
+            main {
+                padding: 3rem 1.5rem;
+            }
+
+            .pipeline-diagram {
+                padding: 1rem;
+            }
+
+            .terminology-table,
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+
+            .terminology-table th,
+            .terminology-table td,
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo">Divan-e Kabir</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="divan_translations.html">Translations</a>
+            <a href="methodology.html">Methodology</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Translation Methodology</h1>
+        <p class="subtitle">A Technical Overview</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>The Challenge</h2>
+            <p>
+                Existing English translations of Rumi fall into two camps: scholarly translations that are accurate but often dry and inaccessible (Nicholson, Arberry), and popular "versions" that are poetic but strip away the Islamic and Sufi context that gives the poetry its meaning (Barks, Ladinsky). Our project aims for a third way: translations that are both accurate and beautiful, preserving Rumi's voice as a Muslim mystic while making his poetry accessible to contemporary readers.
+            </p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Approach</th>
+                        <th>Strength</th>
+                        <th>Weakness</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="approach">Victorian Scholarly<br><small>(Nicholson, Arberry)</small></td>
+                        <td>Accurate, preserves context</td>
+                        <td>Archaic language, unpoetic</td>
+                    </tr>
+                    <tr>
+                        <td class="approach">Popular Versions<br><small>(Barks, Ladinsky)</small></td>
+                        <td>Accessible, poetic</td>
+                        <td>Strips Islamic context, often inaccurate</td>
+                    </tr>
+                    <tr>
+                        <td class="approach">Our Approach</td>
+                        <td>Accurate + poetic + contextual</td>
+                        <td>Requires careful human review</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Translation Philosophy</h2>
+            <p>
+                Our approach is informed by the work of scholar Omid Safi, author of <em>Radical Love: Teachings from the Islamic Mystical Tradition</em>. Safi has argued persuasively that popular Rumi translations have performed a kind of "spiritual colonialism," extracting the poetry from its Islamic roots to create a Rumi palatable to Western spiritual seekers.
+            </p>
+
+            <ul class="principles-list">
+                <li>
+                    <strong>Preserve Islamic References</strong>
+                    References to salat (prayer), Hajj (pilgrimage), Quranic verses, and hadith remain explicit. We do not translate "Hajj" as "spiritual journey" or erase the Prophet Muhammad's name.
+                </li>
+                <li>
+                    <strong>Maintain Sufi Terminology</strong>
+                    Technical terms like <em>fana</em> (annihilation of ego), <em>baqa</em> (subsistence in God), and <em>sama'</em> (spiritual audition) are preserved with glosses rather than paraphrased away.
+                </li>
+                <li>
+                    <strong>Honor Deliberate Ambiguity</strong>
+                    When Rumi writes of "the Beloved" (<em>ma'shuq</em>), he deliberately leaves open whether this refers to God, to Shams-i Tabrizi, or to human love. We preserve this multiplicity rather than collapsing it.
+                </li>
+                <li>
+                    <strong>Prioritize Meaning Over Meter</strong>
+                    Forced rhyme in English often distorts meaning. We prioritize semantic accuracy and provide annotations for wordplay and allusions that cannot cross the linguistic divide.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Multi-Agent Pipeline</h2>
+            <p>
+                We use a four-pass translation pipeline, where each pass is handled by a specialized prompt. This separation allows for both accuracy and style while maintaining systematic quality control.
+            </p>
+
+            <div class="pipeline-diagram">
+                <div class="pipeline-steps">
+                    <div class="pipeline-step">
+                        <span class="step-number">Pass 1</span>
+                        <div class="step-name">Analyzer</div>
+                        <div class="step-desc">Identifies Quranic allusions, Sufi terminology, and grammatical structures</div>
+                    </div>
+                    <div class="pipeline-step">
+                        <span class="step-number">Pass 2</span>
+                        <div class="step-name">Translator</div>
+                        <div class="step-desc">Produces accurate literal translation with uncertainty markers</div>
+                    </div>
+                    <div class="pipeline-step">
+                        <span class="step-number">Pass 3</span>
+                        <div class="step-name">Stylist</div>
+                        <div class="step-desc">Refines for Rumi's voice: urgent, intimate, paradoxical</div>
+                    </div>
+                    <div class="pipeline-step">
+                        <span class="step-number">Pass 4</span>
+                        <div class="step-name">QA</div>
+                        <div class="step-desc">Checks fidelity, flags issues, assigns confidence</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Pass 1: Analysis</h3>
+            <p>
+                Before any translation occurs, we analyze each ghazal to identify its Quranic and hadith allusions, Sufi technical terminology, grammatical structures, and potential ambiguities. This analysis informs all subsequent passes and is included in scholarly notes.
+            </p>
+
+            <h3>Pass 2: Literal Translation</h3>
+            <p>
+                The second pass produces an accurate, literal translation that preserves the couplet (beyt) structure of the original. Uncertain translations are marked. No attempt is made at poetry—accuracy is the sole priority.
+            </p>
+
+            <h3>Pass 3: Stylistic Refinement</h3>
+            <p>
+                The third pass transforms the literal translation into English that sounds like Rumi: direct address, ecstatic urgency, embodied imagery, paradox. We avoid academic distance, New Age vagueness, and over-explanation.
+            </p>
+
+            <h3>Pass 4: Quality Assurance</h3>
+            <p>
+                The final pass compares the English translation against the original Persian to catch hallucinations, verify terminology consistency, and ensure allusions are preserved. Each translation receives a confidence rating; low-confidence translations are flagged for human review.
+            </p>
+        </section>
+
+        <section>
+            <h2>Terminology Glossary</h2>
+            <p>
+                Consistent translation of key terms is essential. We maintain a glossary that all passes reference. Here are some central terms:
+            </p>
+
+            <table class="terminology-table">
+                <thead>
+                    <tr>
+                        <th>Persian</th>
+                        <th>Transliteration</th>
+                        <th>Translation</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="persian">عشق</td>
+                        <td class="transliteration">'ishq</td>
+                        <td>Love</td>
+                        <td>Divine love, not mere romance. Capital L when cosmic force.</td>
+                    </tr>
+                    <tr>
+                        <td class="persian">معشوق</td>
+                        <td class="transliteration">ma'shuq</td>
+                        <td>the Beloved</td>
+                        <td>Capital B. Deliberately ambiguous: God, Shams, human beloved.</td>
+                    </tr>
+                    <tr>
+                        <td class="persian">جان</td>
+                        <td class="transliteration">jan</td>
+                        <td>soul</td>
+                        <td>The spiritual essence, not merely "life."</td>
+                    </tr>
+                    <tr>
+                        <td class="persian">دل</td>
+                        <td class="transliteration">del</td>
+                        <td>heart</td>
+                        <td>Seat of spiritual perception, not mere emotion.</td>
+                    </tr>
+                    <tr>
+                        <td class="persian">می</td>
+                        <td class="transliteration">mey</td>
+                        <td>wine</td>
+                        <td>Mystical intoxication with divine presence.</td>
+                    </tr>
+                    <tr>
+                        <td class="persian">فنا</td>
+                        <td class="transliteration">fana</td>
+                        <td>annihilation</td>
+                        <td>Of ego in the divine. Preserved as "fana" with gloss.</td>
+                    </tr>
+                    <tr>
+                        <td class="persian">سماع</td>
+                        <td class="transliteration">sama'</td>
+                        <td>spiritual audition</td>
+                        <td>The whirling ceremony. Preserved with gloss.</td>
+                    </tr>
+                    <tr>
+                        <td class="persian">نی</td>
+                        <td class="transliteration">ney</td>
+                        <td>reed-flute</td>
+                        <td>Symbol of soul separated from divine origin.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Translation Example</h2>
+            <p>
+                The difference between our approach and popular "versions" is best illustrated by example. Consider this famous opening:
+            </p>
+
+            <div class="example-block">
+                <div class="example-header">Ghazal 2114, Verse 1</div>
+                <div class="example-content">
+                    <p class="label">Persian Original</p>
+                    <p class="persian-text">ای قوم به حج رفته کجایید کجایید / معشوق همین جاست بیایید بیایید</p>
+
+                    <p class="label" style="margin-top: 1.5rem;">Popular Version (to avoid)</p>
+                    <p class="translation avoid">"O seekers on your spiritual journey, where do you wander? Love is here—return to the present moment!"</p>
+                    <p style="font-size: 0.85rem; color: #a54a4a; margin-top: 0.5rem;">
+                        ✗ Strips Hajj (Islamic pilgrimage). ✗ Universalizes "the Beloved" into abstract "Love." ✗ Adds "present moment" (not in original).
+                    </p>
+
+                    <p class="label" style="margin-top: 1.5rem;">Our Translation</p>
+                    <p class="translation prefer">"O people who have gone on Hajj—where are you, where are you? The Beloved is right here—come, come!"</p>
+                    <p style="font-size: 0.85rem; color: #4a7c4e; margin-top: 0.5rem;">
+                        ✓ Preserves Hajj. ✓ Maintains "the Beloved" with deliberate ambiguity. ✓ Captures Rumi's urgent repetition.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Data Sources</h2>
+            <p>
+                Our source texts come from the critical edition of Badi' al-Zaman Foruzanfar (1957–1967), accessed via the Ganjoor.net API. Foruzanfar's ten-volume edition is the scholarly standard for Rumi's Divan.
+            </p>
+
+            <div class="info-box">
+                <h4>Verse Numbering</h4>
+                <p>
+                    We use Foruzanfar numbering (e.g., "Ghazal 2114") as our primary reference. This enables cross-referencing with academic papers, existing translations by Arberry and Nicholson, and other scholarly resources.
+                </p>
+            </div>
+
+            <h3>Ganjoor.net</h3>
+            <p>
+                Ganjoor is the largest Persian poetry database, providing structured access to classical Persian literature. Their data is based on Foruzanfar's edition and covers approximately 40,000 verses of the Divan-e Shams.
+            </p>
+        </section>
+
+        <section>
+            <h2>Quality Assurance</h2>
+            <p>
+                Every translation goes through automated quality checks:
+            </p>
+
+            <ul class="principles-list">
+                <li>
+                    <strong>Terminology Consistency</strong>
+                    Does the translation use our glossary terms consistently? Target: >95%.
+                </li>
+                <li>
+                    <strong>Allusion Preservation</strong>
+                    Are all Quranic and hadith references preserved? Target: 100%.
+                </li>
+                <li>
+                    <strong>No Hallucinations</strong>
+                    Does the translation contain anything not in the original? Target: 0%.
+                </li>
+                <li>
+                    <strong>Confidence Rating</strong>
+                    Each translation receives a confidence score. Low-confidence translations are flagged for human review but still published with a note.
+                </li>
+            </ul>
+
+            <p>
+                Additionally, a batch consistency agent runs periodically across the corpus to detect terminology drift and voice inconsistency across translations.
+            </p>
+        </section>
+
+        <section>
+            <h2>Community Contribution</h2>
+            <p>
+                No translation is final. We welcome corrections and improvements from Persian speakers, Sufi practitioners, and scholars. Contributions are organized in three tiers:
+            </p>
+
+            <ul class="principles-list">
+                <li>
+                    <strong>Issues</strong>
+                    Report errors or suggest improvements via GitHub Issues. No technical knowledge required.
+                </li>
+                <li>
+                    <strong>Suggested Edits</strong>
+                    Fork the repository, edit the translation JSON, and submit a pull request.
+                </li>
+                <li>
+                    <strong>Scholarly Notes</strong>
+                    Add historical context, theological commentary, or thematic analysis.
+                </li>
+            </ul>
+        </section>
+
+        <div class="links-section">
+            <h3>Further Reading</h3>
+            <ul>
+                <li><a href="https://github.com" target="_blank">View the full source code and README on GitHub</a></li>
+                <li><a href="https://ganjoor.net" target="_blank">Ganjoor.net — Source texts</a></li>
+                <li><a href="https://scholars.duke.edu/person/omid.safi" target="_blank">Omid Safi — Duke University</a></li>
+                <li><a href="https://dar-al-masnavi.org" target="_blank">Dar-al-Masnavi — Scholarly Rumi resources</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="index.html">← Back to Home</a></p>
+        <p style="margin-top: 1.5rem;">
+            An open-source project. Source texts from <a href="https://ganjoor.net" target="_blank">Ganjoor</a>.
+        </p>
+    </footer>
+</body>
+</html>

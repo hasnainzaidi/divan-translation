@@ -33,6 +33,44 @@
             font-size: 18px;
         }
 
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--paper);
+            border-bottom: 1px solid var(--mist);
+            padding: 1rem 2rem;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--ink);
+            text-decoration: none;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .nav-logo {
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -334,8 +372,19 @@
 
         /* Responsive */
         @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+
             .hero {
-                padding: 3rem 1.5rem;
+                padding: 6rem 1.5rem 3rem;
             }
 
             .persian-epigraph {
@@ -363,6 +412,16 @@
     </style>
 </head>
 <body>
+    <nav>
+        <a href="index.html" class="nav-logo">Divan-e Kabir</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="divan_translations.html">Translations</a>
+            <a href="methodology.html">Methodology</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+    </nav>
+
     <section class="hero">
         <p class="persian-epigraph">دیوان کبیر</p>
         <h1>Divan-e Kabir</h1>
@@ -444,16 +503,21 @@
         <section class="technical">
             <h2>Methodology</h2>
             <p>
-                This project uses large language models guided by careful prompt engineering to produce
+                This project uses a multi-agent LLM pipeline guided by careful prompt engineering to produce
                 initial translations, which are then subject to human review and scholarly correction.
                 Source texts are drawn from the Foruzanfar critical edition via Ganjoor.net.
             </p>
             <ul class="tech-list">
                 <li><strong>Source:</strong> Ganjoor.net (Foruzanfar critical edition)</li>
-                <li><strong>Translation:</strong> LLM with scholarly prompting</li>
+                <li><strong>Translation:</strong> 4-pass LLM pipeline (analysis → translation → styling → QA)</li>
                 <li><strong>Review:</strong> Open for community correction</li>
                 <li><strong>Output:</strong> HTML, Markdown, JSON</li>
             </ul>
+            <p style="margin-top: 1.5rem;">
+                <a href="methodology.html" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-soft);">
+                    Read the full technical methodology →
+                </a>
+            </p>
         </section>
 
         <section>
