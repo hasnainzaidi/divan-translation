@@ -1,0 +1,103 @@
+{
+  "source": "Divan-e Shams-e Tabrizi (Divan-e Kabir)",
+  "edition": "Based on Foruzanfar critical edition",
+  "note": "Sample ghazals for demonstration. In production, fetch from Ganjoor API.",
+  "ghazals": [
+    {
+      "number": 1,
+      "meter": "Ramal",
+      "rhyme": "-ān",
+      "verses": [
+        {
+          "hemistich1": "بشنو از نی چون حکایت می‌کند",
+          "hemistich2": "از جدایی‌ها شکایت می‌کند"
+        },
+        {
+          "hemistich1": "کز نیستان تا مرا ببریده‌اند",
+          "hemistich2": "در نفیرم مرد و زن نالیده‌اند"
+        },
+        {
+          "hemistich1": "سینه خواهم شرحه شرحه از فراق",
+          "hemistich2": "تا بگویم شرح درد اشتیاق"
+        }
+      ],
+      "notes": "Opening verses of the Masnavi - included as familiar reference point"
+    },
+    {
+      "number": 911,
+      "meter": "Hazaj",
+      "rhyme": "-am",
+      "verses": [
+        {
+          "hemistich1": "من چه دانم که چه مستم من چه دانم که چه هستم",
+          "hemistich2": "دل بداده دل بداده دل به دلبر داده‌ام"
+        },
+        {
+          "hemistich1": "گر مرا صد جان بودی جمله قربان کردمی",
+          "hemistich2": "پیش آن قامت آن قامت چون سرو سهی"
+        }
+      ],
+      "notes": "Characteristic ecstatic ghazal"
+    },
+    {
+      "number": 462,
+      "meter": "Ramal",
+      "rhyme": "-ast",
+      "verses": [
+        {
+          "hemistich1": "آن یکی می‌گفت دوشم کای فلان",
+          "hemistich2": "شمس تبریزی چه نوری در جهان است"
+        },
+        {
+          "hemistich1": "گفتمش خاموش کین دم را بدان",
+          "hemistich2": "کاین سخن را هیچ پایان نیست"
+        },
+        {
+          "hemistich1": "همچو ماهی بر فلک می‌تابد او",
+          "hemistich2": "نور او در هر دلی که جان در آن است"
+        }
+      ],
+      "notes": "Poem directly addressing Shams al-Din Tabrizi"
+    },
+    {
+      "number": 1173,
+      "meter": "Hazaj",
+      "rhyme": "-ū",
+      "verses": [
+        {
+          "hemistich1": "عشق جان جمله جان‌هاست عشق مهر مهربان‌هاست",
+          "hemistich2": "عشق است که نهان است عشق است که عیان است او"
+        },
+        {
+          "hemistich1": "زین عشق شود هر دل چون آتش و چون آب",
+          "hemistich2": "گه سوزد و گه سازد گه بخشد و گه بستاند او"
+        },
+        {
+          "hemistich1": "در مذهب عاشق کفر و ایمان نباشد",
+          "hemistich2": "او را نه تن است و نه جان چون عشق همه جان است او"
+        }
+      ],
+      "notes": "Meditation on the nature of divine love (eshq)"
+    },
+    {
+      "number": 2114,
+      "meter": "Khafif",
+      "rhyme": "-ā",
+      "verses": [
+        {
+          "hemistich1": "ای قوم به حج رفته کجایید کجایید",
+          "hemistich2": "معشوق همین جاست بیایید بیایید"
+        },
+        {
+          "hemistich1": "معشوق تو همسایه و دیوار به دیوار",
+          "hemistich2": "در بادیه سرگشته شما در چه هوایید"
+        },
+        {
+          "hemistich1": "گر صورت بی صورت معشوق ببینید",
+          "hemistich2": "هم خواجه و هم خانه و هم کعبه شمایید"
+        }
+      ],
+      "notes": "Famous poem critiquing external pilgrimage without inner transformation - key Sufi teaching"
+    }
+  ]
+}

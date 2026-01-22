@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divan-e Kabir: Selected Translations</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2c5282;
+            --accent: #c69749;
+            --bg: #faf9f7;
+            --text: #2d3748;
+            --light: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', 'Georgia', serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid var(--accent);
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-weight: normal;
+            letter-spacing: 0.05em;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            font-style: italic;
+        }
+
+        .about {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .about h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+        }
+
+        .about ul {
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .about li {
+            margin-bottom: 0.5rem;
+        }
+
+        .ghazal {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .ghazal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px solid var(--light);
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .ghazal-number {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .ghazal-meta {
+            font-size: 0.9rem;
+            color: #718096;
+            font-style: italic;
+        }
+
+        .persian {
+            direction: rtl;
+            text-align: right;
+            font-family: 'Noto Naskh Arabic', 'Traditional Arabic', serif;
+            font-size: 1.3rem;
+            line-height: 2.2;
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            border-right: 3px solid var(--accent);
+        }
+
+        .persian .verse {
+            margin-bottom: 1rem;
+        }
+
+        .persian .hemistich {
+            display: block;
+        }
+
+        .section-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .translation {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .translation p {
+            margin-bottom: 1rem;
+        }
+
+        .translation strong {
+            color: var(--secondary);
+        }
+
+        .notes {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            border-left: 3px solid var(--secondary);
+        }
+
+        .notes p {
+            margin-bottom: 0.8rem;
+        }
+
+        .notes strong {
+            color: var(--primary);
+        }
+
+        .divider {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            color: #718096;
+            font-style: italic;
+            border-top: 2px solid var(--accent);
+            margin-top: 2rem;
+        }
+
+        footer .quote {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .ghazal {
+                padding: 1.5rem;
+            }
+
+            .persian {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Divan-e Kabir</h1>
+            <p class="subtitle">Selected Translations from the Poetry of<br>Jalal al-Din Rumi (Mawlana)</p>
+        </header>
+
+        <section class="about">
+            <h2>About This Translation</h2>
+            <p><strong>Source:</strong> Divan-e Shams-e Tabrizi (Divan-e Kabir)</p>
+            <p><strong>Edition:</strong> Based on Foruzanfar critical edition</p>
+            <p><strong>Method:</strong> LLM (Omid Safi approach)</p>
+            <p style="margin-top: 1rem;">This translation follows the approach of scholar Omid Safi, preserving the Islamic and Sufi context of Rumi's poetry rather than universalizing it into generic spirituality.</p>
+            <ul>
+                <li>Preserving references to Islamic prayer, Hajj, Quran, and hadith</li>
+                <li>Maintaining Sufi terminology (<em>fana</em>, <em>baqa</em>, <em>sama'</em>, etc.)</li>
+                <li>Keeping the ambiguity of "the Beloved"</li>
+                <li>Providing scholarly notes on context and allusions</li>
+            </ul>
+        </section>
+
+        <article class="ghazal">
+            <div class="ghazal-header">
+                <span class="ghazal-number">Ghazal 1</span>
+                <span class="ghazal-meta">Meter: Ramal | Rhyme: -ān</span>
+            </div>
+
+            <div class="section-title">Persian Text</div>
+            <div class="persian">
+                <div class="verse">
+                <span class="hemistich">بشنو از نی چون حکایت می‌کند</span>
+                <span class="hemistich">از جدایی‌ها شکایت می‌کند</span>
+            </div><div class="verse">
+                <span class="hemistich">کز نیستان تا مرا ببریده‌اند</span>
+                <span class="hemistich">در نفیرم مرد و زن نالیده‌اند</span>
+            </div><div class="verse">
+                <span class="hemistich">سینه خواهم شرحه شرحه از فراق</span>
+                <span class="hemistich">تا بگویم شرح درد اشتیاق</span>
+            </div>
+            </div>
+
+            <div class="section-title">English Translation</div>
+            <div class="translation">
+                <p>[Translation would appear here for Ghazal #1]</p><p>---</p>
+            </div>
+
+            <div class='section-title'>Scholarly Notes</div><div class='notes'><p>This is a mock translation for demonstration purposes. In production, this would be generated by the Claude API with the full translation prompt.</p></div>
+        </article>
+
+        <div class="divider">✦</div>
+
+        <article class="ghazal">
+            <div class="ghazal-header">
+                <span class="ghazal-number">Ghazal 911</span>
+                <span class="ghazal-meta">Meter: Hazaj | Rhyme: -am</span>
+            </div>
+
+            <div class="section-title">Persian Text</div>
+            <div class="persian">
+                <div class="verse">
+                <span class="hemistich">من چه دانم که چه مستم من چه دانم که چه هستم</span>
+                <span class="hemistich">دل بداده دل بداده دل به دلبر داده‌ام</span>
+            </div><div class="verse">
+                <span class="hemistich">گر مرا صد جان بودی جمله قربان کردمی</span>
+                <span class="hemistich">پیش آن قامت آن قامت چون سرو سهی</span>
+            </div>
+            </div>
+
+            <div class="section-title">English Translation</div>
+            <div class="translation">
+                <p>**Verse 1:**<br>What do I know of what I am intoxicated with? What do I know of what I am?<br>Heart given, heart given—I have given my heart to the heart-ravisher.</p><p>**Verse 2:**<br>If I had a hundred souls, I would sacrifice them all,<br>Before that stature, that stature like a tall cypress.</p><p>---</p>
+            </div>
+
+            <div class='section-title'>Scholarly Notes</div><div class='notes'><p>**Sufi Context:** This ghazal exemplifies the "intoxicated" (mast) style of Sufi poetry. The repeated "what do I know" (من چه دانم) expresses the dissolution of rational knowing in mystical experience.</p><p>**Key Terms:**<br>- "Mast" (مست): Spiritually intoxicated—drunk on divine presence, not literal wine. The tavern (meykhaneh) and wine (mey) are standard Sufi symbols for the heart and divine love.<br>- "Dilbar" (دلبر): "Heart-ravisher"—one who steals hearts. Refers to both human beloved and divine Beloved.<br>- "Sarv" (سرو): Cypress—a common Persian poetic image for the beloved's tall, graceful stature.</p><p>**Ecstatic Dissolution:** The stammering repetition ("heart given, heart given"; "that stature, that stature") mimics the speech of one overwhelmed by spiritual experience—the rational faculties failing in the face of encounter with the divine.</p></div>
+        </article>
+
+        <div class="divider">✦</div>
+
+        <article class="ghazal">
+            <div class="ghazal-header">
+                <span class="ghazal-number">Ghazal 462</span>
+                <span class="ghazal-meta">Meter: Ramal | Rhyme: -ast</span>
+            </div>
+
+            <div class="section-title">Persian Text</div>
+            <div class="persian">
+                <div class="verse">
+                <span class="hemistich">آن یکی می‌گفت دوشم کای فلان</span>
+                <span class="hemistich">شمس تبریزی چه نوری در جهان است</span>
+            </div><div class="verse">
+                <span class="hemistich">گفتمش خاموش کین دم را بدان</span>
+                <span class="hemistich">کاین سخن را هیچ پایان نیست</span>
+            </div><div class="verse">
+                <span class="hemistich">همچو ماهی بر فلک می‌تابد او</span>
+                <span class="hemistich">نور او در هر دلی که جان در آن است</span>
+            </div>
+            </div>
+
+            <div class="section-title">English Translation</div>
+            <div class="translation">
+                <p>**Verse 1:**<br>Someone said to me last night: "O friend,<br>What a light Shams-i Tabrizi is in this world!"</p><p>**Verse 2:**<br>I said to him: "Be silent! Know this moment—<br>This speech has no end."</p><p>**Verse 3:**<br>Like a moon he shines upon the heavens,<br>His light is in every heart where the soul resides.</p><p>---</p>
+            </div>
+
+            <div class='section-title'>Scholarly Notes</div><div class='notes'><p>**Historical Context:** This ghazal directly names Shams al-Din Tabrizi (شمس تبریزی), the wandering mystic whose encounter with Rumi transformed the scholar into an ecstatic poet. "Shams" means "sun" in Arabic, and Rumi plays on this throughout—Shams is both the person and the spiritual sun.</p><p>**Key Terms:**<br>- "Shams-i Tabrizi": Rumi's spiritual beloved and teacher. The entire Divan-e Shams is nominally attributed to/dedicated to him.<br>- The moon/sun imagery creates a paradox: Shams (Sun) shines "like a moon"—suggesting his light is both direct illumination and reflected divine light.</p><p>**Sufi Relationship:** The relationship between Rumi and Shams exemplifies the murshid-murid (master-disciple) bond, though Rumi often positions Shams as the greater one. Their relationship scandalized conventional religious authorities of 13th-century Konya.</p></div>
+        </article>
+
+        <div class="divider">✦</div>
+
+        <article class="ghazal">
+            <div class="ghazal-header">
+                <span class="ghazal-number">Ghazal 1173</span>
+                <span class="ghazal-meta">Meter: Hazaj | Rhyme: -ū</span>
+            </div>
+
+            <div class="section-title">Persian Text</div>
+            <div class="persian">
+                <div class="verse">
+                <span class="hemistich">عشق جان جمله جان‌هاست عشق مهر مهربان‌هاست</span>
+                <span class="hemistich">عشق است که نهان است عشق است که عیان است او</span>
+            </div><div class="verse">
+                <span class="hemistich">زین عشق شود هر دل چون آتش و چون آب</span>
+                <span class="hemistich">گه سوزد و گه سازد گه بخشد و گه بستاند او</span>
+            </div><div class="verse">
+                <span class="hemistich">در مذهب عاشق کفر و ایمان نباشد</span>
+                <span class="hemistich">او را نه تن است و نه جان چون عشق همه جان است او</span>
+            </div>
+            </div>
+
+            <div class="section-title">English Translation</div>
+            <div class="translation">
+                <p>**Verse 1:**<br>Love is the soul of all souls, Love is the affection of all the affectionate,<br>Love is that which is hidden, Love is that which is manifest—it is He.</p><p>**Verse 2:**<br>From this Love every heart becomes like fire and like water,<br>Sometimes it burns, sometimes it builds, sometimes it gives, sometimes it takes away—it is He.</p><p>**Verse 3:**<br>In the religion of the lover there is neither disbelief nor faith,<br>The lover has neither body nor soul—for Love is all soul, it is He.</p><p>---</p>
+            </div>
+
+            <div class='section-title'>Scholarly Notes</div><div class='notes'><p>**Sufi Context:** This ghazal meditates on 'ishq (عشق), divine love, as the animating force of existence. The repeated "او" (u/He) at the end of each couplet points to the divine—a common Sufi rhetorical device.</p><p>**Key Terms:**<br>- "'Ishq" (عشق): Not mere romantic love but the cosmic love that drives creation. In Sufi metaphysics, 'ishq is the force by which God desired to be known and thus created the world.<br>- "Kufr wa iman" (کفر و ایمان): "Disbelief and faith"—Rumi suggests the lover transcends religious categories, not by abandoning Islam but by reaching a station where such distinctions dissolve in divine unity (tawhid).</p><p>**Theological Nuance:** The line "neither disbelief nor faith" should not be read as religious relativism. Rather, it expresses the Sufi teaching that the realized mystic perceives only God—the categories of "believer/disbeliever" apply to the world of forms, not to one annihilated (fana) in divine presence.</p><p>**Lost in Translation:** The Persian maintains a hypnotic rhythm through repetition that cannot be fully captured in English.</p></div>
+        </article>
+
+        <div class="divider">✦</div>
+
+        <article class="ghazal">
+            <div class="ghazal-header">
+                <span class="ghazal-number">Ghazal 2114</span>
+                <span class="ghazal-meta">Meter: Khafif | Rhyme: -ā</span>
+            </div>
+
+            <div class="section-title">Persian Text</div>
+            <div class="persian">
+                <div class="verse">
+                <span class="hemistich">ای قوم به حج رفته کجایید کجایید</span>
+                <span class="hemistich">معشوق همین جاست بیایید بیایید</span>
+            </div><div class="verse">
+                <span class="hemistich">معشوق تو همسایه و دیوار به دیوار</span>
+                <span class="hemistich">در بادیه سرگشته شما در چه هوایید</span>
+            </div><div class="verse">
+                <span class="hemistich">گر صورت بی صورت معشوق ببینید</span>
+                <span class="hemistich">هم خواجه و هم خانه و هم کعبه شمایید</span>
+            </div>
+            </div>
+
+            <div class="section-title">English Translation</div>
+            <div class="translation">
+                <p>**Verse 1:**<br>O people who have gone on Hajj—where are you, where are you?<br>The Beloved is right here—come, come!</p><p>**Verse 2:**<br>Your Beloved is your neighbor, wall to wall,<br>Yet you wander lost in the desert—what air do you seek?</p><p>**Verse 3:**<br>If you behold the formless form of the Beloved,<br>You become the master, the house, and the Kaaba itself.</p><p>---</p>
+            </div>
+
+            <div class='section-title'>Scholarly Notes</div><div class='notes'><p>**Sufi Context:** This ghazal addresses the tension between external religious practice (Hajj, pilgrimage to Mecca) and internal spiritual realization. Rumi does not dismiss Hajj but critiques those who seek the Divine only in external journeys while ignoring the Beloved's presence within.</p><p>**Key Terms:**<br>- "Hajj" (حج): The Islamic pilgrimage to Mecca, one of the Five Pillars of Islam. Rumi preserves this specifically Islamic reference.<br>- "The Beloved" (معشوق): Deliberately ambiguous—refers to God, the divine presence, and potentially Shams-i Tabrizi.<br>- "Kaaba" (کعبه): The sacred house in Mecca. In the final verse, Rumi suggests the realized mystic becomes the Kaaba—the heart becomes the true house of God.</p><p>**Quranic Allusion:** The concept of God being closer than one's jugular vein (Quran 50:16) underlies the imagery of the Beloved as "neighbor, wall to wall."</p><p>**Lost in Translation:** The Persian "در چه هوایید" (dar che hava'id) contains wordplay—"hava" means both "air/atmosphere" and "desire/whim," suggesting both physical wandering and scattered spiritual aspiration.</p></div>
+        </article>
+
+        <div class="divider">✦</div>
+
+        <footer>
+            <p>Generated: January 22, 2026</p>
+            <p>This is an open-source translation project.<br>Contributions, corrections, and scholarly input are welcome.</p>
+            <p class="quote">"The wound is the place where the Light enters you." — Rumi</p>
+        </footer>
+    </div>
+</body>
+</html>

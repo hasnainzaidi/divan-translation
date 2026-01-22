@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divan-e Kabir Translation Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Naskh+Arabic:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1a1a1a;
+            --paper: #faf8f5;
+            --gold: #b8924c;
+            --gold-soft: #d4b87a;
+            --mist: #e8e4de;
+            --shadow: rgba(26, 26, 26, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(ellipse at 20% 30%, rgba(184, 146, 76, 0.03) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 70%, rgba(184, 146, 76, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .persian-epigraph {
+            font-family: 'Noto Naskh Arabic', serif;
+            font-size: 2rem;
+            direction: rtl;
+            color: var(--gold);
+            margin-bottom: 2rem;
+            letter-spacing: 0.02em;
+            opacity: 0.9;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 400;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        .hero-line {
+            width: 60px;
+            height: 1px;
+            background: var(--gold);
+            margin: 0 auto 3rem;
+        }
+
+        .hero-description {
+            max-width: 600px;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #333;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            opacity: 0.7;
+        }
+
+        .scroll-indicator::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 40px;
+            background: var(--gold);
+            margin: 1rem auto 0;
+            opacity: 0.5;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+        }
+
+        section {
+            margin-bottom: 6rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            letter-spacing: 0.05em;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--gold);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        .emphasis {
+            font-style: italic;
+            color: #444;
+        }
+
+        /* Principles */
+        .principles {
+            display: grid;
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .principle {
+            padding-left: 1.5rem;
+            border-left: 2px solid var(--mist);
+            transition: border-color 0.3s ease;
+        }
+
+        .principle:hover {
+            border-color: var(--gold-soft);
+        }
+
+        .principle h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.03em;
+        }
+
+        .principle p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        /* Quote Block */
+        .quote-block {
+            background: white;
+            padding: 3rem;
+            margin: 4rem 0;
+            position: relative;
+            box-shadow: 0 4px 30px var(--shadow);
+        }
+
+        .quote-block::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 4rem;
+            color: var(--gold-soft);
+            opacity: 0.4;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .quote-block p {
+            font-size: 1.2rem;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 1rem;
+            padding: 0 1rem;
+        }
+
+        .quote-attribution {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #666;
+            font-style: normal;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: white;
+            margin: 4rem -2rem;
+            box-shadow: 0 0 60px var(--shadow);
+        }
+
+        .cta-section h2::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--ink);
+            color: var(--paper);
+            border: 2px solid var(--ink);
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--ink);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--ink);
+            border: 2px solid var(--mist);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        /* Technical Section */
+        .technical {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .technical h2 {
+            color: var(--ink);
+        }
+
+        .tech-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .tech-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--mist);
+        }
+
+        .tech-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-top: 1px solid var(--mist);
+            margin-top: 4rem;
+        }
+
+        footer .persian-epigraph {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        footer p {
+            font-size: 0.95rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero {
+                padding: 3rem 1.5rem;
+            }
+
+            .persian-epigraph {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 4rem 1.5rem;
+            }
+
+            .quote-block {
+                padding: 2rem 1.5rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <p class="persian-epigraph">دیوان کبیر</p>
+        <h1>Divan-e Kabir</h1>
+        <p class="subtitle">Translating Rumi with Integrity</p>
+        <div class="hero-line"></div>
+        <p class="hero-description">
+            An open-source project to translate the complete <em>Divan-e Shams</em> of Jalal al-Din Rumi,
+            preserving its Islamic and Sufi context—the very context that popular translations have erased.
+        </p>
+        <div class="scroll-indicator">Scroll</div>
+    </section>
+
+    <main class="content">
+        <section>
+            <h2>The Problem</h2>
+            <p>
+                Rumi has become the best-selling poet in America. Yet the Rumi most readers encounter bears little
+                resemblance to the 13th-century Sufi master of Konya. References to Islamic prayer, Quranic verses,
+                the Prophet Muhammad, and centuries of Sufi tradition have been systematically stripped away,
+                leaving a vaguely spiritual figure palatable to Western audiences.
+            </p>
+            <p class="emphasis">
+                What remains is not Rumi. It is a projection—a mirror reflecting back our own assumptions
+                rather than the voice of a devoted Muslim mystic.
+            </p>
+        </section>
+
+        <section>
+            <h2>Our Approach</h2>
+            <p>
+                Drawing on the critical edition of Badi' al-Zaman Foruzanfar,
+                this project aims to produce translations that are both faithful and beautiful—translations that do not
+                ask readers to abandon their context to appreciate Rumi's, but invite them into it.
+            </p>
+
+            <div class="principles">
+                <div class="principle">
+                    <h3>Preserve the Sacred</h3>
+                    <p>References to Hajj, Quranic allusions, hadith, and Islamic prayer remain intact. The <em>sama'</em>
+                    is not merely a dance; it is a Sufi practice of remembrance.</p>
+                </div>
+                <div class="principle">
+                    <h3>Honor the Ambiguity</h3>
+                    <p>The Beloved (<em>ma'shuq</em>) may be God, may be Shams-i Tabrizi, may be the soul itself.
+                    We do not collapse this deliberate multiplicity into a single reading.</p>
+                </div>
+                <div class="principle">
+                    <h3>Meaning Over Meter</h3>
+                    <p>Forced rhyme often distorts meaning. We prioritize fidelity, with annotations
+                    explaining wordplay, allusions, and nuance that cannot cross the linguistic divide.</p>
+                </div>
+                <div class="principle">
+                    <h3>Open to Correction</h3>
+                    <p>No translation is final. Persian speakers, Sufi practitioners, and scholars
+                    are invited to refine and improve every rendering.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="quote-block">
+            <p>
+                O people who have gone on Hajj—where are you, where are you?<br>
+                The Beloved is right here—come, come!
+            </p>
+            <p class="quote-attribution">— Ghazal 2114</p>
+        </div>
+
+        <section class="cta-section">
+            <h2>Explore the Translations</h2>
+            <p>
+                Read our current collection of translated ghazals with full scholarly annotations.
+            </p>
+            <div class="cta-buttons">
+                <a href="divan_translations.html" class="btn btn-primary">Read Translations</a>
+                <a href="https://github.com" class="btn btn-secondary">View on GitHub</a>
+            </div>
+        </section>
+
+        <section class="technical">
+            <h2>Methodology</h2>
+            <p>
+                This project uses large language models guided by careful prompt engineering to produce
+                initial translations, which are then subject to human review and scholarly correction.
+                Source texts are drawn from the Foruzanfar critical edition via Ganjoor.net.
+            </p>
+            <ul class="tech-list">
+                <li><strong>Source:</strong> Ganjoor.net (Foruzanfar critical edition)</li>
+                <li><strong>Translation:</strong> LLM with scholarly prompting</li>
+                <li><strong>Review:</strong> Open for community correction</li>
+                <li><strong>Output:</strong> HTML, Markdown, JSON</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contribute</h2>
+            <p>
+                This is a community project. Persian speakers can review translations for accuracy.
+                Scholars can add historical and theological context. Developers can improve the pipeline.
+                Everyone can help restore Rumi to himself.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="persian-epigraph">از جدایی‌ها شکایت می‌کند</p>
+        <p><em>"It laments the pain of separation."</em></p>
+        <p style="margin-top: 2rem;">
+            An open-source project.<br>
+            Source texts from <a href="https://ganjoor.net" target="_blank">Ganjoor</a>.
+        </p>
+    </footer>
+</body>
+</html>
