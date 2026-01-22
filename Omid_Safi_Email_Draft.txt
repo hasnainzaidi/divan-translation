@@ -1,0 +1,53 @@
+OUTREACH EMAIL TO DR. OMID SAFI
+================================
+
+TO: Omid Safi <omid.safi@duke.edu>
+FROM: Hasnain Zaidi <s.hasnainzaidi@gmail.com>
+SUBJECT: Seeking Your Guidance: Open-Source Divan-e Kabir Translation Project
+
+---
+
+Dear Dr. Safi,
+
+I am working on an open-source project to create a new English translation of Rumi's complete Divan-e Kabir using large language models. Your work—especially "Radical Love" and your public teaching on the importance of preserving Rumi's Islamic context—has been foundational to our approach.
+
+We are explicitly building the translation system to avoid the "whitewashing" you have critiqued: preserving references to salat, Hajj, Quranic allusions, and Sufi terminology rather than universalizing them into generic spirituality.
+
+Before we begin translating at scale, I would be deeply grateful for your input on our approach. I have attached our terminology glossary, tone guide, and a few sample translations. Does this honor the tradition appropriately? Any guidance would be invaluable.
+
+I understand you are very busy, and I am grateful for any time you might spare—even brief feedback would help us ensure we are on the right path.
+
+With respect and gratitude,
+
+Hasnain Zaidi
+s.hasnainzaidi@gmail.com
+
+---
+
+ATTACHMENT: Omid_Safi_Outreach_Materials.docx
+
+---
+
+NOTES FOR SENDING:
+- Dr. Safi's Duke faculty page: https://scholars.duke.edu/person/omid.safi
+- Consider also reaching out via his public social media if email doesn't receive a response
+- The attached document contains:
+  1. Project Vision (1 paragraph)
+  2. Translation Philosophy (citing his influence)
+  3. Full Terminology Glossary (18 key terms)
+  4. Tone Reference with examples
+  5. 3 Sample Translations (Ghazals 2114, 1173, 462)
+  6. Specific questions for his input
+
+---
+
+SPECIFIC QUESTIONS TO ASK (also in the document):
+
+1. Does this approach honor the Islamic/Sufi context appropriately?
+
+2. Any terminology choices that concern you?
+
+3. Are there specific ghazals you would recommend for our pilot?
+   (We're looking for challenging test cases)
+
+4. Would you be willing to review a sample once we have 20 translations?

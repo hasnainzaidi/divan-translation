@@ -2,6 +2,22 @@
 
 An open-source project to translate Rumi's complete Divan-e Shams (Divan-e Kabir) from Persian to English using large language models, following the scholarly approach of Omid Safi.
 
+## Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Set your API key
+export ANTHROPIC_API_KEY="your-key-here"
+
+# Run the 4-pass translation pipeline on sample ghazals
+python pipeline.py --input sample_ghazals.json --output translations.json --limit 3
+
+# Generate formatted output
+python generate_document.py --input translations.json
+```
+
 ## Philosophy
 
 This project aims to create translations that:

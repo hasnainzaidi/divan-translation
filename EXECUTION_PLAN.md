@@ -1,6 +1,6 @@
 # Divan-e Kabir Translation Project: Execution Plan
 
-**Version**: 1.0 (Draft for Review)
+**Version**: 1.1 (Approved)
 **Date**: January 2026
 **Author**: Hasnain Zaidi + Claude
 
@@ -117,7 +117,13 @@ Based on research into Safi's *Radical Love* and public statements:
     {"word": "هوا", "meanings": ["air", "desire"], "note": "pun on physical/spiritual"}
   ],
   "meter_effects": "The hazaj meter creates urgency...",
-  "difficult_constructions": [...]
+  "difficult_constructions": [...],
+  "arabic_content": {
+    "has_arabic": true,
+    "type": "quranic_quotation|hadith|full_verse|phrase",
+    "text": "...",
+    "standard_translation": "..."
+  }
 }
 ```
 
@@ -133,6 +139,7 @@ Based on research into Safi's *Radical Love* and public statements:
 - Preserve hemistich structure
 - Don't attempt poetry yet—prioritize accuracy
 - Flag where multiple readings exist
+- For Quranic verses, use established translations (e.g., Abdel Haleem)
 
 #### Pass 3: Stylist
 **Purpose**: Make it sound like Rumi
@@ -178,6 +185,8 @@ Based on research into Safi's *Radical Love* and public statements:
 }
 ```
 
+**Publishing rule**: All translations auto-publish. Low-confidence translations are flagged for human review but still published.
+
 ### 3.3 Batch Consistency Agent (Periodic)
 
 Runs across translated corpus to detect:
@@ -199,16 +208,38 @@ Runs across translated corpus to detect:
 
 **Fallback**: Internet Archive scans + OCR
 
-### 4.2 Data Schema
+### 4.2 Verse Numbering System
+
+**Decision**: Use Foruzanfar numbering as primary, with Ganjoor ID as internal reference.
+
+```json
+{
+  "id": "F-2114",              // Foruzanfar ghazal number (primary, user-facing)
+  "ganjoor_id": 12345,         // Internal database reference
+  "display": "Ghazal 2114"     // For formatted output
+}
+```
+
+**Rationale**:
+- Foruzanfar is the scholarly standard—academics cite these numbers
+- Ganjoor's data is organized by Foruzanfar anyway
+- Enables cross-reference with Arberry, academic papers, other translations
+- Concordance to other systems (Golpinarli, Ergin) can be added later
+
+### 4.3 Data Schema
 
 ```json
 {
   "ghazal": {
-    "id": "ganjoor_12345",
-    "number": 2114,
+    "id": "F-2114",
+    "ganjoor_id": 12345,
+    "foruzanfar_volume": 1,
+    "foruzanfar_number": 2114,
     "source": "foruzanfar",
     "meter": "Khafif",
     "rhyme": "-ā",
+    "language": "persian",
+    "has_arabic": false,
     "verses": [
       {
         "hemistich1": "ای قوم به حج رفته کجایید کجایید",
@@ -225,30 +256,84 @@ Runs across translated corpus to detect:
   "qa": {
     "confidence": "high",
     "flags": [],
-    "reviewed": false
+    "needs_review": false
   },
   "metadata": {
     "translated_at": "2026-01-22T...",
     "model": "claude-sonnet-4-20250514",
-    "pipeline_version": "1.0"
+    "pipeline_version": "1.1"
   }
 }
 ```
+
+### 4.4 Arabic Content Handling
+
+**Decision**: Persian-first approach. Handle Arabic phrases inline; defer fully Arabic ghazals to Phase 4.
+
+**For Arabic phrases within Persian verses**:
+- Analyzer identifies Arabic text and classifies it (Quranic, hadith, other)
+- For Quranic verses: use established translations (Abdel Haleem recommended)
+- For hadith: note the source if identifiable
+- Scholarly notes explain the Arabic reference
+
+**For fully Arabic ghazals (~10% of Divan)**:
+- Flag during data ingestion
+- Include in Phase 4 with Arabic-specific prompts if needed
+- May require different tone calibration
 
 ---
 
 ## 5. Phased Execution
 
 ### Phase 0: Foundation (Week 1)
-**Goal**: Infrastructure and tooling
+**Goal**: Infrastructure, tooling, and scholarly outreach
 
 | Task | Description | Deliverable |
 |------|-------------|-------------|
 | 0.1 | Finalize terminology glossary | `glossary.json` with 50-100 key terms |
 | 0.2 | Create tone reference document | 10 example translations showing target voice |
-| 0.3 | Build Ganjoor data fetcher | Working script to pull ghazals |
+| 0.3 | Build Ganjoor data fetcher | Working script to pull ghazals with Foruzanfar numbers |
 | 0.4 | Set up output schema | JSON schema + validation |
 | 0.5 | Create comparison corpus | 20 ghazals with Arberry/Nicholson translations for benchmarking |
+| **0.6** | **Reach out to Omid Safi** | **Email with glossary + 3-5 sample translations for blessing** |
+
+### Phase 0.6: Omid Safi Outreach
+
+**Timing**: After completing glossary and tone guide, before pilot translation
+
+**What to share**:
+1. Project vision (1 paragraph)
+2. Translation philosophy (explicitly citing his influence)
+3. Terminology glossary (for his input)
+4. Tone reference document (does this capture Rumi's voice?)
+5. 3-5 sample translations for feedback
+
+**What to ask**:
+1. Does this approach honor the Islamic/Sufi context appropriately?
+2. Any terminology choices that concern you?
+3. Are there specific ghazals you'd recommend for the pilot (challenging test cases)?
+4. Would you be willing to review a sample once we have 20 translations?
+
+**Draft outreach email**:
+```
+Dear Omid,
+
+I'm working on an open-source project to create a new English translation
+of Rumi's complete Divan-e Kabir using large language models. Your work—
+especially Radical Love and your public teaching on the importance of
+preserving Rumi's Islamic context—has been foundational to our approach.
+
+We're explicitly building the translation system to avoid the "whitewashing"
+you've critiqued: preserving references to salat, Hajj, Quranic allusions,
+and Sufi terminology rather than universalizing them into generic spirituality.
+
+Before we begin translating at scale, I'd be grateful for your input on
+our approach. I've attached our terminology glossary and a few sample
+translations. Does this honor the tradition appropriately? Any guidance
+would be invaluable.
+
+[Your name]
+```
 
 ### Phase 1: Proof of Concept (Weeks 2-3)
 **Goal**: Validate the multi-agent architecture works
@@ -257,9 +342,10 @@ Runs across translated corpus to detect:
 |------|-------------|-------------|
 | 1.1 | Implement 4-pass pipeline | Working `translate.py` with all agents |
 | 1.2 | Translate pilot corpus (20 ghazals) | `pilot_translations.json` |
-| 1.3 | Human review of pilot | Feedback document with corrections |
-| 1.4 | Compare to existing translations | Assessment of quality vs. Arberry/Nicholson |
-| 1.5 | Iterate on prompts | Refined prompts based on pilot feedback |
+| 1.3 | Incorporate Safi feedback (if received) | Adjusted prompts/glossary |
+| 1.4 | Human review of pilot | Feedback document with corrections |
+| 1.5 | Compare to existing translations | Assessment of quality vs. Arberry/Nicholson |
+| 1.6 | Iterate on prompts | Refined prompts based on pilot feedback |
 
 **Success criteria**:
 - Persian speaker confirms no major errors in 20 ghazals
@@ -288,21 +374,97 @@ Runs across translated corpus to detect:
 | 3.2 | Contribution guidelines | CONTRIBUTING.md |
 | 3.3 | Documentation | README, methodology doc |
 | 3.4 | Sample output publication | Web-viewable translations |
-| 3.5 | Outreach | Share with Omid Safi, Rumi scholars |
+| 3.5 | Outreach | Share with Rumi scholars, Persian studies communities |
 
 ### Phase 4: Scale (Ongoing)
 **Goal**: Translate full Divan with community
 
 | Task | Description | Deliverable |
 |------|-------------|-------------|
-| 4.1 | Translate remaining ghazals (3,129 more) | Full corpus |
-| 4.2 | Community review system | GitHub issues/PRs for corrections |
-| 4.3 | Scholar advisory | Input from Rumi experts |
-| 4.4 | Continuous improvement | Re-translate with better models/prompts |
+| 4.1 | Translate remaining Persian ghazals (~2,900 more) | Majority of corpus |
+| 4.2 | Arabic ghazals pipeline | Dedicated Arabic handling |
+| 4.3 | Community review system | GitHub issues/PRs for corrections |
+| 4.4 | Scholar advisory | Input from Rumi experts |
+| 4.5 | Continuous improvement | Re-translate with better models/prompts |
 
 ---
 
-## 6. Terminology Glossary (Initial)
+## 6. Community Contribution Model
+
+**Decision**: GitHub-based with tiered contribution levels.
+
+### Repository Structure
+
+```
+divan-kabir-translation/
+├── canonical/                    # Official translations
+│   ├── ghazals/
+│   │   ├── F-0001.json
+│   │   ├── F-0002.json
+│   │   └── ...
+│   └── index.json               # Corpus metadata
+├── community/                    # Alternative contributions
+│   └── ghazals/
+│       └── F-2114/
+│           ├── alt_translation_username.json
+│           └── scholarly_note_username.md
+├── pipeline/                     # Translation code
+│   ├── translate.py
+│   ├── agents/
+│   └── prompts/
+├── reference/                    # Glossary, tone guide, comparisons
+│   ├── glossary.json
+│   ├── tone_guide.md
+│   └── arberry_comparison/
+├── output/                       # Generated documents
+│   ├── html/
+│   ├── markdown/
+│   └── pdf/
+├── CONTRIBUTING.md
+├── README.md
+└── LICENSE
+```
+
+### Contribution Tiers
+
+**Tier 1: Issues (Lowest barrier)**
+- "I think this translation is wrong because..."
+- "This misses a Quranic reference to..."
+- Anyone can file
+- No Git knowledge required
+
+**Tier 2: Suggested Edits (Medium barrier)**
+- Fork repository, edit JSON, submit PR
+- Requires basic Git knowledge
+- Reviewed by maintainers before merge
+
+**Tier 3: Batch Contributions (Highest barrier)**
+- Re-translate a section with alternative approach
+- Add scholarly apparatus (introductions, thematic analysis)
+- Requires approval and review
+
+### CONTRIBUTING.md Contents
+
+1. How to report errors (via GitHub Issues)
+2. How to suggest edits (PR process with template)
+3. Style guide (link to glossary and tone guide)
+4. Review criteria (what makes a contribution accepted)
+5. Code of conduct (respectful scholarly disagreement)
+
+### For Non-Technical Contributors
+
+- Simple web form that generates a GitHub Issue (future enhancement)
+- GitHub Discussions for informal input and questions
+
+### Governance
+
+- Phase 3-4: Hasnain as sole maintainer
+- As community grows: invite trusted contributors as reviewers
+- Potential scholarly advisory board for disputed translations
+
+---
+
+## 7. Terminology Glossary (Initial)
 
 | Persian | Transliteration | Translation | Notes |
 |---------|-----------------|-------------|-------|
@@ -328,7 +490,7 @@ Runs across translated corpus to detect:
 
 ---
 
-## 7. Tone Reference Document
+## 8. Tone Reference Document
 
 ### What Rumi Should Sound Like
 
@@ -370,9 +532,9 @@ Runs across translated corpus to detect:
 
 ---
 
-## 8. Quality Metrics
+## 9. Quality Metrics
 
-### 8.1 Automated Metrics
+### 9.1 Automated Metrics
 
 | Metric | Description | Target |
 |--------|-------------|--------|
@@ -381,7 +543,7 @@ Runs across translated corpus to detect:
 | Allusion preservation | % of Quranic/hadith refs preserved | 100% |
 | No hallucinations | % with no added content | 100% |
 
-### 8.2 Human Evaluation (Sample)
+### 9.2 Human Evaluation (Sample)
 
 | Criterion | Evaluator | Method |
 |-----------|-----------|--------|
@@ -390,7 +552,7 @@ Runs across translated corpus to detect:
 | Poetic quality | English reader | Readability + beauty |
 | Tone consistency | Multiple readers | Does it sound like Rumi? |
 
-### 8.3 Comparison Benchmarks
+### 9.3 Comparison Benchmarks
 
 For ghazals where Arberry/Nicholson translations exist:
 - Our translation should be no less accurate
@@ -399,36 +561,40 @@ For ghazals where Arberry/Nicholson translations exist:
 
 ---
 
-## 9. Risks and Mitigations
+## 10. Risks and Mitigations
 
 | Risk | Likelihood | Impact | Mitigation |
 |------|------------|--------|------------|
-| LLM hallucinations | Medium | High | QA agent + human review for low-confidence |
+| LLM hallucinations | Medium | High | QA agent + flag low-confidence for human review |
 | Terminology drift at scale | Medium | Medium | Batch consistency checker |
 | Tone inconsistency | Medium | Medium | Tone reference + few-shot examples |
 | Ganjoor API unavailable | Low | High | Cache data locally; fallback to HuggingFace dataset |
-| Scholarly criticism | Medium | Medium | Transparent methodology; invite expert review |
+| Scholarly criticism | Medium | Medium | Early Safi outreach; transparent methodology |
+| Omid Safi declines involvement | Low | Medium | Proceed with documented methodology; invite other scholars |
 | Cost overruns | Low | Low | Start small; monitor costs per ghazal |
 
 ---
 
-## 10. Open Questions
+## 11. Resolved Questions
 
-1. **Verse numbering**: Should we use Foruzanfar numbers, Ganjoor IDs, or create our own?
+| Question | Decision | Rationale |
+|----------|----------|-----------|
+| **Verse numbering** | Foruzanfar primary (e.g., "Ghazal 2114"), Ganjoor ID internal | Scholarly standard; enables cross-reference |
+| **Omid Safi involvement** | Reach out early (Phase 0.6) with glossary + samples | Get blessing before scaling; incorporate feedback |
+| **Arabic verses** | Persian-first; Arabic phrases inline; full Arabic ghazals in Phase 4 | Ship faster; Arabic ~10% can be handled later |
+| **Community model** | GitHub with tiered contributions (Issues → PRs → batch) | Familiar, transparent, scalable |
 
-2. **Variant readings**: When manuscripts differ, do we translate one reading or note alternatives?
+## 12. Remaining Open Questions
 
-3. **Prose introductions**: Some ghazals have prose context in editions. Translate these too?
+1. **Variant readings**: When manuscripts differ, do we translate one reading or note alternatives?
 
-4. **Arabic verses**: ~10% of the Divan is in Arabic. Same pipeline or different?
+2. **Prose introductions**: Some ghazals have prose context in editions. Translate these too?
 
-5. **Community contribution model**: GitHub PRs? Dedicated platform? How to handle conflicting suggestions?
-
-6. **Omid Safi involvement**: Should we reach out early for input, or present a finished proof of concept?
+3. **Web interface**: Should we build a searchable web interface for the translations? (Phase 4+)
 
 ---
 
-## 11. Success Criteria
+## 13. Success Criteria
 
 ### Minimum Viable Success (Phase 2)
 - [ ] 100 ghazals translated with multi-agent pipeline
@@ -446,15 +612,16 @@ For ghazals where Arberry/Nicholson translations exist:
 
 ---
 
-## 12. Next Steps
+## 14. Next Steps
 
-Pending your approval of this plan:
+Plan approved. Proceeding to implementation:
 
 1. **Finalize glossary** (task 0.1)
 2. **Create tone reference with 10 examples** (task 0.2)
-3. **Build the 4-pass pipeline** (task 1.1)
-4. **Translate 20 pilot ghazals** (task 1.2)
-5. **Review and iterate**
+3. **Build Ganjoor data fetcher with Foruzanfar numbers** (task 0.3)
+4. **Prepare Omid Safi outreach materials** (task 0.6)
+5. **Build the 4-pass pipeline** (task 1.1)
+6. **Translate 20 pilot ghazals** (task 1.2)
 
 ---
 
@@ -470,4 +637,4 @@ Pending your approval of this plan:
 
 ---
 
-*Draft for review. Please provide feedback before we proceed to implementation.*
+*Version 1.1 — Approved January 2026*

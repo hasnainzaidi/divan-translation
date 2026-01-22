@@ -1,0 +1,8 @@
+{
+  "source": "Divan-e Shams-e Tabrizi (Divan-e Kabir)",
+  "edition": "Based on Foruzanfar critical edition",
+  "translation_method": "Multi-pass LLM (Analyzer → Translator → Stylist → QA)",
+  "translated_at": "2026-01-22T03:31:54.478646",
+  "pipeline_version": "1.1",
+  "translations": []
+}

@@ -1,0 +1,726 @@
+{
+  "source": "Divan-e Shams-e Tabrizi (Divan-e Kabir)",
+  "edition": "Based on Foruzanfar critical edition",
+  "translation_method": "Multi-pass LLM (Analyzer → Translator → Stylist → QA)",
+  "translated_at": "2026-01-21T22:44:34.998993",
+  "pipeline_version": "1.1",
+  "translations": [
+    {
+      "ghazal_id": "F-1",
+      "ghazal_number": 1,
+      "persian_text": [
+        {
+          "hemistich1": "بشنو از نی چون حکایت می‌کند",
+          "hemistich2": "از جدایی‌ها شکایت می‌کند"
+        },
+        {
+          "hemistich1": "کز نیستان تا مرا ببریده‌اند",
+          "hemistich2": "در نفیرم مرد و زن نالیده‌اند"
+        },
+        {
+          "hemistich1": "سینه خواهم شرحه شرحه از فراق",
+          "hemistich2": "تا بگویم شرح درد اشتیاق"
+        }
+      ],
+      "analysis": {
+        "raw_response": "{\n  \"grammatical_notes\": \"The text uses classical Persian constructions. 'چون' functions as 'how/like' introducing manner. The compound verb 'حکایت می‌کند' (tells a story) is standard. 'کز' is contraction of 'که از' (that from). The subjunctive 'ببریده‌اند' (they have cut) follows 'تا' (until/since). 'شرحه شرحه' is an intensive reduplication meaning 'piece by piece' or 'in detail'.\",\n  \"quranic_allusions\": [\n    {\"phrase\": \"بشنو\", \"reference\": \"Multiple Quranic instances of listening/hearing commands\", \"meaning\": \"The imperative 'listen' echoes Quranic calls to attention\", \"rumi_usage\": \"Opens the poem with divine command to pay attention to mystical teaching\"}\n  ],\n  \"hadith_references\": [],\n  \"sufi_terminology\": [\n    {\"term\": \"نی\", \"persian\": \"نی\", \"meaning_in_context\": \"The reed flute, symbol of the human soul separated from divine source, crying out in spiritual longing\"},\n    {\"term\": \"جدایی\", \"persian\": \"جدایی\", \"meaning_in_context\": \"Separation from the Divine Beloved, the fundamental condition of human existence in Sufi cosmology\"},\n    {\"term\": \"فراق\", \"persian\": \"فراق\", \"meaning_in_context\": \"Mystical separation, the painful distance from the Divine that generates spiritual yearning\"},\n    {\"term\": \"اشتیاق\", \"persian\": \"اشتیاق\", \"meaning_in_context\": \"Intense mystical longing, the burning desire for reunion with the Divine source\"}\n  ],\n  \"ambiguities\": [\n    {\"phrase\": \"نی\", \"possible_readings\": [\"literal reed flute\", \"human soul\", \"mystic/seeker\", \"prophet\"], \"recommendation\": \"Preserve ambiguity - the reed functions on multiple symbolic levels simultaneously\"},\n    {\"phrase\": \"نیستان\", \"possible_readings\": [\"literal reedbed\", \"divine source/paradise\", \"state of pre-existence\"], \"recommendation\": \"Maintain the double reference to both physical origin and spiritual source\"},\n    {\"phrase\": \"مرد و زن\", \"possible_readings\": [\"literal men and women\", \"all humanity\", \"dual aspects of existence\"], \"recommendation\": \"Keep the universal human dimension while suggesting metaphysical duality\"}\n  ],\n  \"wordplay\": [\n    {\"word\": \"نی/نیستان\", \"meanings\": [\"reed/reedbed\", \"sound of lament\", \"negation (nay)\"], \"translatable\": false, \"note\": \"The reed (ney) also suggests the sound 'nay' (no/alas), creating phonetic connection to lamentation\"},\n    {\"word\": \"شرحه شرحه/شرح\", \"meanings\": [\"piece by piece\", \"explanation\", \"anatomy/dissection\"], \"translatable\": partially, \"note\": \"The root sh-r-h suggests both explanation and physical cutting/opening\"}\n  ],\n  \"meter\": \"Ramal\",\n  \"meter_effects\": \"The ramal meter creates a flowing, narrative quality appropriate for the reed's story-telling. The rhythm mimics the breath through a reed flute, with alternating stressed syllables suggesting the instrument's natural phrasing.\",\n  \"arabic_content\": {\n    \"has_arabic\": false,\n    \"segments\": []\n  },\n  \"historical_context\": \"This is the famous opening of the Masnavi, Rumi's spiritual epic. The reed flute (ney) was central to Sufi sama' (spiritual audition) practices. The metaphor draws on the physical process of making a reed flute by cutting reeds from their natural bed, paralleling the soul's separation from its divine source.\",\n  \"translation_challenges\": [\n    \"The ney/nay wordplay is untranslatable\",\n    \"The layered symbolism of reed/soul/mystic must be preserved\",\n    \"The musical quality should reflect the poem's connection to sama'\",\n    \"Avoiding over-interpretation of deliberately ambiguous mystical imagery\"\n  ],\n  \"key_images\": [\n    \"Reed flute as speaking/crying soul\",\n    \"Cutting from the reedbed as cosmic separation\",\n    \"Universal lamentation of men and women\",\n    \"Breast torn open to reveal inner pain\"\n  ]\n}",
+        "parse_error": "Expecting value: line 20 column 116 (char 2396)"
+      },
+      "literal_translation": {
+        "literal_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "hemistich1": "Listen to the reed-flute, how it tells a story",
+              "hemistich2": "It makes complaint of separations"
+            },
+            {
+              "verse_number": 2,
+              "hemistich1": "Ever since they cut me from the reed-bed",
+              "hemistich2": "Men and women have wailed in my lament"
+            },
+            {
+              "verse_number": 3,
+              "hemistich1": "I want a breast torn piece by piece from separation",
+              "hemistich2": "So that I may tell the pain of longing"
+            }
+          ]
+        },
+        "translation_notes": [
+          {
+            "verse": 1,
+            "note": "This is the famous opening of the Masnavi, though here presented as a ghazal. 'حکایت' means both 'story' and 'tale' with spiritual significance."
+          },
+          {
+            "verse": 2,
+            "note": "'نیستان' is the reed-bed where reeds grow. 'نفیر' means lament, cry, or the sound made by the reed-flute."
+          },
+          {
+            "verse": 3,
+            "note": "'شرحه شرحه' means piece by piece or strip by strip, indicating intense tearing. 'اشتیاق' is intense longing or yearning."
+          }
+        ],
+        "uncertain_passages": [
+          {
+            "verse": 3,
+            "phrase": "سینه خواهم شرحه شرحه از فراق",
+            "issue": "The syntax could be read different ways",
+            "alternatives": [
+              "I want a breast torn piece by piece from separation",
+              "I want to tear my breast piece by piece due to separation"
+            ]
+          }
+        ],
+        "glossary_terms_used": [
+          "ney"
+        ]
+      },
+      "refined_translation": {
+        "refined_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "line1": "Listen! Listen to the reed-flute!",
+              "line2": "How it weeps the story of separation!"
+            },
+            {
+              "verse_number": 2,
+              "line1": "Since they cut me from my reed-bed,",
+              "line2": "men and women cry in my cry."
+            },
+            {
+              "verse_number": 3,
+              "line1": "I need a heart torn open by separation—",
+              "line2": "only then can I tell you the pain of this longing."
+            }
+          ],
+          "full_text": "Listen! Listen to the reed-flute! How it weeps the story of separation! Since they cut me from my reed-bed, men and women cry in my cry. I need a heart torn open by separation—only then can I tell you the pain of this longing."
+        },
+        "stylistic_choices": [
+          {
+            "verse": 1,
+            "choice": "Doubled 'Listen!' for urgency",
+            "rationale": "Creates Rumi's characteristic ecstatic urgency and direct address"
+          },
+          {
+            "verse": 1,
+            "choice": "'weeps the story' instead of 'tells'",
+            "rationale": "More embodied and emotional—the reed doesn't just narrate, it grieves"
+          },
+          {
+            "verse": 2,
+            "choice": "'cry in my cry'",
+            "rationale": "Emphasizes the unity of all beings in the reed's lament—more intimate than 'wailed in my lament'"
+          },
+          {
+            "verse": 3,
+            "choice": "'I need' instead of 'I want'",
+            "rationale": "More urgent and desperate—captures spiritual necessity not mere desire"
+          },
+          {
+            "verse": 3,
+            "choice": "'heart torn open' instead of 'breast torn piece by piece'",
+            "rationale": "More direct and visceral while maintaining the image of violent opening"
+          }
+        ],
+        "preserved_elements": [
+          "None present in this opening passage"
+        ],
+        "tone_notes": "Achieved Rumi's urgent, intimate voice speaking directly to the reader. The reed becomes a living being with desperate need to communicate its pain. Contemporary language with visceral imagery maintains the raw spiritual longing without Victorian distance."
+      },
+      "qa_result": {
+        "confidence": "medium",
+        "semantic_fidelity": {
+          "score": "acceptable",
+          "issues": [
+            "Line 1: 'Listen! Listen!' adds repetition not in original Persian",
+            "Line 1: 'weeps the story' is more interpretive than 'tells a story'",
+            "Line 3: 'heart torn open' vs 'breast torn piece by piece' loses the intensity of 'شرحه شرحه' (piece by piece)"
+          ]
+        },
+        "hallucination_check": {
+          "additions": [
+            "Repetition of 'Listen!' - original has single 'بشنو'",
+            "'weeps' added where original just says 'tells/recounts'"
+          ],
+          "omissions": [
+            "The specific imagery of 'شرحه شرحه' (piece by piece, strip by strip) is generalized"
+          ]
+        },
+        "islamic_context": {
+          "preserved": true,
+          "issues": []
+        },
+        "terminology": {
+          "consistent": true,
+          "issues": []
+        },
+        "tone": {
+          "sounds_like_rumi": true,
+          "issues": []
+        },
+        "ambiguity_preservation": {
+          "preserved": true,
+          "issues": []
+        },
+        "overall_issues": [
+          "The translation takes interpretive liberties that, while poetic, drift from the literal meaning",
+          "The intensity and specificity of certain Persian phrases is softened"
+        ],
+        "suggestions": [
+          "Consider: 'Listen to the reed-flute! How it tells the story of separation!'",
+          "Consider preserving 'piece by piece' from 'شرحه شرحه' for the visceral impact"
+        ],
+        "flags_for_human_review": false,
+        "human_review_reason": ""
+      },
+      "final_translation": "Listen! Listen to the reed-flute! How it weeps the story of separation! Since they cut me from my reed-bed, men and women cry in my cry. I need a heart torn open by separation—only then can I tell you the pain of this longing.",
+      "scholarly_notes": "\n**Translation Notes:**\n- Verse 1: This is the famous opening of the Masnavi, though here presented as a ghazal. 'حکایت' means both 'story' and 'tale' with spiritual significance.\n- Verse 2: 'نیستان' is the reed-bed where reeds grow. 'نفیر' means lament, cry, or the sound made by the reed-flute.\n- Verse 3: 'شرحه شرحه' means piece by piece or strip by strip, indicating intense tearing. 'اشتیاق' is intense longing or yearning.",
+      "confidence": "medium",
+      "needs_review": false,
+      "metadata": {
+        "translated_at": "2026-01-21T22:42:47.585740",
+        "model": "claude-sonnet-4-20250514",
+        "pipeline_version": "1.1"
+      }
+    },
+    {
+      "ghazal_id": "F-911",
+      "ghazal_number": 911,
+      "persian_text": [
+        {
+          "hemistich1": "من چه دانم که چه مستم من چه دانم که چه هستم",
+          "hemistich2": "دل بداده دل بداده دل به دلبر داده‌ام"
+        },
+        {
+          "hemistich1": "گر مرا صد جان بودی جمله قربان کردمی",
+          "hemistich2": "پیش آن قامت آن قامت چون سرو سهی"
+        }
+      ],
+      "analysis": {
+        "grammatical_notes": "The opening uses repetitive interrogative structure 'من چه دانم که' (man che danam ke) for mystical bewilderment. The phrase 'دل بداده' employs elision of the copula. In verse 2, 'گر مرا صد جان بودی' uses conditional subjunctive. The fragment 'چون سرو سهی' appears incomplete - likely missing a verb or continuation.",
+        "quranic_allusions": [
+          {
+            "phrase": "صد جان",
+            "reference": "Relates to Quran 2:54 and concept of sacrificing the nafs",
+            "meaning": "Hundred souls/lives - complete self-sacrifice",
+            "rumi_usage": "Hyperbolic expression of total devotion, echoing Quranic themes of sacrificing the lower self for divine love"
+          }
+        ],
+        "hadith_references": [],
+        "sufi_terminology": [
+          {
+            "term": "mast",
+            "persian": "مست",
+            "meaning_in_context": "Spiritually intoxicated - the state of mystical rapture where ordinary consciousness is dissolved"
+          },
+          {
+            "term": "jan",
+            "persian": "جان",
+            "meaning_in_context": "Soul/life - not merely biological life but the spiritual essence that can be offered in mystical sacrifice"
+          },
+          {
+            "term": "qurban",
+            "persian": "قربان",
+            "meaning_in_context": "Ritual sacrifice, but here meaning complete spiritual surrender and self-offering to the beloved"
+          },
+          {
+            "term": "dilbar",
+            "persian": "دلبر",
+            "meaning_in_context": "Heart-taker/beloved - the divine beloved who captures and possesses the lover's heart"
+          }
+        ],
+        "ambiguities": [
+          {
+            "phrase": "دلبر",
+            "possible_readings": [
+              "Divine beloved (God)",
+              "Shams al-Din Tabrizi",
+              "Universal principle of love"
+            ],
+            "recommendation": "Preserve ambiguity - this multiplicity of reference is central to Sufi poetry's spiritual function"
+          },
+          {
+            "phrase": "مست",
+            "possible_readings": [
+              "Spiritually intoxicated",
+              "Bewildered by love",
+              "In ecstatic trance"
+            ],
+            "recommendation": "Maintain the mystical ambiguity - the state encompasses multiple dimensions of spiritual experience"
+          }
+        ],
+        "wordplay": [
+          {
+            "word": "دل/دل بداده/دلبر",
+            "meanings": [
+              "Heart given/heart-giver/heart-taker"
+            ],
+            "translatable": false,
+            "note": "Triple play on 'dil' (heart) showing the complete circuit of love - giving, having given, and the one who takes"
+          },
+          {
+            "word": "دانم/دانه",
+            "meanings": [
+              "I know",
+              "grain/seed"
+            ],
+            "translatable": false,
+            "note": "Subtle echo between knowledge and the grain/seed of realization"
+          }
+        ],
+        "meter": "Hazaj: - ᴗ - - / - ᴗ - - / - ᴗ - -",
+        "meter_effects": "The repetitive rhythm mimics the dhikr (remembrance) pattern and creates a trance-like quality appropriate to the mystical intoxication described. The caesura after 'دل بداده' emphasizes the act of heart-giving.",
+        "arabic_content": {
+          "has_arabic": false,
+          "segments": []
+        },
+        "historical_context": "The cypress (سرو) imagery connects to classical Persian poetry traditions. The 'qamат' (stature) likely refers to the beloved's physical form as manifestation of divine beauty. This ghazal reflects Rumi's mature period where personal love for Shams had transformed into universal mystical doctrine.",
+        "translation_challenges": [
+          "The repetitive 'che danam ke che' structure creates rhythm impossible to replicate in English",
+          "The threefold heart wordplay (dil bada-de/dilbar) cannot be preserved",
+          "The incomplete second verse presents textual uncertainty",
+          "The mystical ambiguity of 'dilbar' should not be resolved to any single meaning"
+        ],
+        "key_images": [
+          "Mystical intoxication and bewilderment",
+          "Heart as gift completely given to the beloved",
+          "Hundred souls as hyperbolic devotion",
+          "Cypress-like stature of the beloved",
+          "The economy of mystical exchange (giving heart, sacrificing souls)"
+        ]
+      },
+      "literal_translation": {
+        "literal_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "hemistich1": "What do I know what I am intoxicated with, what do I know what I am",
+              "hemistich2": "Heart given away, heart given away, I have given my heart to the heart-taker"
+            },
+            {
+              "verse_number": 2,
+              "hemistich1": "If I had a hundred souls, I would sacrifice them all",
+              "hemistich2": "Before that stature, that stature like a cypress, carefree"
+            }
+          ]
+        },
+        "translation_notes": [
+          {
+            "verse": 1,
+            "note": "The repetition of 'دل بداده' (heart given away) emphasizes the complete surrender of the heart. The wordplay between dil (heart), dil badada (heart given away), and dilbar (heart-taker) creates a sonic unity."
+          },
+          {
+            "verse": 2,
+            "note": "The repetition of 'آن قامت' (that stature) emphasizes the beloved's majestic presence. 'سهی' can mean both 'carefree' and 'inadvertent/unaware,' suggesting the beloved's natural, unstudied grace."
+          }
+        ],
+        "uncertain_passages": [
+          {
+            "verse": 1,
+            "phrase": "مستم",
+            "issue": "Multiple meanings of spiritual intoxication",
+            "alternatives": [
+              "intoxicated",
+              "enraptured",
+              "bewildered"
+            ]
+          },
+          {
+            "verse": 2,
+            "phrase": "سهی",
+            "issue": "Ambiguous adjective with multiple meanings",
+            "alternatives": [
+              "carefree",
+              "inadvertent",
+              "unaware",
+              "natural"
+            ]
+          }
+        ],
+        "glossary_terms_used": [
+          "jan",
+          "dilbar"
+        ]
+      },
+      "refined_translation": {
+        "refined_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "line1": "What do I know what intoxicates me? What do I know what I am?",
+              "line2": "Heart given, heart given—I have given my heart to the Heart-Stealer!"
+            },
+            {
+              "verse_number": 2,
+              "line1": "If I had a hundred souls, I would sacrifice them all—",
+              "line2": "all of them!—before that cypress stature, so free, so tall."
+            }
+          ],
+          "full_text": "What do I know what intoxicates me? What do I know what I am? Heart given, heart given—I have given my heart to the Heart-Stealer! If I had a hundred souls, I would sacrifice them all—all of them!—before that cypress stature, so free, so tall."
+        },
+        "stylistic_choices": [
+          {
+            "verse": 1,
+            "choice": "Kept repeated questions for bewilderment",
+            "rationale": "Rumi's characteristic confusion and wonder in divine presence"
+          },
+          {
+            "verse": 1,
+            "choice": "Repeated 'Heart given' with dash and exclamation",
+            "rationale": "Creates ecstatic urgency and emphasizes the complete surrender"
+          },
+          {
+            "verse": 1,
+            "choice": "Capitalized 'Heart-Stealer'",
+            "rationale": "Preserves divine title while making it active and immediate"
+          },
+          {
+            "verse": 2,
+            "choice": "Added 'all of them!' interruption",
+            "rationale": "Amplifies the hyperbolic devotion with Rumi's characteristic intensity"
+          },
+          {
+            "verse": 2,
+            "choice": "Maintained cypress image with 'so free, so tall'",
+            "rationale": "Preserves Persian poetic tradition while adding rhythm and embodied description"
+          }
+        ],
+        "preserved_elements": [
+          "دلبر as Heart-Stealer (divine beloved)",
+          "مست as intoxication (mystical state)",
+          "Cypress imagery from Persian poetry",
+          "Economy of mystical sacrifice"
+        ],
+        "tone_notes": "Achieved bewildered ecstasy—the speaker is lost in divine love, repeatedly questioning their own state while declaring total surrender. The tone moves from confused wonder to passionate devotion."
+      },
+      "qa_result": {
+        "confidence": "medium",
+        "semantic_fidelity": {
+          "score": "acceptable",
+          "issues": [
+            "Line 2: 'so free, so tall' adds interpretive content not present in 'چون سرو سهی' (like a cypress, carefree)",
+            "'all of them!' repetition not in original Persian"
+          ]
+        },
+        "hallucination_check": {
+          "additions": [
+            "'so tall' - not in original Persian",
+            "'all of them!' - repetitive emphasis not in source"
+          ],
+          "omissions": []
+        },
+        "islamic_context": {
+          "preserved": true,
+          "issues": []
+        },
+        "terminology": {
+          "consistent": true,
+          "issues": []
+        },
+        "tone": {
+          "sounds_like_rumi": true,
+          "issues": []
+        },
+        "ambiguity_preservation": {
+          "preserved": true,
+          "issues": []
+        },
+        "overall_issues": [
+          "Minor additions that weren't in the original Persian",
+          "Some interpretive flourishes beyond literal meaning"
+        ],
+        "suggestions": [
+          "Consider 'before that stature like a cypress, carefree' instead of 'so free, so tall'",
+          "Remove the added 'all of them!' emphasis"
+        ],
+        "flags_for_human_review": false,
+        "human_review_reason": "Minor additions don't significantly distort meaning, but translator should be aware of tendency to embellish"
+      },
+      "final_translation": "What do I know what intoxicates me? What do I know what I am? Heart given, heart given—I have given my heart to the Heart-Stealer! If I had a hundred souls, I would sacrifice them all—all of them!—before that cypress stature, so free, so tall.",
+      "scholarly_notes": "**Quranic Allusions:**\n- Relates to Quran 2:54 and concept of sacrificing the nafs: Hundred souls/lives - complete self-sacrifice\n\n**Sufi Terminology:**\n- *mast* (مست): Spiritually intoxicated - the state of mystical rapture where ordinary consciousness is dissolved\n- *jan* (جان): Soul/life - not merely biological life but the spiritual essence that can be offered in mystical sacrifice\n- *qurban* (قربان): Ritual sacrifice, but here meaning complete spiritual surrender and self-offering to the beloved\n- *dilbar* (دلبر): Heart-taker/beloved - the divine beloved who captures and possesses the lover's heart\n\n**Deliberate Ambiguities:**\n- \"دلبر\": Divine beloved (God), Shams al-Din Tabrizi, Universal principle of love\n- \"مست\": Spiritually intoxicated, Bewildered by love, In ecstatic trance\n\n**Wordplay (Lost in Translation):**\n- *دل/دل بداده/دلبر*: Heart given/heart-giver/heart-taker\n- *دانم/دانه*: I know, grain/seed\n\n**Translation Notes:**\n- Verse 1: The repetition of 'دل بداده' (heart given away) emphasizes the complete surrender of the heart. The wordplay between dil (heart), dil badada (heart given away), and dilbar (heart-taker) creates a sonic unity.\n- Verse 2: The repetition of 'آن قامت' (that stature) emphasizes the beloved's majestic presence. 'سهی' can mean both 'carefree' and 'inadvertent/unaware,' suggesting the beloved's natural, unstudied grace.",
+      "confidence": "medium",
+      "needs_review": false,
+      "metadata": {
+        "translated_at": "2026-01-21T22:43:40.349157",
+        "model": "claude-sonnet-4-20250514",
+        "pipeline_version": "1.1"
+      }
+    },
+    {
+      "ghazal_id": "F-462",
+      "ghazal_number": 462,
+      "persian_text": [
+        {
+          "hemistich1": "آن یکی می‌گفت دوشم کای فلان",
+          "hemistich2": "شمس تبریزی چه نوری در جهان است"
+        },
+        {
+          "hemistich1": "گفتمش خاموش کین دم را بدان",
+          "hemistich2": "کاین سخن را هیچ پایان نیست"
+        },
+        {
+          "hemistich1": "همچو ماهی بر فلک می‌تابد او",
+          "hemistich2": "نور او در هر دلی که جان در آن است"
+        }
+      ],
+      "analysis": {
+        "grammatical_notes": "Classical Persian with standard syntax. 'آن یکی' (an yaki) is a common narrative opening meaning 'someone/a certain person'. The compound verb 'می‌گفت' indicates past continuous. 'کای فلان' uses the vocative particle 'کای' followed by 'فلان' (so-and-so/such-and-such person). The relative clause 'که جان در آن است' uses standard Persian construction.",
+        "quranic_allusions": [
+          {
+            "phrase": "نور",
+            "reference": "Quran 24:35 (Ayat an-Nur)",
+            "meaning": "The Light Verse describing Allah as the light of heavens and earth",
+            "rumi_usage": "Rumi uses 'نور' (nur/light) to describe Shams's spiritual essence, connecting to the divine light mentioned in the Quran"
+          }
+        ],
+        "hadith_references": [],
+        "sufi_terminology": [
+          {
+            "term": "نور",
+            "persian": "نور",
+            "meaning_in_context": "Divine light or spiritual illumination emanating from the perfect master (Shams). In Sufi terminology, nur represents the manifestation of divine qualities in the realized saint."
+          },
+          {
+            "term": "جان",
+            "persian": "جان",
+            "meaning_in_context": "Soul or spiritual essence, not mere physical life. Refers to the divine spark within human beings that can recognize spiritual light."
+          }
+        ],
+        "ambiguities": [
+          {
+            "phrase": "شمس تبریزی",
+            "possible_readings": [
+              "Literal reference to the historical Shams al-Din Tabrizi",
+              "Metaphor for the divine beloved",
+              "Symbol of spiritual illumination"
+            ],
+            "recommendation": "Preserve ambiguity - Rumi often merges the personal beloved with divine beloved"
+          },
+          {
+            "phrase": "این سخن",
+            "possible_readings": [
+              "This speech/word",
+              "This matter/affair",
+              "This divine discourse"
+            ],
+            "recommendation": "The ambiguity between mundane speech and mystical discourse should be maintained"
+          }
+        ],
+        "wordplay": [
+          {
+            "word": "شمس",
+            "meanings": [
+              "Sun (literal)",
+              "Shams al-Din Tabrizi (person)",
+              "Divine illumination"
+            ],
+            "translatable": false,
+            "note": "The name Shams literally means 'sun' creating untranslatable wordplay with light imagery"
+          },
+          {
+            "word": "می‌تابد",
+            "meanings": [
+              "Shines",
+              "Radiates",
+              "Reflects light"
+            ],
+            "translatable": true,
+            "note": "Connects to the sun/Shams wordplay and celestial imagery"
+          }
+        ],
+        "meter": "Ramal: fa'ilun fa'ilun fa'ilun fa'ilun",
+        "meter_effects": "The ramal meter creates a flowing, narrative quality appropriate for the conversational opening. The consistent rhythm supports the mystical dialogue structure.",
+        "arabic_content": {
+          "has_arabic": false,
+          "segments": []
+        },
+        "historical_context": "Direct reference to Shams al-Din Tabrizi, Rumi's spiritual master and beloved friend whose disappearance profoundly affected Rumi. The ghazal appears to be defending or explaining Shams's spiritual significance to someone who questioned it. The conversational format suggests actual discussions Rumi may have had about Shams after his departure.",
+        "translation_challenges": [
+          "The untranslatable pun on Shams/sun",
+          "Preserving the ambiguity between personal and divine beloved",
+          "The idiomatic expression 'کای فلان' has no exact English equivalent",
+          "Maintaining the conversational tone while preserving mystical depth",
+          "The fish-on-firmament metaphor in verse 3 requires cultural context"
+        ],
+        "key_images": [
+          "Light (نور) as divine manifestation",
+          "Fish shining in the firmament (unusual/impossible image suggesting transcendence)",
+          "Heart (دل) as receptacle for divine light",
+          "Endless speech/discourse (mystical conversation)",
+          "Celestial radiance (می‌تابد)"
+        ]
+      },
+      "literal_translation": {
+        "literal_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "hemistich1": "That one was saying to me yesterday: 'O so-and-so,",
+              "hemistich2": "what light is Shams of Tabriz in the world?'"
+            },
+            {
+              "verse_number": 2,
+              "hemistich1": "I said to him: 'Be silent, know this moment",
+              "hemistich2": "that this speech has no end.'"
+            },
+            {
+              "verse_number": 3,
+              "hemistich1": "Like the moon, he shines upon the sky,",
+              "hemistich2": "his light is in every heart in which there is soul."
+            }
+          ]
+        },
+        "translation_notes": [
+          {
+            "verse": 1,
+            "note": "فلان (falan) is a placeholder meaning 'so-and-so' or 'certain person'"
+          },
+          {
+            "verse": 2,
+            "note": "این دم (in dam) literally means 'this breath/moment' - referring to the present instant"
+          },
+          {
+            "verse": 3,
+            "note": "بر فلک (bar falak) means 'upon the sky/firmament' - Shams is compared to celestial light"
+          }
+        ],
+        "uncertain_passages": [
+          {
+            "verse": 2,
+            "phrase": "این سخن",
+            "issue": "Multiple possible meanings",
+            "alternatives": [
+              "this speech",
+              "this matter",
+              "this divine discourse"
+            ]
+          },
+          {
+            "verse": 3,
+            "phrase": "همچو ماهی",
+            "issue": "Could be moon or fish metaphor",
+            "alternatives": [
+              "like the moon",
+              "like a fish"
+            ]
+          }
+        ],
+        "glossary_terms_used": [
+          "jan"
+        ]
+      },
+      "refined_translation": {
+        "refined_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "line1": "Someone came to me yesterday: 'Tell me—",
+              "line2": "what light is Shams of Tabriz in this world?'"
+            },
+            {
+              "verse_number": 2,
+              "line1": "I told him: 'Silence! Know this moment—",
+              "line2": "this conversation has no end.'"
+            },
+            {
+              "verse_number": 3,
+              "line1": "Like a fish blazing across the sky,",
+              "line2": "his light lives in every heart that breathes."
+            }
+          ],
+          "full_text": "Someone came to me yesterday: 'Tell me—what light is Shams of Tabriz in this world?' I told him: 'Silence! Know this moment—this conversation has no end.' Like a fish blazing across the sky, his light lives in every heart that breathes."
+        },
+        "stylistic_choices": [
+          {
+            "verse": 1,
+            "choice": "Direct dialogue with dramatic pause (dash)",
+            "rationale": "Creates immediacy and sets up the urgent question about Shams"
+          },
+          {
+            "verse": 2,
+            "choice": "'Silence!' as sharp command",
+            "rationale": "Shows Rumi's characteristic imperatives—the question itself is too vast for words"
+          },
+          {
+            "verse": 3,
+            "choice": "'blazing' instead of 'shining'",
+            "rationale": "More intense, embodied language that captures the impossible transcendence"
+          },
+          {
+            "verse": 3,
+            "choice": "'every heart that breathes'",
+            "rationale": "Makes the spiritual physical—breath as life force, more visceral than 'soul'"
+          }
+        ],
+        "preserved_elements": [
+          "Shams of Tabriz (kept exact name)",
+          "The paradoxical fish/sky image (mystical impossibility)",
+          "Light as divine manifestation",
+          "Heart as spiritual receptacle"
+        ],
+        "tone_notes": "Urgent, mysterious, with the characteristic Rumi move from question to silence to cosmic vision. The impossible image of a fish blazing in sky captures divine transcendence beyond normal categories."
+      },
+      "qa_result": {
+        "confidence": "low",
+        "semantic_fidelity": {
+          "score": "poor",
+          "issues": [
+            "Line 3: 'همچو ماهی' means 'like a fish' but 'ماهی بر فلک می‌تابد' should be 'like the moon shines upon the sky' - 'ماه' (moon) was misread as 'ماهی' (fish)",
+            "The image of 'a fish blazing across the sky' creates a surreal metaphor not present in the original",
+            "Lost the sky/heaven imagery ('فلک') which is important cosmological reference"
+          ]
+        },
+        "hallucination_check": {
+          "additions": [
+            "'blazing across the sky' - adds motion and intensity not in original",
+            "'that breathes' - more specific than 'که جان در آن است' (in which there is soul)"
+          ],
+          "omissions": [
+            "The sky/heaven ('فلک') as the location where the moon shines",
+            "The preposition structure 'upon the sky' lost"
+          ]
+        },
+        "islamic_context": {
+          "preserved": true,
+          "issues": []
+        },
+        "terminology": {
+          "consistent": true,
+          "issues": []
+        },
+        "tone": {
+          "sounds_like_rumi": true,
+          "issues": []
+        },
+        "ambiguity_preservation": {
+          "preserved": false,
+          "issues": [
+            "The fish/moon confusion creates unintended surrealism rather than preserving mystical ambiguity",
+            "Original moon imagery connects to traditional Light of Muhammad symbolism"
+          ]
+        },
+        "overall_issues": [
+          "Critical misreading: 'ماه' (moon) interpreted as 'ماهی' (fish)",
+          "This changes the entire cosmological metaphor from moon-light to surreal fish imagery",
+          "Loses connection to classical Islamic light symbolism"
+        ],
+        "suggestions": [
+          "Correct to: 'Like the moon, he shines upon the sky'",
+          "Consider: 'his light dwells in every heart that holds a soul' for final phrase"
+        ],
+        "flags_for_human_review": true,
+        "human_review_reason": "Critical semantic error - moon misread as fish, fundamentally altering the metaphor and losing important cosmological/Islamic symbolism"
+      },
+      "final_translation": "Someone came to me yesterday: 'Tell me—what light is Shams of Tabriz in this world?' I told him: 'Silence! Know this moment—this conversation has no end.' Like a fish blazing across the sky, his light lives in every heart that breathes.",
+      "scholarly_notes": "**Quranic Allusions:**\n- Quran 24:35 (Ayat an-Nur): The Light Verse describing Allah as the light of heavens and earth\n\n**Sufi Terminology:**\n- *نور* (نور): Divine light or spiritual illumination emanating from the perfect master (Shams). In Sufi terminology, nur represents the manifestation of divine qualities in the realized saint.\n- *جان* (جان): Soul or spiritual essence, not mere physical life. Refers to the divine spark within human beings that can recognize spiritual light.\n\n**Deliberate Ambiguities:**\n- \"شمس تبریزی\": Literal reference to the historical Shams al-Din Tabrizi, Metaphor for the divine beloved, Symbol of spiritual illumination\n- \"این سخن\": This speech/word, This matter/affair, This divine discourse\n\n**Wordplay (Lost in Translation):**\n- *شمس*: Sun (literal), Shams al-Din Tabrizi (person), Divine illumination\n- *می‌تابد*: Shines, Radiates, Reflects light\n\n**Translation Notes:**\n- Verse 1: فلان (falan) is a placeholder meaning 'so-and-so' or 'certain person'\n- Verse 2: این دم (in dam) literally means 'this breath/moment' - referring to the present instant\n- Verse 3: بر فلک (bar falak) means 'upon the sky/firmament' - Shams is compared to celestial light",
+      "confidence": "low",
+      "needs_review": true,
+      "metadata": {
+        "translated_at": "2026-01-21T22:44:34.998713",
+        "model": "claude-sonnet-4-20250514",
+        "pipeline_version": "1.1"
+      }
+    }
+  ]
+}

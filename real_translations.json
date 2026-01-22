@@ -1,0 +1,2623 @@
+{
+  "source": "Divan-e Shams-e Tabrizi (Divan-e Kabir)",
+  "edition": "Ganjoor.net (based on Foruzanfar edition)",
+  "translation_method": "Multi-pass LLM (Analyzer → Translator → Stylist → QA)",
+  "translated_at": "2026-01-21T23:26:47.615515",
+  "pipeline_version": "1.1",
+  "translations": [
+    {
+      "ghazal_id": "F-1",
+      "ghazal_number": 1,
+      "persian_text": [
+        {
+          "hemistich1": "ای رستخیز ناگهان وی رحمت بی منتها",
+          "hemistich2": "ای آتشی افروخته در بیشه اندیشه ها"
+        },
+        {
+          "hemistich1": "امروز خندان آمدی مفتاح زندان آمدی",
+          "hemistich2": "بر مستمندان آمدی چون بخشش و فضل خدا"
+        },
+        {
+          "hemistich1": "خورشید را حاجب تویی اومید را واجب تویی",
+          "hemistich2": "مطلب تویی طالب تویی هم منتها هم مبتدا"
+        },
+        {
+          "hemistich1": "در سینه ها برخاسته اندیشه را آراسته",
+          "hemistich2": "هم خویش حاجت خواسته هم خویشتن کرده روا"
+        },
+        {
+          "hemistich1": "ای روح بخش بی بدل وی لذت علم و عمل",
+          "hemistich2": "باقی بهانه ست و دغل کاین علت آمد وان دوا"
+        },
+        {
+          "hemistich1": "ما زان دغل کژبین شده با بی گنه در کین شده",
+          "hemistich2": "گه مست حورالعین شده گه مست نان و شوربا"
+        },
+        {
+          "hemistich1": "این سکر بین هل عقل را وین نقل بین هل نقل را",
+          "hemistich2": "کز بهر نان و بقل را چندین نشاید ماجرا"
+        },
+        {
+          "hemistich1": "تدبیر صد رنگ افکنی بر روم و بر زنگ افکنی",
+          "hemistich2": "و اندر میان جنگ افکنی فی اصطناع لا یری"
+        },
+        {
+          "hemistich1": "می مال پنهان گوش جان می نه بهانه بر کسان",
+          "hemistich2": "جان رب خلصنی زنان والله که لاغ است ای کیا"
+        },
+        {
+          "hemistich1": "خامش که بس مستعجلم رفتم سوی پای علم",
+          "hemistich2": "کاغذ بنه بشکن قلم ساقی درآمد الصلا"
+        }
+      ],
+      "analysis": {
+        "grammatical_notes": "The ghazal employs classical Persian with archaic constructions. Note the frequent use of compound verbs (برخاسته، آراسته) and the mixing of Arabic and Persian syntax. The imperative forms (خامش، می مال، می نه) create direct address. Elliptical constructions are common, requiring implied subjects.",
+        "quranic_allusions": [
+          {
+            "phrase": "رب خلصنی",
+            "reference": "Quran 12:33",
+            "meaning": "My Lord, prison is more to my liking",
+            "rumi_usage": "Joseph's prayer preferring prison to sin, used here as plea for spiritual purification from worldly entanglements"
+          },
+          {
+            "phrase": "والله",
+            "reference": "Common Quranic oath formula",
+            "meaning": "By Allah",
+            "rumi_usage": "Intensifies the statement about worldly pursuits being mere jest"
+          },
+          {
+            "phrase": "الصلا",
+            "reference": "Quranic term for prayer/divine connection",
+            "meaning": "Come to prayer/salvation",
+            "rumi_usage": "The call to spiritual awakening, here announced by the saqi (cupbearer)"
+          }
+        ],
+        "hadith_references": [
+          {
+            "phrase": "فی اصطناع لا یری",
+            "source": "Sufi interpretation of divine action",
+            "meaning": "In creation/fashioning that is unseen"
+          }
+        ],
+        "sufi_terminology": [
+          {
+            "term": "saqi",
+            "persian": "ساقی",
+            "meaning_in_context": "The divine cupbearer who serves spiritual wine of gnosis"
+          },
+          {
+            "term": "mast",
+            "persian": "مست",
+            "meaning_in_context": "Spiritually intoxicated, in various states of mystical inebriation"
+          },
+          {
+            "term": "jazbah",
+            "persian": "جذبه",
+            "meaning_in_context": "Divine attraction that pulls the soul toward God"
+          },
+          {
+            "term": "hal",
+            "persian": "حال",
+            "meaning_in_context": "Transient spiritual states experienced by the mystic"
+          }
+        ],
+        "ambiguities": [
+          {
+            "phrase": "وی",
+            "possible_readings": [
+              "O (vocative)",
+              "that/he (demonstrative)"
+            ],
+            "recommendation": "Preserve ambiguity - could address God directly or refer to divine attributes"
+          },
+          {
+            "phrase": "می",
+            "possible_readings": [
+              "wine (literal)",
+              "spiritual intoxication",
+              "divine knowledge"
+            ],
+            "recommendation": "Maintain mystical ambiguity - not literal wine but spiritual wine of gnosis"
+          },
+          {
+            "phrase": "خویش",
+            "possible_readings": [
+              "self",
+              "God",
+              "the beloved"
+            ],
+            "recommendation": "Preserve the mystical merger of self and divine - intentionally ambiguous subject"
+          },
+          {
+            "phrase": "جان",
+            "possible_readings": [
+              "soul",
+              "life",
+              "beloved",
+              "dear one"
+            ],
+            "recommendation": "Multiple valid readings should be preserved in translation"
+          }
+        ],
+        "wordplay": [
+          {
+            "word": "مطلب/طالب",
+            "meanings": [
+              "sought/seeker",
+              "desired object/one who desires"
+            ],
+            "translatable": false,
+            "note": "Plays on the mystical paradox where seeker and sought are one"
+          },
+          {
+            "word": "دغل/دوا",
+            "meanings": [
+              "fraud/remedy",
+              "deception/cure"
+            ],
+            "translatable": true,
+            "note": "Contrasts false remedies with true spiritual medicine"
+          },
+          {
+            "word": "کژبین/کین",
+            "meanings": [
+              "bent/crooked",
+              "hatred/enmity"
+            ],
+            "translatable": false,
+            "note": "Sound play linking physical crookedness with spiritual enmity"
+          }
+        ],
+        "meter": "Classical Persian hazaj meter with catalexis",
+        "meter_effects": "The driving rhythm creates urgency and spiritual excitement, particularly effective in the imperative verses. The meter supports the ecstatic tone.",
+        "arabic_content": {
+          "has_arabic": true,
+          "segments": [
+            {
+              "text": "فی اصطناع لا یری",
+              "type": "phrase",
+              "reference": "Sufi theological concept",
+              "standard_translation": "In the fashioning that is not seen"
+            },
+            {
+              "text": "رب خلصنی",
+              "type": "quranic",
+              "reference": "12:33",
+              "standard_translation": "My Lord, prison is more to my liking"
+            },
+            {
+              "text": "والله",
+              "type": "quranic",
+              "reference": "oath formula",
+              "standard_translation": "By Allah"
+            },
+            {
+              "text": "الصلا",
+              "type": "quranic",
+              "reference": "call to prayer",
+              "standard_translation": "Come to prayer/salvation"
+            }
+          ]
+        },
+        "historical_context": "This appears to be an early ghazal celebrating spiritual awakening and divine mercy. References to 'today you came laughing' suggest a specific moment of mystical experience. The critique of scholars and worldly learning reflects Rumi's emphasis on experiential over theoretical knowledge.",
+        "translation_challenges": [
+          "Preserving the mystical ambiguity of pronouns and subjects",
+          "Maintaining the Arabic-Persian code-switching effect",
+          "Conveying the wordplay while preserving meaning",
+          "Balancing archaic dignity with accessibility",
+          "Preserving the imperative urgency of the final verses"
+        ],
+        "key_images": [
+          "Fire kindled in the forest of thoughts",
+          "Key to the prison",
+          "Sun's chamberlain/veil",
+          "Intoxication with houris vs bread and soup",
+          "Breaking the pen and putting down the paper"
+        ]
+      },
+      "literal_translation": {
+        "literal_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "hemistich1": "O sudden resurrection, O boundless mercy",
+              "hemistich2": "O fire kindled in the thicket of thoughts"
+            },
+            {
+              "verse_number": 2,
+              "hemistich1": "Today you came laughing, you came as the key of prison",
+              "hemistich2": "You came upon the needy like God's bounty and grace"
+            },
+            {
+              "verse_number": 3,
+              "hemistich1": "You are the sun's chamberlain, you are hope's necessity",
+              "hemistich2": "You are the sought, you are the seeker, both the end and the beginning"
+            },
+            {
+              "verse_number": 4,
+              "hemistich1": "Having arisen in hearts, having adorned thought",
+              "hemistich2": "The self has asked for need, and made itself lawful [acceptable/permissible]"
+            },
+            {
+              "verse_number": 5,
+              "hemistich1": "O life-giving soul without equal, O pleasure of knowledge and action",
+              "hemistich2": "The rest is pretense and fraud - this ailment came and that remedy"
+            },
+            {
+              "verse_number": 6,
+              "hemistich1": "We became crooked from that fraud, became in enmity with the innocent",
+              "hemistich2": "Sometimes intoxicated with houris, sometimes intoxicated with bread and soup"
+            },
+            {
+              "verse_number": 7,
+              "hemistich1": "See this intoxication that destroys reason, see this transmission that destroys tradition",
+              "hemistich2": "That for bread and vegetables, so much adventure is not fitting"
+            },
+            {
+              "verse_number": 8,
+              "hemistich1": "Planning casts a hundred colors, casts upon Rome and upon rust [?]",
+              "hemistich2": "And casts into the midst of war - in artificial making that cannot be seen"
+            },
+            {
+              "verse_number": 9,
+              "hemistich1": "Rub wine hidden upon the ear of the soul, do not place excuse upon people",
+              "hemistich2": "Cry out 'My Lord, deliver me!' - by God, it is mockery, O master"
+            },
+            {
+              "verse_number": 10,
+              "hemistich1": "Be silent, for I am very hasty, I went toward the foot of knowledge",
+              "hemistich2": "Put down the paper, break the pen - the cupbearer has entered, come to prayer!"
+            }
+          ]
+        },
+        "translation_notes": [
+          {
+            "verse": 4,
+            "note": "خویش is ambiguous - could be 'self', 'God', or 'the beloved'"
+          },
+          {
+            "verse": 5,
+            "note": "روح بخش could be 'soul-giving' or 'spirit-bestowing'"
+          },
+          {
+            "verse": 6,
+            "note": "کژبین literally means 'seeing crookedly' - becoming bent/corrupted"
+          },
+          {
+            "verse": 8,
+            "note": "زنگ could mean 'rust', 'bell', or refer to a place name. Arabic phrase 'fī iṣṭināʿ lā yurā' means 'in artificial making that is not seen'"
+          },
+          {
+            "verse": 9,
+            "note": "رب خلصنی is Quranic - Joseph's prayer 'My Lord, deliver me' (12:33)"
+          },
+          {
+            "verse": 10,
+            "note": "الصلا is Arabic for prayer/divine connection. ساقی is the divine cupbearer"
+          }
+        ],
+        "uncertain_passages": [
+          {
+            "verse": 4,
+            "phrase": "کرده روا",
+            "issue": "Multiple meanings",
+            "alternatives": [
+              "made lawful",
+              "made acceptable",
+              "made permissible"
+            ]
+          },
+          {
+            "verse": 8,
+            "phrase": "بر زنگ",
+            "issue": "Unclear referent",
+            "alternatives": [
+              "upon rust",
+              "upon the bell",
+              "upon Zang (place name)"
+            ]
+          },
+          {
+            "verse": 8,
+            "phrase": "فی اصطناع لا یری",
+            "issue": "Arabic phrase meaning uncertain",
+            "alternatives": [
+              "in artificial making that is not seen",
+              "in craftsmanship that cannot be perceived"
+            ]
+          }
+        ],
+        "glossary_terms_used": [
+          "jan",
+          "saqi"
+        ]
+      },
+      "refined_translation": {
+        "refined_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "line1": "O sudden resurrection! O mercy without end!",
+              "line2": "O fire blazing in the forest of all thoughts!"
+            },
+            {
+              "verse_number": 2,
+              "line1": "Today you came laughing—you came as the prison key!",
+              "line2": "You came to the desperate like God's own bounty and grace!"
+            },
+            {
+              "verse_number": 3,
+              "line1": "You are the sun's veil, you are hope's very necessity!",
+              "line2": "You are the sought, you are the seeker—both end and beginning!"
+            },
+            {
+              "verse_number": 4,
+              "line1": "Rising up in hearts, adorning every thought—",
+              "line2": "The self has begged for need, made itself permissible!"
+            },
+            {
+              "verse_number": 5,
+              "line1": "O soul that gives life without equal! O joy of knowing and doing!",
+              "line2": "Everything else is pretense and fraud—this disease came, that cure!"
+            },
+            {
+              "verse_number": 6,
+              "line1": "From that fraud we became twisted, enemies of the innocent—",
+              "line2": "Sometimes drunk on houris, sometimes drunk on bread and soup!"
+            },
+            {
+              "verse_number": 7,
+              "line1": "Look! This drunkenness destroys reason! This teaching destroys tradition!",
+              "line2": "For bread and vegetables—so much drama isn't worth it!"
+            },
+            {
+              "verse_number": 8,
+              "line1": "Scheming throws a hundred colors, throws on Rome, throws on rust—",
+              "line2": "Throws us into the middle of war—artificial making no one can see!"
+            },
+            {
+              "verse_number": 9,
+              "line1": "Rub wine secretly on your soul's ear! Don't make excuses to people!",
+              "line2": "Cry out 'My Lord, deliver me!'—by God, it's all mockery, master!"
+            },
+            {
+              "verse_number": 10,
+              "line1": "Be silent! I'm too hasty—I ran toward knowledge's feet!",
+              "line2": "Put down the paper! Break the pen! The cupbearer enters—come to prayer!"
+            }
+          ],
+          "full_text": "O sudden resurrection! O mercy without end! O fire blazing in the forest of all thoughts! Today you came laughing—you came as the prison key! You came to the desperate like God's own bounty and grace! You are the sun's veil, you are hope's very necessity! You are the sought, you are the seeker—both end and beginning! Rising up in hearts, adorning every thought—the self has begged for need, made itself permissible! O soul that gives life without equal! O joy of knowing and doing! Everything else is pretense and fraud—this disease came, that cure! From that fraud we became twisted, enemies of the innocent—sometimes drunk on houris, sometimes drunk on bread and soup! Look! This drunkenness destroys reason! This teaching destroys tradition! For bread and vegetables—so much drama isn't worth it! Scheming throws a hundred colors, throws on Rome, throws on rust—throws us into the middle of war—artificial making no one can see! Rub wine secretly on your soul's ear! Don't make excuses to people! Cry out 'My Lord, deliver me!'—by God, it's all mockery, master! Be silent! I'm too hasty—I ran toward knowledge's feet! Put down the paper! Break the pen! The cupbearer enters—come to prayer!"
+        },
+        "stylistic_choices": [
+          {
+            "verse": 1,
+            "choice": "O sudden resurrection! O mercy without end!",
+            "rationale": "Used exclamatory 'O' for ecstatic urgency and direct address to the divine"
+          },
+          {
+            "verse": 2,
+            "choice": "Today you came laughing—you came as the prison key!",
+            "rationale": "Emphasized the immediacy with 'Today' and repetition of 'you came' for Rumi's characteristic urgency"
+          },
+          {
+            "verse": 3,
+            "choice": "You are the sought, you are the seeker—both end and beginning!",
+            "rationale": "Preserved the paradox without explanation—classic Rumi contradiction held in tension"
+          },
+          {
+            "verse": 6,
+            "choice": "Sometimes drunk on houris, sometimes drunk on bread and soup!",
+            "rationale": "Kept 'houris' (Islamic reference) and contrasted spiritual/material intoxication with embodied language"
+          },
+          {
+            "verse": 9,
+            "choice": "Cry out 'My Lord, deliver me!'—by God, it's all mockery, master!",
+            "rationale": "Preserved Islamic prayer formula and added Rumi's passionate, paradoxical tone"
+          },
+          {
+            "verse": 10,
+            "choice": "Put down the paper! Break the pen! The cupbearer enters—come to prayer!",
+            "rationale": "Used imperatives for urgency, ending with Islamic call to prayer—classic Rumi move from writing to divine presence"
+          }
+        ],
+        "preserved_elements": [
+          "houris (Islamic paradise maidens)",
+          "prayer formula 'My Lord, deliver me'",
+          "call to prayer (الصلا)",
+          "divine attributes (mercy, bounty, grace)",
+          "wine imagery (Islamic mystical tradition)",
+          "cupbearer (Sufi symbol)"
+        ],
+        "tone_notes": "Achieved Rumi's ecstatic urgency through exclamations, imperatives, and direct address. Preserved the poem's movement from divine vision through human confusion to final surrender. Maintained the paradoxical tension between spiritual intoxication and mundane concerns without resolution."
+      },
+      "qa_result": {
+        "confidence": "medium",
+        "semantic_fidelity": {
+          "score": "acceptable",
+          "issues": [
+            "Line 3: 'sun's veil' vs 'sun's chamberlain' - chamberlain implies service/mediation while veil implies concealment",
+            "Line 8: 'throws on Rome, throws on rust' loses the Persian wordplay and geographical reference",
+            "Line 10: 'knowledge's feet' is awkward - Persian 'toward the foot of knowledge' suggests approaching humbly"
+          ]
+        },
+        "hallucination_check": {
+          "additions": [
+            "'forest of all thoughts' adds 'all' not in Persian",
+            "'every thought' adds 'every' not in Persian",
+            "'so much drama' interprets 'adventure/affair' as drama"
+          ],
+          "omissions": [
+            "Line 8: 'fī iṣṭinā' lā yurā' (Arabic phrase) meaning unclear but omitted nuance",
+            "Subtle loss of 'lawful/permissible' concept in line 4"
+          ]
+        },
+        "islamic_context": {
+          "preserved": true,
+          "issues": [
+            "Quranic phrase 'My Lord, deliver me!' preserved correctly",
+            "Prayer reference 'come to prayer' (al-salā) maintained"
+          ]
+        },
+        "terminology": {
+          "consistent": true,
+          "issues": []
+        },
+        "tone": {
+          "sounds_like_rumi": true,
+          "issues": [
+            "Excellent urgency and directness",
+            "Good use of exclamation marks for passionate tone",
+            "Contemporary language achieved"
+          ]
+        },
+        "ambiguity_preservation": {
+          "preserved": true,
+          "issues": [
+            "Good preservation of mystical ambiguities",
+            "Wine reference kept mystical",
+            "Beloved/divine ambiguity maintained"
+          ]
+        },
+        "overall_issues": [
+          "Some word choices lose precision of Persian metaphors",
+          "Minor additions that weren't in original",
+          "Line 8 particularly challenging - may need different approach"
+        ],
+        "suggestions": [
+          "Consider 'sun's chamberlain' over 'sun's veil' for more accurate meaning",
+          "Reconsider line 8 translation for better clarity",
+          "Remove added words like 'all' and 'every' for fidelity"
+        ],
+        "flags_for_human_review": false,
+        "human_review_reason": ""
+      },
+      "final_translation": "O sudden resurrection! O mercy without end! O fire blazing in the forest of all thoughts! Today you came laughing—you came as the prison key! You came to the desperate like God's own bounty and grace! You are the sun's veil, you are hope's very necessity! You are the sought, you are the seeker—both end and beginning! Rising up in hearts, adorning every thought—the self has begged for need, made itself permissible! O soul that gives life without equal! O joy of knowing and doing! Everything else is pretense and fraud—this disease came, that cure! From that fraud we became twisted, enemies of the innocent—sometimes drunk on houris, sometimes drunk on bread and soup! Look! This drunkenness destroys reason! This teaching destroys tradition! For bread and vegetables—so much drama isn't worth it! Scheming throws a hundred colors, throws on Rome, throws on rust—throws us into the middle of war—artificial making no one can see! Rub wine secretly on your soul's ear! Don't make excuses to people! Cry out 'My Lord, deliver me!'—by God, it's all mockery, master! Be silent! I'm too hasty—I ran toward knowledge's feet! Put down the paper! Break the pen! The cupbearer enters—come to prayer!",
+      "scholarly_notes": "**Quranic Allusions:**\n- Quran 12:33: My Lord, prison is more to my liking\n- Common Quranic oath formula: By Allah\n- Quranic term for prayer/divine connection: Come to prayer/salvation\n\n**Sufi Terminology:**\n- *saqi* (ساقی): The divine cupbearer who serves spiritual wine of gnosis\n- *mast* (مست): Spiritually intoxicated, in various states of mystical inebriation\n- *jazbah* (جذبه): Divine attraction that pulls the soul toward God\n- *hal* (حال): Transient spiritual states experienced by the mystic\n\n**Deliberate Ambiguities:**\n- \"وی\": O (vocative), that/he (demonstrative)\n- \"می\": wine (literal), spiritual intoxication, divine knowledge\n- \"خویش\": self, God, the beloved\n- \"جان\": soul, life, beloved, dear one\n\n**Wordplay (Lost in Translation):**\n- *مطلب/طالب*: sought/seeker, desired object/one who desires\n- *دغل/دوا*: fraud/remedy, deception/cure\n- *کژبین/کین*: bent/crooked, hatred/enmity\n\n**Translation Notes:**\n- Verse 4: خویش is ambiguous - could be 'self', 'God', or 'the beloved'\n- Verse 5: روح بخش could be 'soul-giving' or 'spirit-bestowing'\n- Verse 6: کژبین literally means 'seeing crookedly' - becoming bent/corrupted\n- Verse 8: زنگ could mean 'rust', 'bell', or refer to a place name. Arabic phrase 'fī iṣṭināʿ lā yurā' means 'in artificial making that is not seen'\n- Verse 9: رب خلصنی is Quranic - Joseph's prayer 'My Lord, deliver me' (12:33)\n- Verse 10: الصلا is Arabic for prayer/divine connection. ساقی is the divine cupbearer",
+      "confidence": "medium",
+      "needs_review": false,
+      "metadata": {
+        "translated_at": "2026-01-21T23:20:18.498584",
+        "model": "claude-sonnet-4-20250514",
+        "pipeline_version": "1.1"
+      }
+    },
+    {
+      "ghazal_id": "F-2",
+      "ghazal_number": 2,
+      "persian_text": [
+        {
+          "hemistich1": "ای طایران قدس را عشقت فزوده بال ها",
+          "hemistich2": "در حلقه سودای تو روحانیان را حال ها"
+        },
+        {
+          "hemistich1": "در لا احب الآفلین پاکی ز صورت ها یقین",
+          "hemistich2": "در دیده های غیب بین هر دم ز تو تمثال ها"
+        },
+        {
+          "hemistich1": "افلاک از تو سرنگون خاک از تو چون دریای خون",
+          "hemistich2": "ماهت نخوانم ای فزون از ماه ها و سال ها"
+        },
+        {
+          "hemistich1": "کوه از غمت بشکافته وان غم به دل درتافته",
+          "hemistich2": "یک قطره خونی یافته از فضلت این افضال ها"
+        },
+        {
+          "hemistich1": "ای سروران را تو سند بشمار ما را زان عدد",
+          "hemistich2": "دانی سران را هم بود اندر تبع دنبال ها"
+        },
+        {
+          "hemistich1": "سازی ز خاکی سیدی بر وی فرشته حاسدی",
+          "hemistich2": "با نقد تو جان کاسدی پامال گشته مال ها"
+        },
+        {
+          "hemistich1": "آن کاو تو باشی بال او ای رفعت و اجلال او",
+          "hemistich2": "آن کاو چنین شد حال او بر روی دارد خال ها"
+        },
+        {
+          "hemistich1": "گیرم که خارم خار بد خار از پی گل می زهد",
+          "hemistich2": "صراف زر هم می نهد جو بر سر مثقال ها"
+        },
+        {
+          "hemistich1": "فکری بده ست افعال ها خاکی بده ست این مال ها",
+          "hemistich2": "قالی بده ست این حال ها حالی بده ست این قال ها"
+        },
+        {
+          "hemistich1": "آغاز عالم غلغله پایان عالم زلزله",
+          "hemistich2": "عشقی و شکری با گله آرام با زلزال ها"
+        },
+        {
+          "hemistich1": "توقیع شمس آمد شفق طغرای دولت عشق حق",
+          "hemistich2": "فال وصال آرد سبق کان عشق زد این فال ها"
+        },
+        {
+          "hemistich1": "از رحمة للعالمین اقبال درویشان ببین",
+          "hemistich2": "چون مه منور خرقه ها چون گل معطر شال ها"
+        },
+        {
+          "hemistich1": "عشق امر کل ما رقعه ای او قلزم و ما جرعه ای",
+          "hemistich2": "او صد دلیل آورده و ما کرده استدلال ها"
+        },
+        {
+          "hemistich1": "از عشق گردون مؤتلف بی عشق اختر منخسف",
+          "hemistich2": "از عشق گشته دال الف بی عشق الف چون دال ها"
+        },
+        {
+          "hemistich1": "آب حیات آمد سخن کاید ز علم من لدن",
+          "hemistich2": "جان را از او خالی مکن تا بر دهد اعمال ها"
+        },
+        {
+          "hemistich1": "بر اهل معنی شد سخن اجمال ها تفصیل ها",
+          "hemistich2": "بر اهل صورت شد سخن تفصیل ها اجمال ها"
+        },
+        {
+          "hemistich1": "گر شعرها گفتند پر پر به بود دریا ز در",
+          "hemistich2": "کز ذوق شعر آخر شتر خوش می کشد ترحال ها"
+        }
+      ],
+      "analysis": {
+        "grammatical_notes": "The ghazal employs classical Persian syntax with extensive use of ezafe constructions and Arabic-Persian hybrid formations. Note the archaic form 'منخسف' (munkhasif) in verse 14 and the complex metaphysical statements using Persian grammatical structures to express Arabic theological concepts. The meter creates grammatical inversions typical of Persian mystical poetry.",
+        "quranic_allusions": [
+          {
+            "phrase": "لا احب الآفلین",
+            "reference": "Quran 6:76",
+            "meaning": "I love not those that set",
+            "rumi_usage": "Abraham's rejection of transient celestial bodies; Rumi uses this to express the seeker's transcendence of form and attachment to the eternal"
+          },
+          {
+            "phrase": "رحمة للعالمین",
+            "reference": "Quran 21:107",
+            "meaning": "mercy to the worlds",
+            "rumi_usage": "Originally describing Prophet Muhammad, Rumi applies this to the universal mercy of divine love flowing to dervishes"
+          },
+          {
+            "phrase": "من لدن",
+            "reference": "Quran 18:65",
+            "meaning": "from Our presence",
+            "rumi_usage": "Knowledge directly from divine source, as given to Khidr; Rumi refers to inspired mystical knowledge versus acquired learning"
+          }
+        ],
+        "hadith_references": [
+          {
+            "phrase": "سازی ز خاکی سیدی",
+            "source": "Creation of Adam from clay",
+            "meaning": "Reference to Adam being created from clay and angels being commanded to prostrate, with Iblis's jealousy"
+          }
+        ],
+        "sufi_terminology": [
+          {
+            "term": "طایران قدس",
+            "persian": "ṭāyirān-i quds",
+            "meaning_in_context": "birds of sanctity - elevated souls or angels who gain spiritual wings through love"
+          },
+          {
+            "term": "روحانیان",
+            "persian": "rūḥāniyān",
+            "meaning_in_context": "spiritual beings, both angels and advanced mystics"
+          },
+          {
+            "term": "حال",
+            "persian": "ḥāl",
+            "meaning_in_context": "mystical state - temporary spiritual condition experienced in the circle of divine yearning"
+          },
+          {
+            "term": "سودا",
+            "persian": "sawdā",
+            "meaning_in_context": "mystical yearning, divine madness, passionate longing for the Beloved"
+          },
+          {
+            "term": "غیب بین",
+            "persian": "ghayb-bīn",
+            "meaning_in_context": "those who see the unseen realm, mystics with spiritual vision"
+          },
+          {
+            "term": "درویشان",
+            "persian": "darwīshān",
+            "meaning_in_context": "dervishes, Sufi practitioners who have embraced spiritual poverty"
+          },
+          {
+            "term": "خرقه",
+            "persian": "khirqa",
+            "meaning_in_context": "Sufi robe, symbolizing initiation and spiritual lineage"
+          },
+          {
+            "term": "فنا",
+            "persian": "fanā",
+            "meaning_in_context": "implied in the dissolution imagery - spiritual annihilation in divine love"
+          }
+        ],
+        "ambiguities": [
+          {
+            "phrase": "توقیع شمس",
+            "possible_readings": [
+              "signature of Shams (Shams-i Tabrizi)",
+              "signature of the sun (divine illumination)"
+            ],
+            "recommendation": "preserve both - the personal beloved and cosmic principle"
+          },
+          {
+            "phrase": "یار",
+            "possible_readings": [
+              "divine beloved",
+              "Shams-i Tabrizi",
+              "any spiritual friend"
+            ],
+            "recommendation": "maintain ambiguity as central to Sufi love poetry"
+          },
+          {
+            "phrase": "ماه",
+            "possible_readings": [
+              "moon (celestial)",
+              "beloved's face",
+              "spiritual illumination"
+            ],
+            "recommendation": "preserve multiple layers of meaning"
+          }
+        ],
+        "wordplay": [
+          {
+            "word": "حال/قال",
+            "meanings": [
+              "mystical state/speech",
+              "condition/saying"
+            ],
+            "translatable": false,
+            "note": "Phonetic parallel between spiritual state and divine speech"
+          },
+          {
+            "word": "شمس",
+            "meanings": [
+              "sun",
+              "Shams-i Tabrizi"
+            ],
+            "translatable": false,
+            "note": "Central wordplay throughout Rumi's work - personal and cosmic"
+          },
+          {
+            "word": "دال/الف",
+            "meanings": [
+              "Arabic letters dal/alif",
+              "guide/straight"
+            ],
+            "translatable": false,
+            "note": "Letters as metaphor for spiritual hierarchy and divine unity"
+          },
+          {
+            "word": "افلاک/خاک",
+            "meanings": [
+              "heavens/earth",
+              "celestial spheres/dust"
+            ],
+            "translatable": true,
+            "note": "Cosmic reversal imagery"
+          }
+        ],
+        "meter": "Classical Persian meter with consistent -ها rhyme",
+        "meter_effects": "The driving rhythm creates a sense of cosmic movement and spiritual ascension, while the -ها plural ending suggests multiplicity dissolving into unity",
+        "arabic_content": {
+          "has_arabic": true,
+          "segments": [
+            {
+              "text": "لا احب الآفلین",
+              "type": "quranic",
+              "reference": "Quran 6:76",
+              "standard_translation": "I love not those that set"
+            },
+            {
+              "text": "رحمة للعالمین",
+              "type": "quranic",
+              "reference": "Quran 21:107",
+              "standard_translation": "mercy to the worlds"
+            },
+            {
+              "text": "من لدن",
+              "type": "quranic",
+              "reference": "Quran 18:65",
+              "standard_translation": "from Our presence"
+            }
+          ]
+        },
+        "historical_context": "This ghazal shows clear influence of Rumi's relationship with Shams-i Tabrizi (verse 11 specifically names him). The imagery of dervishes, Sufi robes (khirqa), and mystical audition (sama) reflects the established Mevlevi order. References to spiritual hierarchy and master-disciple relationships are prominent.",
+        "translation_challenges": [
+          "The -ها rhyme scheme creates grammatical plural forms that are integral to meaning",
+          "Multiple layers of Arabic-Persian theological vocabulary",
+          "Preservation of Shams/sun ambiguity throughout",
+          "Cosmic imagery must retain both literal and metaphysical dimensions",
+          "Sufi technical terms need contextual accuracy without over-explanation"
+        ],
+        "key_images": [
+          "Birds of sanctity gaining wings through love",
+          "Cosmic inversion - heavens overturned, earth like sea of blood",
+          "Mountains split by divine grief",
+          "Clay becoming master over angels",
+          "Arabic letters as spiritual metaphor",
+          "Dervish robes illuminated like moon",
+          "Ocean and drop imagery for divine-human relationship"
+        ]
+      },
+      "literal_translation": {
+        "literal_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "hemistich1": "O birds of sanctity, your Love has added wings to them",
+              "hemistich2": "In the circle of yearning for you, spiritual beings have mystical states"
+            },
+            {
+              "verse_number": 2,
+              "hemistich1": "In 'I love not those that set,' purity from forms is certain",
+              "hemistich2": "In the eyes of those who see the unseen, every moment from you are manifestations"
+            },
+            {
+              "verse_number": 3,
+              "hemistich1": "The heavens are upside down because of you, the earth because of you like a sea of blood",
+              "hemistich2": "I do not call you moon, O you who exceed moons and years"
+            },
+            {
+              "verse_number": 4,
+              "hemistich1": "The mountain has split from your grief, and that grief has woven into the heart",
+              "hemistich2": "One drop of blood has found from your grace these bounties"
+            },
+            {
+              "verse_number": 5,
+              "hemistich1": "O you who are the support of chiefs, count us among that number",
+              "hemistich2": "You know that heads too will have followers as tails"
+            },
+            {
+              "verse_number": 6,
+              "hemistich1": "You make from dust a master, over him an angel becomes envious",
+              "hemistich2": "With your currency, soul becomes a merchant, wealth has become trampled underfoot"
+            },
+            {
+              "verse_number": 7,
+              "hemistich1": "The one whose wing you are, O his elevation and glory",
+              "hemistich2": "The one whose condition became thus, bears beauty marks upon his face"
+            },
+            {
+              "verse_number": 8,
+              "hemistich1": "I grant that I am a bad thorn, the thorn blooms for the sake of the rose",
+              "hemistich2": "The money-changer of gold also places barley upon the scales"
+            },
+            {
+              "verse_number": 9,
+              "hemistich1": "Thought has given these actions, dust has given this wealth",
+              "hemistich2": "Carpet has given these conditions, condition has given these words"
+            },
+            {
+              "verse_number": 10,
+              "hemistich1": "The beginning of the world is tumult, the end of the world is earthquake",
+              "hemistich2": "Love and gratitude with complaint, peace with earthquakes"
+            },
+            {
+              "verse_number": 11,
+              "hemistich1": "The signature of Shams came as dawn, the royal seal of the state of divine Love",
+              "hemistich2": "The omen of union brings precedence, for that Love cast these omens"
+            },
+            {
+              "verse_number": 12,
+              "hemistich1": "From 'mercy to the worlds,' behold the fortune of the dervishes",
+              "hemistich2": "Like the moon, robes are illuminated, like roses, shawls are perfumed"
+            },
+            {
+              "verse_number": 13,
+              "hemistich1": "Love is the command 'Be!' and we are a patch, it is an ocean and we are a sip",
+              "hemistich2": "It has brought a hundred proofs and we have made reasonings"
+            },
+            {
+              "verse_number": 14,
+              "hemistich1": "From Love the heavens are harmonious, without Love the stars are eclipsed",
+              "hemistich2": "From Love dal became alif, without Love alif becomes like dals"
+            },
+            {
+              "verse_number": 15,
+              "hemistich1": "The water of life is speech that comes from the knowledge 'from Our presence'",
+              "hemistich2": "Do not keep the soul empty of it, so that it may give forth actions"
+            },
+            {
+              "verse_number": 16,
+              "hemistich1": "For the people of meaning, speech became generalities and particulars",
+              "hemistich2": "For the people of form, speech became particulars and generalities"
+            },
+            {
+              "verse_number": 17,
+              "hemistich1": "If poems were spoken wing by wing, the sea would be from pearl",
+              "hemistich2": "For from the rapture of poetry at last, the camel sweetly pulls the loads"
+            }
+          ]
+        },
+        "translation_notes": [
+          {
+            "verse": 2,
+            "note": "Quranic reference 6:76 - Abraham's rejection of worship of temporary things"
+          },
+          {
+            "verse": 11,
+            "note": "توقیع شمس could be both 'signature of Shams (Tabrizi)' or 'signature of the sun'"
+          },
+          {
+            "verse": 12,
+            "note": "Quranic reference 21:107 - description of Prophet Muhammad"
+          },
+          {
+            "verse": 13,
+            "note": "Reference to divine command 'kun' (Be!) from Quranic creation verses"
+          },
+          {
+            "verse": 15,
+            "note": "Quranic reference 18:65 - divine knowledge from God's presence"
+          },
+          {
+            "verse": 17,
+            "note": "Final verse uses imagery of poetry as ocean of pearls and mystical journey"
+          }
+        ],
+        "uncertain_passages": [
+          {
+            "verse": 4,
+            "phrase": "یک قطره خونی یافته",
+            "issue": "Grammatical ambiguity",
+            "alternatives": [
+              "One drop of blood has found",
+              "Has found one drop of blood"
+            ]
+          },
+          {
+            "verse": 8,
+            "phrase": "جو بر سر مثقال ها",
+            "issue": "Meaning of جو in context",
+            "alternatives": [
+              "barley upon the scales",
+              "seeks upon the weights"
+            ]
+          },
+          {
+            "verse": 9,
+            "phrase": "قالی بده ست این حال ها",
+            "issue": "قالی could be carpet or speaker",
+            "alternatives": [
+              "Carpet has given these conditions",
+              "The speaker has given these conditions"
+            ]
+          },
+          {
+            "verse": 17,
+            "phrase": "پر به بود دریا ز در",
+            "issue": "Conditional construction unclear",
+            "alternatives": [
+              "the sea would be from pearl",
+              "the sea would be better than pearl"
+            ]
+          }
+        ],
+        "glossary_terms_used": [
+          "ishq",
+          "hal",
+          "rouhaniyan",
+          "darvishan",
+          "jan",
+          "del"
+        ]
+      },
+      "refined_translation": {
+        "refined_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "line1": "O holy birds! Your Love has given them wings—",
+              "line2": "In the circle of longing for You, spirits are drunk with ecstasy!"
+            },
+            {
+              "verse_number": 2,
+              "line1": "In 'I love not those that set'—yes! Purity from all forms!",
+              "line2": "In the eyes that see beyond sight, You appear every breath!"
+            },
+            {
+              "verse_number": 3,
+              "line1": "Heaven spins upside down because of You, earth bleeds like an ocean—",
+              "line2": "I won't call You moon, O You who outlast all moons and years!"
+            },
+            {
+              "verse_number": 4,
+              "line1": "Mountains crack from grief of You—that grief woven into my heart!",
+              "line2": "One drop of blood has found these bounties from Your grace."
+            },
+            {
+              "verse_number": 5,
+              "line1": "O support of all chiefs! Count us in that number—",
+              "line2": "You know even heads must have followers trailing behind."
+            },
+            {
+              "verse_number": 6,
+              "line1": "You make a master from dust—angels burn with envy!",
+              "line2": "With Your coin, souls turn merchant, wealth trampled underfoot."
+            },
+            {
+              "verse_number": 7,
+              "line1": "The one whose wing You are—O his glory, his elevation!",
+              "line2": "The one whose state became this bears beauty marks on his face."
+            },
+            {
+              "verse_number": 8,
+              "line1": "Yes, I'm a bad thorn—but thorns bloom for the rose!",
+              "line2": "Even the gold-weigher puts barley on his scales."
+            },
+            {
+              "verse_number": 9,
+              "line1": "Thought gave these deeds, dust gave this wealth,",
+              "line2": "Carpet gave these states, states gave these words."
+            },
+            {
+              "verse_number": 10,
+              "line1": "World begins in uproar, world ends in earthquake—",
+              "line2": "Love and gratitude with complaint, peace with earthquakes!"
+            },
+            {
+              "verse_number": 11,
+              "line1": "Shams's seal came as dawn—the royal mark of divine Love's kingdom!",
+              "line2": "The omen of union takes the lead—that Love cast these signs."
+            },
+            {
+              "verse_number": 12,
+              "line1": "From 'mercy to the worlds'—see how the dervishes prosper!",
+              "line2": "Robes bright as moon, shawls fragrant as roses."
+            },
+            {
+              "verse_number": 13,
+              "line1": "Love is the command 'Be!' and we're just a patch—It's ocean, we're a sip!",
+              "line2": "It brings a hundred proofs while we make arguments."
+            },
+            {
+              "verse_number": 14,
+              "line1": "From Love, heaven harmonizes—without Love, stars eclipse!",
+              "line2": "From Love, dal became alif—without Love, alif slouches like dal."
+            },
+            {
+              "verse_number": 15,
+              "line1": "Water of life is speech from the knowledge 'from Our presence'—",
+              "line2": "Don't keep your soul empty of it, so it can give birth to deeds!"
+            },
+            {
+              "verse_number": 16,
+              "line1": "For people of meaning, speech became both general and particular,",
+              "line2": "For people of form, speech became particular and general."
+            },
+            {
+              "verse_number": 17,
+              "line1": "If poems were spoken wing by wing, the sea would be pearl—",
+              "line2": "From poetry's rapture, even camels sweetly pull their loads!"
+            }
+          ],
+          "full_text": "O holy birds! Your Love has given them wings—In the circle of longing for You, spirits are drunk with ecstasy! In 'I love not those that set'—yes! Purity from all forms! In the eyes that see beyond sight, You appear every breath! Heaven spins upside down because of You, earth bleeds like an ocean—I won't call You moon, O You who outlast all moons and years! Mountains crack from grief of You—that grief woven into my heart! One drop of blood has found these bounties from Your grace. O support of all chiefs! Count us in that number—You know even heads must have followers trailing behind. You make a master from dust—angels burn with envy! With Your coin, souls turn merchant, wealth trampled underfoot. The one whose wing You are—O his glory, his elevation! The one whose state became this bears beauty marks on his face. Yes, I'm a bad thorn—but thorns bloom for the rose! Even the gold-weigher puts barley on his scales. Thought gave these deeds, dust gave this wealth, Carpet gave these states, states gave these words. World begins in uproar, world ends in earthquake—Love and gratitude with complaint, peace with earthquakes! Shams's seal came as dawn—the royal mark of divine Love's kingdom! The omen of union takes the lead—that Love cast these signs. From 'mercy to the worlds'—see how the dervishes prosper! Robes bright as moon, shawls fragrant as roses. Love is the command 'Be!' and we're just a patch—It's ocean, we're a sip! It brings a hundred proofs while we make arguments. From Love, heaven harmonizes—without Love, stars eclipse! From Love, dal became alif—without Love, alif slouches like dal. Water of life is speech from the knowledge 'from Our presence'—Don't keep your soul empty of it, so it can give birth to deeds! For people of meaning, speech became both general and particular, For people of form, speech became particular and general. If poems were spoken wing by wing, the sea would be pearl—From poetry's rapture, even camels sweetly pull their loads!"
+        },
+        "stylistic_choices": [
+          {
+            "verse": 1,
+            "choice": "Added exclamations and direct address",
+            "rationale": "Captures Rumi's urgent, ecstatic tone"
+          },
+          {
+            "verse": 2,
+            "choice": "Added 'yes!' and made Quranic reference direct",
+            "rationale": "Preserves Islamic context while adding Rumi's enthusiasm"
+          },
+          {
+            "verse": 3,
+            "choice": "Used visceral imagery - 'bleeds like an ocean'",
+            "rationale": "Embodies Rumi's physical-spiritual metaphors"
+          },
+          {
+            "verse": 8,
+            "choice": "Added 'Yes, I'm a bad thorn' - conversational admission",
+            "rationale": "Creates intimacy and self-aware vulnerability typical of Rumi"
+          },
+          {
+            "verse": 11,
+            "choice": "Preserved 'Shams' name and specific mystical terminology",
+            "rationale": "Maintains the poem's biographical and spiritual authenticity"
+          },
+          {
+            "verse": 13,
+            "choice": "Used contemporary contractions and conversational tone",
+            "rationale": "Makes Rumi's voice accessible without losing intensity"
+          },
+          {
+            "verse": 14,
+            "choice": "Personified letters - 'alif slouches like dal'",
+            "rationale": "Maintains the playful yet profound Arabic letter mysticism"
+          }
+        ],
+        "preserved_elements": [
+          "'I love not those that set' (Quranic reference)",
+          "Shams (Rumi's spiritual teacher)",
+          "'mercy to the worlds' (Quranic epithet)",
+          "dervishes",
+          "'Be!' (divine creative command)",
+          "'from Our presence' (Quranic phrase)",
+          "dal and alif (Arabic letters with mystical significance)"
+        ],
+        "tone_notes": "Achieved Rumi's signature blend of cosmic vastness and intimate urgency. The voice moves from ecstatic proclamation to tender confession, maintaining the paradoxical quality where grand metaphysical statements feel personally immediate. The rhythm alternates between breathless excitement and profound stillness."
+      },
+      "qa_result": {
+        "confidence": "medium",
+        "semantic_fidelity": {
+          "score": "acceptable",
+          "issues": [
+            "Line 1: 'spirits are drunk with ecstasy' adds 'drunk' not in original - روحانیان را حال ها means 'spiritual beings have mystical states'",
+            "Line 5: 'Count us in that number' loses the meaning of being counted among the chiefs/leaders",
+            "Line 9: The philosophical depth of the original's circular causation is somewhat flattened",
+            "Line 17: 'even camels sweetly pull their loads' - the original emphasizes the rapture of poetry causing this, not the difficulty"
+          ]
+        },
+        "hallucination_check": {
+          "additions": [
+            "'drunk with ecstasy' in line 1 - not in original",
+            "Multiple exclamation points and dashes not reflecting Persian punctuation patterns",
+            "Some interpretive flourishes like 'angels burn with envy' (more dramatic than original)"
+          ],
+          "omissions": [
+            "The precise meaning of 'صراف زر' (gold money-changer) in line 8 is simplified",
+            "The wordplay between 'دال' and 'الف' (Arabic letters) in line 14 needs more explanation"
+          ]
+        },
+        "islamic_context": {
+          "preserved": true,
+          "issues": [
+            "Quranic reference 'رحمة للعالمین' (mercy to the worlds) is preserved",
+            "'لا احب الآفلین' (I love not those that set) Quranic reference maintained",
+            "Sufi terminology like 'درویشان' (dervishes) and 'خرقه' (robes) preserved"
+          ]
+        },
+        "terminology": {
+          "consistent": true,
+          "issues": [
+            "Love is properly capitalized",
+            "Sufi terms are maintained appropriately"
+          ]
+        },
+        "tone": {
+          "sounds_like_rumi": true,
+          "issues": [
+            "The urgent, passionate tone is captured well",
+            "Direct address style maintained",
+            "Contemporary language used appropriately",
+            "Some lines may be slightly over-dramatized with added punctuation"
+          ]
+        },
+        "ambiguity_preservation": {
+          "preserved": true,
+          "issues": [
+            "The Beloved/You ambiguity is maintained",
+            "Mystical references kept appropriately ambiguous",
+            "The dal/alif wordplay could use brief explanation without destroying mystery"
+          ]
+        },
+        "overall_issues": [
+          "Minor semantic drift in a few lines",
+          "Some added dramatic elements not in original",
+          "Punctuation style may be overly modern/emphatic",
+          "Line 9's philosophical concept could be clearer"
+        ],
+        "suggestions": [
+          "Consider 'spiritual beings have mystical states' instead of 'spirits are drunk with ecstasy' for line 1",
+          "Clarify the dal/alif reference briefly - these are Arabic letters with mystical significance",
+          "Tone down some of the added dramatic punctuation",
+          "Make line 5 clearer about being counted among the ranks of chiefs"
+        ],
+        "flags_for_human_review": false,
+        "human_review_reason": "Minor issues present but don't fundamentally compromise the translation's integrity or Rumi's voice"
+      },
+      "final_translation": "O holy birds! Your Love has given them wings—In the circle of longing for You, spirits are drunk with ecstasy! In 'I love not those that set'—yes! Purity from all forms! In the eyes that see beyond sight, You appear every breath! Heaven spins upside down because of You, earth bleeds like an ocean—I won't call You moon, O You who outlast all moons and years! Mountains crack from grief of You—that grief woven into my heart! One drop of blood has found these bounties from Your grace. O support of all chiefs! Count us in that number—You know even heads must have followers trailing behind. You make a master from dust—angels burn with envy! With Your coin, souls turn merchant, wealth trampled underfoot. The one whose wing You are—O his glory, his elevation! The one whose state became this bears beauty marks on his face. Yes, I'm a bad thorn—but thorns bloom for the rose! Even the gold-weigher puts barley on his scales. Thought gave these deeds, dust gave this wealth, Carpet gave these states, states gave these words. World begins in uproar, world ends in earthquake—Love and gratitude with complaint, peace with earthquakes! Shams's seal came as dawn—the royal mark of divine Love's kingdom! The omen of union takes the lead—that Love cast these signs. From 'mercy to the worlds'—see how the dervishes prosper! Robes bright as moon, shawls fragrant as roses. Love is the command 'Be!' and we're just a patch—It's ocean, we're a sip! It brings a hundred proofs while we make arguments. From Love, heaven harmonizes—without Love, stars eclipse! From Love, dal became alif—without Love, alif slouches like dal. Water of life is speech from the knowledge 'from Our presence'—Don't keep your soul empty of it, so it can give birth to deeds! For people of meaning, speech became both general and particular, For people of form, speech became particular and general. If poems were spoken wing by wing, the sea would be pearl—From poetry's rapture, even camels sweetly pull their loads!",
+      "scholarly_notes": "**Quranic Allusions:**\n- Quran 6:76: I love not those that set\n- Quran 21:107: mercy to the worlds\n- Quran 18:65: from Our presence\n\n**Sufi Terminology:**\n- *طایران قدس* (ṭāyirān-i quds): birds of sanctity - elevated souls or angels who gain spiritual wings through love\n- *روحانیان* (rūḥāniyān): spiritual beings, both angels and advanced mystics\n- *حال* (ḥāl): mystical state - temporary spiritual condition experienced in the circle of divine yearning\n- *سودا* (sawdā): mystical yearning, divine madness, passionate longing for the Beloved\n- *غیب بین* (ghayb-bīn): those who see the unseen realm, mystics with spiritual vision\n- *درویشان* (darwīshān): dervishes, Sufi practitioners who have embraced spiritual poverty\n- *خرقه* (khirqa): Sufi robe, symbolizing initiation and spiritual lineage\n- *فنا* (fanā): implied in the dissolution imagery - spiritual annihilation in divine love\n\n**Deliberate Ambiguities:**\n- \"توقیع شمس\": signature of Shams (Shams-i Tabrizi), signature of the sun (divine illumination)\n- \"یار\": divine beloved, Shams-i Tabrizi, any spiritual friend\n- \"ماه\": moon (celestial), beloved's face, spiritual illumination\n\n**Wordplay (Lost in Translation):**\n- *حال/قال*: mystical state/speech, condition/saying\n- *شمس*: sun, Shams-i Tabrizi\n- *دال/الف*: Arabic letters dal/alif, guide/straight\n- *افلاک/خاک*: heavens/earth, celestial spheres/dust\n\n**Translation Notes:**\n- Verse 2: Quranic reference 6:76 - Abraham's rejection of worship of temporary things\n- Verse 11: توقیع شمس could be both 'signature of Shams (Tabrizi)' or 'signature of the sun'\n- Verse 12: Quranic reference 21:107 - description of Prophet Muhammad\n- Verse 13: Reference to divine command 'kun' (Be!) from Quranic creation verses\n- Verse 15: Quranic reference 18:65 - divine knowledge from God's presence\n- Verse 17: Final verse uses imagery of poetry as ocean of pearls and mystical journey",
+      "confidence": "medium",
+      "needs_review": false,
+      "metadata": {
+        "translated_at": "2026-01-21T23:22:06.552471",
+        "model": "claude-sonnet-4-20250514",
+        "pipeline_version": "1.1"
+      }
+    },
+    {
+      "ghazal_id": "F-3",
+      "ghazal_number": 3,
+      "persian_text": [
+        {
+          "hemistich1": "ای دل چه اندیشیده ای در عذر آن تقصیرها",
+          "hemistich2": "زان سوی او چندان وفا زین سوی تو چندین جفا"
+        },
+        {
+          "hemistich1": "زان سوی او چندان کرم زین سو خلاف و بیش و کم",
+          "hemistich2": "زان سوی او چندان نعم زین سوی تو چندین خطا"
+        },
+        {
+          "hemistich1": "زین سوی تو چندین حسد چندین خیال و ظن بد",
+          "hemistich2": "زان سوی او چندان کشش چندان چشش چندان عطا"
+        },
+        {
+          "hemistich1": "چندین چشش از بهر چه تا جان تلخت خوش شود",
+          "hemistich2": "چندین کشش از بهر چه تا در رسی در اولیا"
+        },
+        {
+          "hemistich1": "از بد پشیمان می شوی الله گویان می شوی",
+          "hemistich2": "آن دم تو را او می کشد تا وارهاند مر تو را"
+        },
+        {
+          "hemistich1": "از جرم ترسان می شوی وز چاره پرسان می شوی",
+          "hemistich2": "آن لحظه ترساننده را با خود نمی بینی چرا"
+        },
+        {
+          "hemistich1": "گر چشم تو بربست او چون مهره ای در دست او",
+          "hemistich2": "گاهی بغلطاند چنین گاهی ببازد در هوا"
+        },
+        {
+          "hemistich1": "گاهی نهد در طبع تو سودای سیم و زر و زن",
+          "hemistich2": "گاهی نهد در جان تو نور خیال مصطفیٰ"
+        },
+        {
+          "hemistich1": "این سو کشان سوی خوشان وان سو کشان با ناخوشان",
+          "hemistich2": "یا بگذرد یا بشکند کشتی در این گرداب ها"
+        },
+        {
+          "hemistich1": "چندان دعا کن در نهان چندان بنال اندر شبان",
+          "hemistich2": "کز گنبد هفت آسمان در گوش تو آید صدا"
+        },
+        {
+          "hemistich1": "بانگ شعیب و ناله اش وان اشک همچون ژاله اش",
+          "hemistich2": "چون شد ز حد از آسمان آمد سحرگاهش ندا"
+        },
+        {
+          "hemistich1": "گر مجرمی بخشیدمت وز جرم آمرزیدمت",
+          "hemistich2": "فردوس خواهی دادمت خامش رها کن این دعا"
+        },
+        {
+          "hemistich1": "گفتا نه این خواهم نه آن دیدار حق خواهم عیان",
+          "hemistich2": "گر هفت بحر آتش شود من در روم بهر لقا"
+        },
+        {
+          "hemistich1": "گر رانده آن منظرم بسته است از او چشم ترم",
+          "hemistich2": "من در جحیم اولی ٰترم جنت نشاید مر مرا"
+        },
+        {
+          "hemistich1": "جنت مرا بی روی او هم دوزخ ست و هم عدو",
+          "hemistich2": "من سوختم زین رنگ و بو کو فر انوار بقا"
+        },
+        {
+          "hemistich1": "گفتند باری کم گری تا کم نگردد مبصری",
+          "hemistich2": "که چشم نابینا شود چون بگذرد از حد بکا"
+        },
+        {
+          "hemistich1": "گفت ار دو چشمم عاقبت خواهند دیدن آن صفت",
+          "hemistich2": "هر جزو من چشمی شود کی غم خورم من از عمیٰ"
+        },
+        {
+          "hemistich1": "ور عاقبت این چشم من محروم خواهد ماندن",
+          "hemistich2": "تا کور گردد آن بصر کو نیست لایق دوست را"
+        },
+        {
+          "hemistich1": "اندر جهان هر آدمی باشد فدای یار خود",
+          "hemistich2": "یار یکی انبان خون یار یکی شمس ضیا"
+        },
+        {
+          "hemistich1": "چون هر کسی درخورد خود یاری گزید از نیک و بد",
+          "hemistich2": "ما را دریغ آید که خود فانی کنیم از بهر لا"
+        },
+        {
+          "hemistich1": "روزی یکی همراه شد با بایزید اندر رهی",
+          "hemistich2": "پس بایزیدش گفت چه پیشه گزیدی ای دغا"
+        },
+        {
+          "hemistich1": "گفتا که من خربنده ام پس بایزیدش گفت رو",
+          "hemistich2": "یا رب خرش را مرگ ده تا او شود بنده خدا"
+        }
+      ],
+      "analysis": {
+        "grammatical_notes": "Classical Persian with some archaic constructions. Note the consistent use of 'چندان/چندین' (so much/so many) creating parallel structures. Verse 5 uses archaic 'مر تو را' for emphasis. Verse 11 shows poetic inversion 'چون شد ز حد'. The dialogue format in later verses (گفت/گفتا) indicates direct speech. Final verses contain a narrative about Bayazid with colloquial elements.",
+        "quranic_allusions": [
+          {
+            "phrase": "اولیا",
+            "reference": "Quran 10:62",
+            "meaning": "Friends/saints of God",
+            "rumi_usage": "Used as the goal of spiritual attainment - reaching the ranks of God's friends"
+          },
+          {
+            "phrase": "گنبد هفت آسمان",
+            "reference": "Quran 2:29, 17:44",
+            "meaning": "Seven heavens",
+            "rumi_usage": "The cosmic structure from which divine call comes to the seeker"
+          },
+          {
+            "phrase": "فردوس",
+            "reference": "Quran 18:107, 23:11",
+            "meaning": "Paradise/Firdaws",
+            "rumi_usage": "The highest level of paradise, offered but rejected by the true seeker"
+          },
+          {
+            "phrase": "جحیم",
+            "reference": "Quran 2:119, 5:10",
+            "meaning": "Hell/Hellfire",
+            "rumi_usage": "Preferred by the lover over paradise without the beloved's vision"
+          },
+          {
+            "phrase": "جنت",
+            "reference": "Quran 2:25",
+            "meaning": "Paradise/Garden",
+            "rumi_usage": "Rejected as inadequate without the beloved's presence"
+          },
+          {
+            "phrase": "لقا",
+            "reference": "Quran 2:46, 18:110",
+            "meaning": "Meeting/encounter with God",
+            "rumi_usage": "The ultimate goal - direct meeting with the divine beloved"
+          },
+          {
+            "phrase": "بقا",
+            "reference": "Quranic concept",
+            "meaning": "Subsistence/permanence",
+            "rumi_usage": "The eternal divine lights that the seeker yearns for"
+          },
+          {
+            "phrase": "یا رب",
+            "reference": "Quranic invocation",
+            "meaning": "O Lord",
+            "rumi_usage": "Bayazid's prayer for his companion's spiritual transformation"
+          }
+        ],
+        "hadith_references": [
+          {
+            "phrase": "نور... مصطفی",
+            "source": "Various hadith about prophetic light",
+            "meaning": "The light/vision of Prophet Muhammad",
+            "rumi_usage": "One of the divine inspirations God places in the heart"
+          }
+        ],
+        "sufi_terminology": [
+          {
+            "term": "fana",
+            "persian": "فانی",
+            "meaning_in_context": "Self-annihilation for God's sake, the ultimate spiritual goal mentioned in verse 20"
+          },
+          {
+            "term": "hal",
+            "persian": "حال",
+            "meaning_in_context": "Spiritual states - the alternating conditions of attraction and repulsion described throughout"
+          },
+          {
+            "term": "jadhb",
+            "persian": "کشش",
+            "meaning_in_context": "Divine attraction/pulling - God's drawing of the soul toward Himself"
+          },
+          {
+            "term": "awliya",
+            "persian": "اولیا",
+            "meaning_in_context": "Saints/friends of God - the spiritual rank the seeker aspires to reach"
+          },
+          {
+            "term": "dhikr",
+            "persian": "الله گویان",
+            "meaning_in_context": "Remembrance of God through repetition of His name"
+          },
+          {
+            "term": "baqa",
+            "persian": "بقا",
+            "meaning_in_context": "Subsistence in God after annihilation - the eternal divine lights"
+          },
+          {
+            "term": "liqa",
+            "persian": "لقا",
+            "meaning_in_context": "Direct meeting/vision of God - the ultimate mystical experience"
+          }
+        ],
+        "ambiguities": [
+          {
+            "phrase": "او",
+            "possible_readings": [
+              "God",
+              "the Beloved",
+              "Shams"
+            ],
+            "recommendation": "Preserve ambiguity - fundamental to Sufi poetry where divine and human beloved merge"
+          },
+          {
+            "phrase": "یار",
+            "possible_readings": [
+              "Friend",
+              "Beloved",
+              "God"
+            ],
+            "recommendation": "Keep general 'beloved' to maintain mystical ambiguity"
+          },
+          {
+            "phrase": "دوست",
+            "possible_readings": [
+              "Friend",
+              "Beloved",
+              "God"
+            ],
+            "recommendation": "Preserve as 'Friend' but note mystical overtones"
+          },
+          {
+            "phrase": "شمس ضیا",
+            "possible_readings": [
+              "Sun of light",
+              "Shams al-Din (Rumi's master)"
+            ],
+            "recommendation": "Preserve both meanings - the historical person and cosmic symbol"
+          }
+        ],
+        "wordplay": [
+          {
+            "word": "چشم/چشش",
+            "meanings": [
+              "eye",
+              "expectation/hope"
+            ],
+            "translatable": false,
+            "note": "Pun between 'chashm' (eye) and 'chashesh' (expectation) - untranslatable wordplay"
+          },
+          {
+            "word": "کشش/کشد",
+            "meanings": [
+              "attraction",
+              "kills/draws"
+            ],
+            "translatable": false,
+            "note": "Play on root k-sh-sh: divine attraction and the beloved's 'killing' effect"
+          },
+          {
+            "word": "شمس ضیا",
+            "meanings": [
+              "sun of light",
+              "Shams al-Din"
+            ],
+            "translatable": true,
+            "note": "Can preserve both cosmic and personal meanings in translation"
+          },
+          {
+            "word": "لا",
+            "meanings": [
+              "No (from la ilaha illa Allah)",
+              "Nothing"
+            ],
+            "translatable": true,
+            "note": "The 'no' of negation in the shahada, representing spiritual annihilation"
+          }
+        ],
+        "meter": "hazaj-e musaddes-e mahdhuf (modified)",
+        "meter_effects": "The driving rhythm mirrors the pull-and-push of spiritual states. Variations in the meter emphasize key emotional moments, particularly in the dialogue sections.",
+        "arabic_content": {
+          "has_arabic": true,
+          "segments": [
+            {
+              "text": "الله گویان",
+              "type": "phrase",
+              "reference": "Islamic dhikr",
+              "standard_translation": "saying Allah/invoking God"
+            },
+            {
+              "text": "مصطفی",
+              "type": "phrase",
+              "reference": "Prophet's epithet",
+              "standard_translation": "The Chosen One (Muhammad)"
+            },
+            {
+              "text": "یا رب",
+              "type": "phrase",
+              "reference": "Quranic invocation",
+              "standard_translation": "O Lord"
+            }
+          ]
+        },
+        "historical_context": "The ghazal includes a story about Bayazid Bistami (d. 874), one of the great early Sufis known for ecstatic utterances. The dialogue format and anecdotal ending are typical of Sufi teaching stories. References to Shams al-Din suggest this was written during or after Rumi's transformative relationship with his spiritual master.",
+        "translation_challenges": [
+          "The central ambiguity of 'او' (he/she/it) referring to God/Beloved must be preserved",
+          "Wordplay between چشم/چشش cannot be reproduced in English",
+          "The rhythm of چندان/چندین creates a hypnotic effect difficult to maintain",
+          "Multiple levels of meaning in یار/دوست require careful handling",
+          "The narrative shift to Bayazid story needs smooth transition",
+          "Quranic terminology should retain some Arabic flavor where possible"
+        ],
+        "key_images": [
+          "The chess piece (مهره) metaphor for human agency under divine control",
+          "The ship (کشتی) in whirlpools representing the soul's perilous journey",
+          "Seven heavens as source of divine voice",
+          "Shuayb's tears like dew drops",
+          "Paradise as enemy without the beloved's face",
+          "Every part of the body becoming an eye",
+          "The donkey-seller as metaphor for spiritual blindness"
+        ]
+      },
+      "literal_translation": {
+        "literal_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "hemistich1": "O heart, what have you thought in excuse for those shortcomings?",
+              "hemistich2": "From that side of Him so much faithfulness, from this side of you so much cruelty"
+            },
+            {
+              "verse_number": 2,
+              "hemistich1": "From that side of Him so much generosity, from this side opposition and more and less",
+              "hemistich2": "From that side of Him so many blessings, from this side of you so many errors"
+            },
+            {
+              "verse_number": 3,
+              "hemistich1": "From this side of you so much envy, so much imagination and evil suspicion",
+              "hemistich2": "From that side of Him so much attraction, so much expectation [or: eye], so much bestowal"
+            },
+            {
+              "verse_number": 4,
+              "hemistich1": "So much expectation [or: eye] for what purpose, so that your bitter soul becomes sweet?",
+              "hemistich2": "So much attraction for what purpose, so that you arrive among the saints?"
+            },
+            {
+              "verse_number": 5,
+              "hemistich1": "You become repentant from evil, you become saying 'Allah'",
+              "hemistich2": "At that moment He draws you so that He may deliver you"
+            },
+            {
+              "verse_number": 6,
+              "hemistich1": "You become fearful from sin and become asking for remedy",
+              "hemistich2": "Why do you not see that frightening moment with yourself?"
+            },
+            {
+              "verse_number": 7,
+              "hemistich1": "If He closed your eye, you are like a bead in His hand",
+              "hemistich2": "Sometimes He rolls [you] thus, sometimes He tosses [you] in the air"
+            },
+            {
+              "verse_number": 8,
+              "hemistich1": "Sometimes He places in your nature the desire for silver and gold and woman",
+              "hemistich2": "Sometimes He places in your soul the light of Mustafa's vision"
+            },
+            {
+              "verse_number": 9,
+              "hemistich1": "Drawing this way toward the pleasant ones, and that way drawing with the unpleasant ones",
+              "hemistich2": "Either it passes or it breaks, the ship in these whirlpools"
+            },
+            {
+              "verse_number": 10,
+              "hemistich1": "Pray so much in secret, wail so much in the nights",
+              "hemistich2": "That from the dome of seven heavens a voice comes to your ear"
+            },
+            {
+              "verse_number": 11,
+              "hemistich1": "The cry of Shu'ayb and his lament, and those tears like his dew",
+              "hemistich2": "When it passed beyond limit, from heaven came a dawn call to him"
+            },
+            {
+              "verse_number": 12,
+              "hemistich1": "'If you are a criminal, I have forgiven you, and from sin I have pardoned you",
+              "hemistich2": "I will give you Paradise - be silent, abandon this prayer'"
+            },
+            {
+              "verse_number": 13,
+              "hemistich1": "He said: 'I want neither this nor that - I want the vision of God manifest",
+              "hemistich2": "If seven seas become fire, I will enter for the sake of meeting'"
+            },
+            {
+              "verse_number": 14,
+              "hemistich1": "If I am driven from that vision of Him, my eye is closed from Him",
+              "hemistich2": "I am worthier in Hell - Paradise does not befit me"
+            },
+            {
+              "verse_number": 15,
+              "hemistich1": "Paradise without His face is both Hell and enemy to me",
+              "hemistich2": "I am burned from this color and scent - where is the splendor of the lights of subsistence?"
+            },
+            {
+              "verse_number": 16,
+              "hemistich1": "They said: 'At least weep less, so that your sight does not diminish",
+              "hemistich2": "For the eye becomes blind when it passes beyond the limit in weeping'"
+            },
+            {
+              "verse_number": 17,
+              "hemistich1": "He said: 'If my two eyes will finally see that attribute",
+              "hemistich2": "Every part of me will become an eye - why should I grieve from blindness?'"
+            },
+            {
+              "verse_number": 18,
+              "hemistich1": "And if finally this eye of mine will remain deprived",
+              "hemistich2": "Let that sight become blind which is not worthy of the Friend"
+            },
+            {
+              "verse_number": 19,
+              "hemistich1": "In the world every human being is sacrificial for his friend",
+              "hemistich2": "One's friend is a bag of blood, one's friend is Shams of Light"
+            },
+            {
+              "verse_number": 20,
+              "hemistich1": "Since everyone chose a friend according to himself from good and bad",
+              "hemistich2": "We grudge ourselves that we annihilate ourselves for the sake of 'No'"
+            },
+            {
+              "verse_number": 21,
+              "hemistich1": "One day a companion joined Bayazid on a path",
+              "hemistich2": "Then Bayazid said to him: 'What profession have you chosen, O deceitful one?'"
+            },
+            {
+              "verse_number": 22,
+              "hemistich1": "He said: 'I am a donkey-seller.' Then Bayazid said to him: 'Go!'",
+              "hemistich2": "'O Lord, give death to his donkey so that he becomes a servant of God'"
+            }
+          ]
+        },
+        "translation_notes": [
+          {
+            "verse": 3,
+            "note": "چشش can mean both 'eye' and 'expectation/hope' - both meanings are relevant in Sufi context"
+          },
+          {
+            "verse": 4,
+            "note": "The wordplay between چشش (expectation/eye) and کشش (attraction) is preserved"
+          },
+          {
+            "verse": 8,
+            "note": "Mustafa refers to Prophet Muhammad, literally 'the Chosen One'"
+          },
+          {
+            "verse": 11,
+            "note": "Shu'ayb is the prophet Jethro, mentioned in Quran"
+          },
+          {
+            "verse": 19,
+            "note": "شمس ضیا plays on Shams al-Din, Rumi's spiritual master, literally 'Sun of Light'"
+          },
+          {
+            "verse": 20,
+            "note": "لا refers to 'La' from 'La ilaha illa Allah' (There is no god but God)"
+          },
+          {
+            "verse": 21,
+            "note": "Bayazid refers to the famous Sufi saint Bayazid Bistami"
+          }
+        ],
+        "uncertain_passages": [
+          {
+            "verse": 6,
+            "phrase": "آن لحظه ترساننده را با خود نمی بینی چرا",
+            "issue": "Ambiguous syntax",
+            "alternatives": [
+              "Why do you not see that frightening moment with yourself?",
+              "Why do you not see yourself in that frightening moment?"
+            ]
+          },
+          {
+            "verse": 9,
+            "phrase": "یا بگذرد یا بشکند کشتی",
+            "issue": "Subject of verbs unclear",
+            "alternatives": [
+              "Either it [the ship] passes or breaks",
+              "Either it [the situation] passes or the ship breaks"
+            ]
+          },
+          {
+            "verse": 20,
+            "phrase": "دریغ آید که خود فانی کنیم",
+            "issue": "Meaning of دریغ in context",
+            "alternatives": [
+              "We grudge ourselves",
+              "We are sorry that we"
+            ]
+          }
+        ],
+        "glossary_terms_used": [
+          "awliya",
+          "fana",
+          "liqa",
+          "baqa"
+        ]
+      },
+      "refined_translation": {
+        "refined_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "line1": "O heart, what excuses are you making for your failings?",
+              "line2": "From His side—such faithfulness! From your side—such cruelty!"
+            },
+            {
+              "verse_number": 2,
+              "line1": "From His side—such generosity! From yours—rebellion, more and less!",
+              "line2": "From His side—blessing upon blessing! From yours—error upon error!"
+            },
+            {
+              "verse_number": 3,
+              "line1": "From your side—envy, dark imaginings, evil suspicions!",
+              "line2": "From His side—such pulling, such longing eyes, such gifts!"
+            },
+            {
+              "verse_number": 4,
+              "line1": "Why such longing eyes? So your bitter soul turns sweet!",
+              "line2": "Why such pulling? So you reach the saints!"
+            },
+            {
+              "verse_number": 5,
+              "line1": "You repent from evil, you cry 'Allah! Allah!'",
+              "line2": "That very moment He pulls you close to deliver you!"
+            },
+            {
+              "verse_number": 6,
+              "line1": "You fear your sins, you beg for remedy—",
+              "line2": "Why can't you see? That frightening moment is within you!"
+            },
+            {
+              "verse_number": 7,
+              "line1": "He closes your eyes—you're a chess piece in His hand!",
+              "line2": "Sometimes He rolls you this way, sometimes tosses you in the air!"
+            },
+            {
+              "verse_number": 8,
+              "line1": "Sometimes He plants lust for silver, gold, and women in you—",
+              "line2": "Sometimes He fills your soul with Mustafa's blazing light!"
+            },
+            {
+              "verse_number": 9,
+              "line1": "Pulling you toward joy, pulling you toward sorrow—",
+              "line2": "The ship either passes through these whirlpools or breaks apart!"
+            },
+            {
+              "verse_number": 10,
+              "line1": "Pray so much in secret! Wail through the nights!",
+              "line2": "Until from the dome of seven heavens a Voice reaches your ear!"
+            },
+            {
+              "verse_number": 11,
+              "line1": "Shu'ayb's cry, his lament, tears like dewdrops—",
+              "line2": "When it passed all limits, Heaven's dawn-call came to him!"
+            },
+            {
+              "verse_number": 12,
+              "line1": "'Criminal? I forgive you! Sinner? I pardon you!",
+              "line2": "I'll give you Paradise—now be quiet! Stop this prayer!'"
+            },
+            {
+              "verse_number": 13,
+              "line1": "He said: 'I want neither this nor that—I want God's face unveiled!",
+              "line2": "Let seven seas turn to fire—I'll dive in to meet You!'"
+            },
+            {
+              "verse_number": 14,
+              "line1": "If I'm banished from that vision, if my eyes are sealed from Him,",
+              "line2": "I belong in Hell—Paradise means nothing to me!"
+            },
+            {
+              "verse_number": 15,
+              "line1": "Paradise without His face is Hell itself, my enemy!",
+              "line2": "I burn from this color and scent—where is the splendor of eternal light?"
+            },
+            {
+              "verse_number": 16,
+              "line1": "They said: 'Weep less! Your sight will fade—",
+              "line2": "Eyes go blind when weeping passes all bounds!'"
+            },
+            {
+              "verse_number": 17,
+              "line1": "He said: 'If these two eyes will finally see His beauty,",
+              "line2": "Every part of me becomes an eye—why fear blindness?'"
+            },
+            {
+              "verse_number": 18,
+              "line1": "And if this eye stays forever deprived,",
+              "line2": "Let that sight go blind that's unworthy of the Friend!"
+            },
+            {
+              "verse_number": 19,
+              "line1": "Every human sacrifices everything for their beloved—",
+              "line2": "One's beloved is a sack of blood, another's is Shams of Light!"
+            },
+            {
+              "verse_number": 20,
+              "line1": "Everyone chose their beloved to match themselves, good or bad—",
+              "line2": "We grudge ourselves for dying in the 'No' of 'There is no god but God'!"
+            },
+            {
+              "verse_number": 21,
+              "line1": "A man joined Bayazid on the road one day—",
+              "line2": "Bayazid asked: 'What's your trade, you fraud?'"
+            },
+            {
+              "verse_number": 22,
+              "line1": "'I sell donkeys,' he said. 'Go!' said Bayazid,",
+              "line2": "'O Lord, kill his donkey so he can serve You!'"
+            }
+          ],
+          "full_text": "O heart, what excuses are you making for your failings? From His side—such faithfulness! From your side—such cruelty! From His side—such generosity! From yours—rebellion, more and less! From His side—blessing upon blessing! From yours—error upon error! From your side—envy, dark imaginings, evil suspicions! From His side—such pulling, such longing eyes, such gifts! Why such longing eyes? So your bitter soul turns sweet! Why such pulling? So you reach the saints! You repent from evil, you cry 'Allah! Allah!' That very moment He pulls you close to deliver you! You fear your sins, you beg for remedy—Why can't you see? That frightening moment is within you! He closes your eyes—you're a chess piece in His hand! Sometimes He rolls you this way, sometimes tosses you in the air! Sometimes He plants lust for silver, gold, and women in you—Sometimes He fills your soul with Mustafa's blazing light! Pulling you toward joy, pulling you toward sorrow—The ship either passes through these whirlpools or breaks apart! Pray so much in secret! Wail through the nights! Until from the dome of seven heavens a Voice reaches your ear! Shu'ayb's cry, his lament, tears like dewdrops—When it passed all limits, Heaven's dawn-call came to him! 'Criminal? I forgive you! Sinner? I pardon you! I'll give you Paradise—now be quiet! Stop this prayer!' He said: 'I want neither this nor that—I want God's face unveiled! Let seven seas turn to fire—I'll dive in to meet You!' If I'm banished from that vision, if my eyes are sealed from Him, I belong in Hell—Paradise means nothing to me! Paradise without His face is Hell itself, my enemy! I burn from this color and scent—where is the splendor of eternal light? They said: 'Weep less! Your sight will fade—Eyes go blind when weeping passes all bounds!' He said: 'If these two eyes will finally see His beauty, Every part of me becomes an eye—why fear blindness?' And if this eye stays forever deprived, Let that sight go blind that's unworthy of the Friend! Every human sacrifices everything for their beloved—One's beloved is a sack of blood, another's is Shams of Light! Everyone chose their beloved to match themselves, good or bad—We grudge ourselves for dying in the 'No' of 'There is no god but God'! A man joined Bayazid on the road one day—Bayazid asked: 'What's your trade, you fraud?' 'I sell donkeys,' he said. 'Go!' said Bayazid, 'O Lord, kill his donkey so he can serve You!'"
+        },
+        "stylistic_choices": [
+          {
+            "verse": 1,
+            "choice": "Direct heart address with exclamatory contrast",
+            "rationale": "Opens with Rumi's signature intimate address to the heart, using sharp contrasts"
+          },
+          {
+            "verse": 7,
+            "choice": "Chess piece metaphor with active verbs",
+            "rationale": "Preserves the Persian 'mahre' as chess piece, uses dynamic 'rolls' and 'tosses'"
+          },
+          {
+            "verse": 12,
+            "choice": "Divine voice in direct quotes with commands",
+            "rationale": "Makes God's voice immediate and commanding, typical of Rumi's divine dialogues"
+          },
+          {
+            "verse": 13,
+            "choice": "Ecstatic declaration with fire imagery",
+            "rationale": "Captures the lover's passionate rejection of Paradise for direct vision"
+          },
+          {
+            "verse": 17,
+            "choice": "Body becoming all eyes",
+            "rationale": "Preserves the mystical image of total spiritual perception"
+          },
+          {
+            "verse": 20,
+            "choice": "Reference to Shahadah's negation",
+            "rationale": "Maintains the Islamic context of 'La' (No) from 'La ilaha illa Allah'"
+          }
+        ],
+        "preserved_elements": [
+          "Mustafa (Prophet Muhammad)",
+          "Shu'ayb (Prophet Shu'aib)",
+          "Seven heavens",
+          "Bayazid (Sufi master)",
+          "Shahadah formula (La ilaha illa Allah)",
+          "Islamic theological terminology",
+          "Shams of Light (Shams-e Tabrizi reference)"
+        ],
+        "tone_notes": "Maintains Rumi's signature urgency and direct address while preserving the theological debate about Paradise versus direct divine vision. The tone shifts from self-examination to ecstatic declaration to practical spiritual instruction."
+      },
+      "qa_result": {
+        "confidence": "medium",
+        "semantic_fidelity": {
+          "score": "acceptable",
+          "issues": [
+            "Line 3: 'چشش' translated as 'longing eyes' - this is interpretive; literal meaning is 'expectation/tasting'",
+            "Line 7: 'مهره' translated as 'chess piece' - original means 'bead', chess piece is interpretive addition",
+            "Line 20: 'لا' explained as 'the No of There is no god but God' - this is explanatory addition not in original"
+          ]
+        },
+        "hallucination_check": {
+          "additions": [
+            "'Allah! Allah!' - original only has 'الله گویان' (saying Allah)",
+            "'chess piece' - original says 'bead' (مهره)",
+            "Explanation of 'لا' as shahada - not in Persian text"
+          ],
+          "omissions": [
+            "Line 11: 'like his dew' (همچون ژاله اش) omitted",
+            "Line 14: 'I am worthier in Hell' (من در جحیم اولی ٰترم) simplified"
+          ]
+        },
+        "islamic_context": {
+          "preserved": true,
+          "issues": [
+            "Mustafa (Prophet Muhammad) correctly preserved",
+            "Shu'ayb (Prophet) correctly preserved",
+            "Seven heavens reference maintained",
+            "Bayazid reference maintained"
+          ]
+        },
+        "terminology": {
+          "consistent": true,
+          "issues": [
+            "Uses 'the Friend' appropriately for divine beloved",
+            "Maintains mystical terminology well"
+          ]
+        },
+        "tone": {
+          "sounds_like_rumi": true,
+          "issues": [
+            "Captures urgency and passion well",
+            "Uses contemporary language effectively",
+            "Maintains direct, embodied quality"
+          ]
+        },
+        "ambiguity_preservation": {
+          "preserved": false,
+          "issues": [
+            "Line 20: Over-explains 'لا' with shahada reference",
+            "Line 7: 'Chess piece' interpretation removes ambiguity of 'bead'"
+          ]
+        },
+        "overall_issues": [
+          "Some interpretive additions that aren't in the original Persian",
+          "Occasional over-explanation of ambiguous mystical terms",
+          "Minor omissions of descriptive details"
+        ],
+        "suggestions": [
+          "Change 'chess piece' back to 'bead' to maintain original metaphor",
+          "Remove explanatory addition about shahada in line 20",
+          "Consider restoring 'like his dew' in line 11",
+          "Consider 'expectation' or 'tasting' instead of 'longing eyes' for چشش"
+        ],
+        "flags_for_human_review": false,
+        "human_review_reason": ""
+      },
+      "final_translation": "O heart, what excuses are you making for your failings? From His side—such faithfulness! From your side—such cruelty! From His side—such generosity! From yours—rebellion, more and less! From His side—blessing upon blessing! From yours—error upon error! From your side—envy, dark imaginings, evil suspicions! From His side—such pulling, such longing eyes, such gifts! Why such longing eyes? So your bitter soul turns sweet! Why such pulling? So you reach the saints! You repent from evil, you cry 'Allah! Allah!' That very moment He pulls you close to deliver you! You fear your sins, you beg for remedy—Why can't you see? That frightening moment is within you! He closes your eyes—you're a chess piece in His hand! Sometimes He rolls you this way, sometimes tosses you in the air! Sometimes He plants lust for silver, gold, and women in you—Sometimes He fills your soul with Mustafa's blazing light! Pulling you toward joy, pulling you toward sorrow—The ship either passes through these whirlpools or breaks apart! Pray so much in secret! Wail through the nights! Until from the dome of seven heavens a Voice reaches your ear! Shu'ayb's cry, his lament, tears like dewdrops—When it passed all limits, Heaven's dawn-call came to him! 'Criminal? I forgive you! Sinner? I pardon you! I'll give you Paradise—now be quiet! Stop this prayer!' He said: 'I want neither this nor that—I want God's face unveiled! Let seven seas turn to fire—I'll dive in to meet You!' If I'm banished from that vision, if my eyes are sealed from Him, I belong in Hell—Paradise means nothing to me! Paradise without His face is Hell itself, my enemy! I burn from this color and scent—where is the splendor of eternal light? They said: 'Weep less! Your sight will fade—Eyes go blind when weeping passes all bounds!' He said: 'If these two eyes will finally see His beauty, Every part of me becomes an eye—why fear blindness?' And if this eye stays forever deprived, Let that sight go blind that's unworthy of the Friend! Every human sacrifices everything for their beloved—One's beloved is a sack of blood, another's is Shams of Light! Everyone chose their beloved to match themselves, good or bad—We grudge ourselves for dying in the 'No' of 'There is no god but God'! A man joined Bayazid on the road one day—Bayazid asked: 'What's your trade, you fraud?' 'I sell donkeys,' he said. 'Go!' said Bayazid, 'O Lord, kill his donkey so he can serve You!'",
+      "scholarly_notes": "**Quranic Allusions:**\n- Quran 10:62: Friends/saints of God\n- Quran 2:29, 17:44: Seven heavens\n- Quran 18:107, 23:11: Paradise/Firdaws\n- Quran 2:119, 5:10: Hell/Hellfire\n- Quran 2:25: Paradise/Garden\n- Quran 2:46, 18:110: Meeting/encounter with God\n- Quranic concept: Subsistence/permanence\n- Quranic invocation: O Lord\n\n**Sufi Terminology:**\n- *fana* (فانی): Self-annihilation for God's sake, the ultimate spiritual goal mentioned in verse 20\n- *hal* (حال): Spiritual states - the alternating conditions of attraction and repulsion described throughout\n- *jadhb* (کشش): Divine attraction/pulling - God's drawing of the soul toward Himself\n- *awliya* (اولیا): Saints/friends of God - the spiritual rank the seeker aspires to reach\n- *dhikr* (الله گویان): Remembrance of God through repetition of His name\n- *baqa* (بقا): Subsistence in God after annihilation - the eternal divine lights\n- *liqa* (لقا): Direct meeting/vision of God - the ultimate mystical experience\n\n**Deliberate Ambiguities:**\n- \"او\": God, the Beloved, Shams\n- \"یار\": Friend, Beloved, God\n- \"دوست\": Friend, Beloved, God\n- \"شمس ضیا\": Sun of light, Shams al-Din (Rumi's master)\n\n**Wordplay (Lost in Translation):**\n- *چشم/چشش*: eye, expectation/hope\n- *کشش/کشد*: attraction, kills/draws\n- *شمس ضیا*: sun of light, Shams al-Din\n- *لا*: No (from la ilaha illa Allah), Nothing\n\n**Translation Notes:**\n- Verse 3: چشش can mean both 'eye' and 'expectation/hope' - both meanings are relevant in Sufi context\n- Verse 4: The wordplay between چشش (expectation/eye) and کشش (attraction) is preserved\n- Verse 8: Mustafa refers to Prophet Muhammad, literally 'the Chosen One'\n- Verse 11: Shu'ayb is the prophet Jethro, mentioned in Quran\n- Verse 19: شمس ضیا plays on Shams al-Din, Rumi's spiritual master, literally 'Sun of Light'\n- Verse 20: لا refers to 'La' from 'La ilaha illa Allah' (There is no god but God)\n- Verse 21: Bayazid refers to the famous Sufi saint Bayazid Bistami",
+      "confidence": "medium",
+      "needs_review": false,
+      "metadata": {
+        "translated_at": "2026-01-21T23:24:11.174560",
+        "model": "claude-sonnet-4-20250514",
+        "pipeline_version": "1.1"
+      }
+    },
+    {
+      "ghazal_id": "F-4",
+      "ghazal_number": 4,
+      "persian_text": [
+        {
+          "hemistich1": "ای یوسف خوش نام ما خوش می روی بر بام ما",
+          "hemistich2": "ای درشکسته جام ما ای بردریده دام ما"
+        },
+        {
+          "hemistich1": "ای نور ما ای سور ما ای دولت منصور ما",
+          "hemistich2": "جوشی بنه در شور ما تا می شود انگور ما"
+        },
+        {
+          "hemistich1": "ای دلبر و مقصود ما ای قبله و معبود ما",
+          "hemistich2": "آتش زدی در عود ما نظاره کن در دود ما"
+        },
+        {
+          "hemistich1": "ای یار ما عیار ما دام دل خمار ما",
+          "hemistich2": "پا وامکش از کار ما بستان گرو دستار ما"
+        },
+        {
+          "hemistich1": "در گل بمانده پای دل جان می دهم چه جای دل",
+          "hemistich2": "وز آتش سودای دل ای وای دل ای وای ما"
+        }
+      ],
+      "analysis": {
+        "grammatical_notes": "The ghazal uses classical Persian constructions with extensive use of ezafe (possessive particle) chains like 'یوسف خوش نام ما'. The imperative forms 'جوشی بنه' and 'پا وامکش' create direct address. The final verse shifts from addressing the beloved to internal monologue with 'جان می دهم چه جای دل'.",
+        "quranic_allusions": [
+          {
+            "phrase": "یوسف",
+            "reference": "Quran 12:1-111",
+            "meaning": "Prophet Joseph, paradigm of divine beauty",
+            "rumi_usage": "The beloved is compared to Joseph, representing divine beauty that causes spiritual intoxication and loss of control"
+          },
+          {
+            "phrase": "قبله",
+            "reference": "Quran 2:144",
+            "meaning": "Direction of prayer toward Mecca",
+            "rumi_usage": "The beloved becomes the spiritual qibla, the direction toward which the lover turns in worship"
+          }
+        ],
+        "hadith_references": [],
+        "sufi_terminology": [
+          {
+            "term": "یار",
+            "persian": "یار",
+            "meaning_in_context": "The beloved, which can simultaneously refer to God, the spiritual guide, or the mystical beloved"
+          },
+          {
+            "term": "عیار",
+            "persian": "عیار",
+            "meaning_in_context": "The standard or touchstone by which spiritual authenticity is measured"
+          },
+          {
+            "term": "خمار",
+            "persian": "خمار",
+            "meaning_in_context": "Spiritual intoxication or hangover from divine love, the altered state following mystical experience"
+          },
+          {
+            "term": "سودای دل",
+            "persian": "سودای دل",
+            "meaning_in_context": "The burning passion or melancholy of the heart in separation from the beloved"
+          }
+        ],
+        "ambiguities": [
+          {
+            "phrase": "یوسف خوش نام ما",
+            "possible_readings": [
+              "Our beautifully-named Joseph",
+              "Joseph of our good reputation"
+            ],
+            "recommendation": "Preserve the ambiguity as it allows both personal intimacy and universal beauty"
+          },
+          {
+            "phrase": "یار ما عیار ما",
+            "possible_readings": [
+              "Our friend, our standard",
+              "Our beloved, our criterion"
+            ],
+            "recommendation": "The wordplay between یار and عیار should be preserved through alliteration or rhyme if possible"
+          },
+          {
+            "phrase": "دام ما",
+            "possible_readings": [
+              "Our snare/trap",
+              "Our net"
+            ],
+            "recommendation": "Preserve ambiguity - could be the trap set by the beloved or the trap of worldly attachment"
+          }
+        ],
+        "wordplay": [
+          {
+            "word": "یار/عیار",
+            "meanings": [
+              "beloved/friend",
+              "standard/criterion"
+            ],
+            "translatable": false,
+            "note": "Internal rhyme and semantic relationship cannot be preserved in English"
+          },
+          {
+            "word": "جام/دام",
+            "meanings": [
+              "cup",
+              "trap/snare"
+            ],
+            "translatable": true,
+            "note": "Both broken cup and torn snare suggest liberation through the beloved's presence"
+          },
+          {
+            "word": "شور/انگور",
+            "meanings": [
+              "excitement/saltiness",
+              "grape"
+            ],
+            "translatable": false,
+            "note": "The internal rhyme connects spiritual ferment with grape transformation"
+          }
+        ],
+        "meter": "Classical Persian hazaj meter with variations",
+        "meter_effects": "The driving rhythm emphasizes the urgency and intensity of the lover's address to the beloved. The shorter final hemistich creates a sense of breathless culmination.",
+        "arabic_content": {
+          "has_arabic": false,
+          "segments": []
+        },
+        "historical_context": "The Joseph reference connects to Islamic tradition where Joseph represents perfect beauty. The imagery of cups, wine, and grapes reflects the Sufi tradition of using wine metaphors for spiritual states. The 'turban' (دستار) reference suggests the religious establishment that the mystic must sometimes abandon.",
+        "translation_challenges": [
+          "Multiple layered meanings of یار (beloved/friend/God)",
+          "Internal rhymes and sound patterns throughout",
+          "Preserving the ambiguity between sacred and profane love",
+          "The shift from direct address to internal monologue in the final verse",
+          "Technical Sufi vocabulary that lacks direct English equivalents"
+        ],
+        "key_images": [
+          "Joseph ascending to the rooftop (spiritual elevation and beauty)",
+          "Broken cup and torn snare (liberation through love)",
+          "Fire in the oud/aloe wood (mystical burning that produces fragrance)",
+          "Grape fermentation (spiritual transformation)",
+          "Foot stuck in mud while soul departs (physical entrapment vs spiritual liberation)"
+        ]
+      },
+      "literal_translation": {
+        "literal_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "hemistich1": "O Joseph of our beautiful name, beautifully you go upon our roof",
+              "hemistich2": "O breaker of our cup, O tearer of our snare"
+            },
+            {
+              "verse_number": 2,
+              "hemistich1": "O our light, O our feast, O fortune of our Mansur",
+              "hemistich2": "Set a boiling in our excitement so that our grape may become wine"
+            },
+            {
+              "verse_number": 3,
+              "hemistich1": "O heart-taker and our purpose, O our qibla and our worshipped one",
+              "hemistich2": "You set fire to our aloe-wood, look at our smoke"
+            },
+            {
+              "verse_number": 4,
+              "hemistich1": "O our Friend, our standard, snare of the heart, our spiritual intoxication",
+              "hemistich2": "Withdraw your foot from our work, take as pledge our turban"
+            },
+            {
+              "verse_number": 5,
+              "hemistich1": "The foot of the heart remains stuck in mud, I give my soul - what is the place of the heart?",
+              "hemistich2": "And from the fire of the heart's passion, O woe to the heart, O woe to us"
+            }
+          ]
+        },
+        "translation_notes": [
+          {
+            "verse": 1,
+            "note": "خوش نام could mean 'beautifully-named' or 'of good reputation' - preserving the ambiguity with 'beautiful name'"
+          },
+          {
+            "verse": 2,
+            "note": "منصور likely refers to Mansur al-Hallaj, the famous Sufi mystic"
+          },
+          {
+            "verse": 2,
+            "note": "شور can mean both 'excitement/fervor' and 'saltiness' - context suggests mystical fervor"
+          },
+          {
+            "verse": 3,
+            "note": "قبله maintains Islamic context as direction of prayer"
+          },
+          {
+            "verse": 4,
+            "note": "عیار means both 'standard/criterion' and relates to 'touchstone' for testing gold"
+          },
+          {
+            "verse": 4,
+            "note": "خمار refers to spiritual intoxication or the hangover-like state after mystical experience"
+          },
+          {
+            "verse": 5,
+            "note": "گل could mean 'mud' or 'rose' - context of 'stuck' suggests mud"
+          },
+          {
+            "verse": 5,
+            "note": "سودای دل is the burning passion/melancholy of heart in separation"
+          }
+        ],
+        "uncertain_passages": [
+          {
+            "verse": 2,
+            "phrase": "سور ما",
+            "issue": "Could mean feast, banquet, or refer to Quranic chapter",
+            "alternatives": [
+              "our feast",
+              "our banquet",
+              "our chapter"
+            ]
+          },
+          {
+            "verse": 4,
+            "phrase": "پا وامکش از کار ما",
+            "issue": "Idiomatic expression meaning withdraw/abstain",
+            "alternatives": [
+              "withdraw your foot from our work",
+              "abstain from our affairs"
+            ]
+          },
+          {
+            "verse": 5,
+            "phrase": "چه جای دل",
+            "issue": "Could be rhetorical question about heart's proper place",
+            "alternatives": [
+              "what is the place of the heart",
+              "where is room for the heart"
+            ]
+          }
+        ],
+        "glossary_terms_used": [
+          "yar",
+          "qibla"
+        ]
+      },
+      "refined_translation": {
+        "refined_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "line1": "O Joseph of beautiful name! How beautifully you walk on our rooftop!",
+              "line2": "O you who shatter our cup, you who tear apart our snare!"
+            },
+            {
+              "verse_number": 2,
+              "line1": "O our light! O our celebration! O fortune of our Mansur!",
+              "line2": "Set our excitement boiling—let our grape become wine!"
+            },
+            {
+              "verse_number": 3,
+              "line1": "O heart-stealer, our purpose! O our qibla, our worshipped one!",
+              "line2": "You set fire to our aloe-wood—now look at our smoke!"
+            },
+            {
+              "verse_number": 4,
+              "line1": "O Friend! Our measure, our heart's trap, our holy drunkenness!",
+              "line2": "Lift your foot from our work—take our turban as your pledge!"
+            },
+            {
+              "verse_number": 5,
+              "line1": "My heart's foot is stuck in mud—I give my soul, but where is my heart?",
+              "line2": "From the fire of my heart's passion—oh woe to this heart, woe to us!"
+            }
+          ],
+          "full_text": "O Joseph of beautiful name! How beautifully you walk on our rooftop! O you who shatter our cup, you who tear apart our snare! O our light! O our celebration! O fortune of our Mansur! Set our excitement boiling—let our grape become wine! O heart-stealer, our purpose! O our qibla, our worshipped one! You set fire to our aloe-wood—now look at our smoke! O Friend! Our measure, our heart's trap, our holy drunkenness! Lift your foot from our work—take our turban as your pledge! My heart's foot is stuck in mud—I give my soul, but where is my heart? From the fire of my heart's passion—oh woe to this heart, woe to us!"
+        },
+        "stylistic_choices": [
+          {
+            "verse": 1,
+            "choice": "Used urgent exclamations 'O Joseph!' to capture ecstatic direct address",
+            "rationale": "Creates Rumi's characteristic passionate calling out to the Beloved"
+          },
+          {
+            "verse": 2,
+            "choice": "Imperative 'Set our excitement boiling' and 'let our grape become wine'",
+            "rationale": "Commands directed at Beloved create intimate urgency and spiritual transformation imagery"
+          },
+          {
+            "verse": 3,
+            "choice": "Preserved 'qibla' as Islamic prayer direction",
+            "rationale": "Maintains Islamic context essential to Rumi's spiritual framework"
+          },
+          {
+            "verse": 4,
+            "choice": "'Holy drunkenness' for spiritual intoxication",
+            "rationale": "Captures mystical state without losing Sufi context"
+          },
+          {
+            "verse": 5,
+            "choice": "Personal 'I give my soul' and immediate 'oh woe'",
+            "rationale": "Creates the paradox of offering soul while heart remains trapped"
+          }
+        ],
+        "preserved_elements": [
+          "qibla (Islamic prayer direction)",
+          "Mansur (Al-Hallaj reference)",
+          "Turban (Islamic cultural element)",
+          "Joseph (Quranic figure)",
+          "Beloved as spiritual Friend"
+        ],
+        "tone_notes": "Maintained ecstatic urgency through exclamations and direct commands, preserved the paradox of spiritual liberation versus physical entrapment, kept the progression from celebration to anguish that characterizes mystical experience"
+      },
+      "qa_result": {
+        "confidence": "medium",
+        "semantic_fidelity": {
+          "score": "good",
+          "issues": [
+            "Line 4: 'our heart's trap' for 'دام دل خمار ما' loses the flow - should be 'heart-snare of our intoxication'",
+            "Line 5: 'My heart's foot' shifts from collective 'our' voice to individual 'my' inconsistently"
+          ]
+        },
+        "hallucination_check": {
+          "additions": [
+            "Excessive exclamation points not in original",
+            "'holy drunkenness' adds 'holy' qualifier not present in خمار"
+          ],
+          "omissions": []
+        },
+        "islamic_context": {
+          "preserved": true,
+          "issues": [
+            "قبله correctly preserved as 'qibla'"
+          ]
+        },
+        "terminology": {
+          "consistent": false,
+          "issues": [
+            "یار translated as 'Friend' should be 'the Friend' per glossary",
+            "خمار as 'holy drunkenness' should be 'spiritual intoxication' per standard usage"
+          ]
+        },
+        "tone": {
+          "sounds_like_rumi": false,
+          "issues": [
+            "Over-punctuated with excessive exclamation points creates breathless rather than urgent tone",
+            "Some phrases too choppy - breaks natural flow of Persian"
+          ]
+        },
+        "ambiguity_preservation": {
+          "preserved": true,
+          "issues": []
+        },
+        "overall_issues": [
+          "Punctuation choices disrupt the natural rhythm",
+          "Minor terminology inconsistencies",
+          "Slight shift from collective to individual voice in final line"
+        ],
+        "suggestions": [
+          "Reduce exclamation points for better flow",
+          "Maintain 'the Friend' capitalization",
+          "Consider 'heart-snare of our intoxication' for better flow in line 4",
+          "Keep consistent voice throughout"
+        ],
+        "flags_for_human_review": false,
+        "human_review_reason": "Minor issues that don't significantly impact meaning or Islamic context - acceptable for publication with noted improvements"
+      },
+      "final_translation": "O Joseph of beautiful name! How beautifully you walk on our rooftop! O you who shatter our cup, you who tear apart our snare! O our light! O our celebration! O fortune of our Mansur! Set our excitement boiling—let our grape become wine! O heart-stealer, our purpose! O our qibla, our worshipped one! You set fire to our aloe-wood—now look at our smoke! O Friend! Our measure, our heart's trap, our holy drunkenness! Lift your foot from our work—take our turban as your pledge! My heart's foot is stuck in mud—I give my soul, but where is my heart? From the fire of my heart's passion—oh woe to this heart, woe to us!",
+      "scholarly_notes": "**Quranic Allusions:**\n- Quran 12:1-111: Prophet Joseph, paradigm of divine beauty\n- Quran 2:144: Direction of prayer toward Mecca\n\n**Sufi Terminology:**\n- *یار* (یار): The beloved, which can simultaneously refer to God, the spiritual guide, or the mystical beloved\n- *عیار* (عیار): The standard or touchstone by which spiritual authenticity is measured\n- *خمار* (خمار): Spiritual intoxication or hangover from divine love, the altered state following mystical experience\n- *سودای دل* (سودای دل): The burning passion or melancholy of the heart in separation from the beloved\n\n**Deliberate Ambiguities:**\n- \"یوسف خوش نام ما\": Our beautifully-named Joseph, Joseph of our good reputation\n- \"یار ما عیار ما\": Our friend, our standard, Our beloved, our criterion\n- \"دام ما\": Our snare/trap, Our net\n\n**Wordplay (Lost in Translation):**\n- *یار/عیار*: beloved/friend, standard/criterion\n- *جام/دام*: cup, trap/snare\n- *شور/انگور*: excitement/saltiness, grape\n\n**Translation Notes:**\n- Verse 1: خوش نام could mean 'beautifully-named' or 'of good reputation' - preserving the ambiguity with 'beautiful name'\n- Verse 2: منصور likely refers to Mansur al-Hallaj, the famous Sufi mystic\n- Verse 2: شور can mean both 'excitement/fervor' and 'saltiness' - context suggests mystical fervor\n- Verse 3: قبله maintains Islamic context as direction of prayer\n- Verse 4: عیار means both 'standard/criterion' and relates to 'touchstone' for testing gold\n- Verse 4: خمار refers to spiritual intoxication or the hangover-like state after mystical experience\n- Verse 5: گل could mean 'mud' or 'rose' - context of 'stuck' suggests mud\n- Verse 5: سودای دل is the burning passion/melancholy of heart in separation",
+      "confidence": "medium",
+      "needs_review": false,
+      "metadata": {
+        "translated_at": "2026-01-21T23:25:16.398023",
+        "model": "claude-sonnet-4-20250514",
+        "pipeline_version": "1.1"
+      }
+    },
+    {
+      "ghazal_id": "F-5",
+      "ghazal_number": 5,
+      "persian_text": [
+        {
+          "hemistich1": "آن شکل بین وان شیوه بین وان قد و خد و دست و پا",
+          "hemistich2": "آن رنگ بین وان هنگ بین وان ماه بدر اندر قبا"
+        },
+        {
+          "hemistich1": "از سرو گویم یا چمن از لاله گویم یا سمن",
+          "hemistich2": "از شمع گویم یا لگن یا رقص گل پیش صبا"
+        },
+        {
+          "hemistich1": "ای عشق چون آتشکده در نقش و صورت آمده",
+          "hemistich2": "بر کاروان دل زده  یک دم امان ده یا فتی"
+        },
+        {
+          "hemistich1": "در آتش و در سوز من  شب می برم تا روز من",
+          "hemistich2": "ای فرخ پیروز من از روی آن شمس الضحی"
+        },
+        {
+          "hemistich1": "بر گرد ماهش می تنم  بی لب سلامش می کنم",
+          "hemistich2": "خود را زمین برمی زنم زان پیش کو گوید صلا"
+        },
+        {
+          "hemistich1": "گلزار و باغ عالمی چشم و چراغ عالمی",
+          "hemistich2": "هم درد و داغ عالمی  چون پا نهی اندر جفا"
+        },
+        {
+          "hemistich1": "آیم کنم جان را گرو  گویی مده زحمت  برو",
+          "hemistich2": "خدمت کنم تا واروم گویی که ای ابله بیا"
+        },
+        {
+          "hemistich1": "گشته خیال همنشین با عاشقان آتشین",
+          "hemistich2": "غایب مبادا صورتت یک دم ز پیش چشم ما"
+        },
+        {
+          "hemistich1": "ای دل قرار تو چه شد وان کار و بار تو چه شد",
+          "hemistich2": "خوابت که می بندد چنین اندر صباح و در مسا"
+        },
+        {
+          "hemistich1": "دل گفت حسن روی او وان نرگس جادوی او",
+          "hemistich2": "وان سنبل ابروی او وان لعل  شیرین ماجرا"
+        },
+        {
+          "hemistich1": "ای عشق پیش هر کسی نام و لقب داری بسی",
+          "hemistich2": "من دوش نام دیگرت کردم که درد بی دوا"
+        },
+        {
+          "hemistich1": "ای رونق جانم ز تو  چون چرخ گردانم ز تو",
+          "hemistich2": "گندم فرست ای جان که تا خیره نگردد آسیا"
+        },
+        {
+          "hemistich1": "دیگر نخواهم زد نفس این بیت را می گوی و بس",
+          "hemistich2": "بگداخت جانم زین هوس ارفق بنا یا ربنا"
+        }
+      ],
+      "analysis": {
+        "raw_response": "{\n  \"grammatical_notes\": \"The ghazal uses classical Persian syntax with frequent omission of copulas and possessive markers. Notable archaic forms include 'بدر' (badr) for full moon, 'لگن' (lagan) for basin/bowl, and compound constructions like 'شمس الضحی'. The interrogative structure in verses 9 and 12 creates dramatic tension. Imperative forms dominate the later verses, showing increasing desperation.\",\n  \"quranic_allusions\": [\n    {\"phrase\": \"شمس الضحی\", \"reference\": \"Quran 93:1\", \"meaning\": \"By the morning brightness/sun of forenoon\", \"rumi_usage\": \"Refers to Shams al-Din Tabrizi as the divine light, playing on both the Quranic oath and his beloved's name\"},\n    {\"phrase\": \"صلا\", \"reference\": \"General Islamic practice\", \"meaning\": \"Call to prayer\", \"rumi_usage\": \"The beloved's presence becomes a call to spiritual awakening\"},\n    {\"phrase\": \"یا ربنا\", \"reference\": \"Quran 2:286 and others\", \"meaning\": \"O our Lord\", \"rumi_usage\": \"Direct appeal to God for mercy from the pain of love\"}\n  ],\n  \"hadith_references\": [\n    {\"phrase\": \"درد بی دوا\", \"source\": \"Traditional Islamic medicine/Sufi literature\", \"meaning\": \"Incurable pain/disease without remedy - often used for divine love\"}\n  ],\n  \"sufi_terminology\": [\n    {\"term\": \"fana\", \"persian\": \"implied in گشته خیال همنشین\", \"meaning_in_context\": \"The lover's ego dissolving into the beloved's imagination\"},\n    {\"term\": \"hal\", \"persian\": \"هوس\", \"meaning_in_context\": \"Spiritual state of longing that melts the soul\"},\n    {\"term\": \"sama'\", \"persian\": \"رقص گل پیش صبا\", \"meaning_in_context\": \"The dance of flowers before dawn wind as spiritual audition\"},\n    {\"term\": \"dhikr\", \"persian\": \"بی لب سلامش می کنم\", \"meaning_in_context\": \"Silent remembrance/greeting of the beloved\"}\n  ],\n  \"ambiguities\": [\n    {\"phrase\": \"آن شکل\", \"possible_readings\": [\"that physical form\", \"that divine manifestation\", \"that spiritual archetype\"], \"recommendation\": \"Preserve ambiguity - could refer to human beloved, divine beauty, or both simultaneously\"},\n    {\"phrase\": \"یا فتی\", \"possible_readings\": [\"O youth\", \"O noble one\", \"O generous one\"], \"recommendation\": \"Keep open - traditional address that could be to beloved or God\"},\n    {\"phrase\": \"شمس الضحی\", \"possible_readings\": [\"sun of forenoon (Quranic)\", \"Shams al-Din (his beloved)\", \"divine illumination\"], \"recommendation\": \"Essential to preserve all layers - this is the poem's key ambiguity\"},\n    {\"phrase\": \"آسیا\", \"possible_readings\": [\"mill/grindstone\", \"Asia (place name)\", \"grinding motion of existence\"], \"recommendation\": \"Preserve the mechanical metaphor while noting geographical possibility\"}\n  ],\n  \"wordplay\": [\n    {\"word\": \"شمس\", \"meanings\": [\"sun\", \"Shams al-Din Tabrizi\"], \"translatable\": false, \"note\": \"Central pun of the poem - every solar reference potentially refers to his beloved teacher\"},\n    {\"word\": \"هنگ\", \"meanings\": [\"time/moment\", \"color/hue\", \"manner\"], \"translatable\": false, \"note\": \"Rhymes with رنگ (color) while adding temporal dimension\"},\n    {\"word\": \"صبا\", \"meanings\": [\"dawn wind\", \"morning\", \"messenger wind\"], \"translatable\": partially, \"note\": \"Traditional Persian poetry trope - wind as divine messenger\"},\n    {\"word\": \"گرو\", \"meanings\": [\"pledge/mortgage\", \"hostage\"], \"translatable\": true, \"note\": \"Soul as collateral in love's transaction\"}\n  ],\n  \"meter\": \"Hazaj musamman mahzuf (- ∪ - - / - ∪ - - / - ∪ - - / - ∪ -)\",\n  \"meter_effects\": \"The hazaj meter creates a swaying, hypnotic rhythm appropriate for mystical intoxication. The catalexis (missing final syllable) creates urgency and breathlessness, mimicking the lover's emotional state.\",\n  \"arabic_content\": {\n    \"has_arabic\": true,\n    \"segments\": [\n      {\"text\": \"شمس الضحی\", \"type\": \"quranic\", \"reference\": \"Quran 93:1\", \"standard_translation\": \"By the morning brightness\"},\n      {\"text\": \"صلا\", \"type\": \"phrase\", \"reference\": \"Islamic call to prayer\", \"standard_translation\": \"prayer call\"},\n      {\"text\": \"یا ربنا\", \"type\": \"quranic\", \"reference\": \"Quran 2:286\", \"standard_translation\": \"O our Lord\"}\n    ]\n  },\n  \"historical_context\": \"This ghazal clearly references Shams al-Din Tabrizi, Rumi's spiritual beloved who disappeared mysteriously. The progression from physical description to spiritual anguish reflects Rumi's transformation after Shams's loss. The mill metaphor in verse 12 may reference the sama' ceremonies where Rumi would whirl.\",\n  \"translation_challenges\": [\n    \"Preserving the Shams/sun wordplay throughout\",\n    \"Maintaining the progression from physical to metaphysical description\",\n    \"Keeping the ambiguity between human and divine beloved\",\n    \"Rendering the urgency created by the cataleptic meter\",\n    \"Preserving the mill/grinding metaphor's mechanical precision\"\n  ],\n  \"key_images\": [\n    \"Physical beauty catalog (verse 1-2)\",\n    \"Fire imagery (verses 3-4)\",\n    \"Circular motion (whirling, mill)\",\n    \"Dawn/morning light\",\n    \"Garden and flowers\",\n    \"Mill and grain metaphor\"\n  ]\n}",
+        "parse_error": "Expecting value: line 26 column 93 (char 3086)"
+      },
+      "literal_translation": {
+        "literal_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "hemistich1": "Look at that form and look at that manner and that stature and cheek and hand and foot",
+              "hemistich2": "Look at that color and look at that time and that full moon in a robe"
+            },
+            {
+              "verse_number": 2,
+              "hemistich1": "Shall I speak of cypress or garden, shall I speak of tulip or jasmine",
+              "hemistich2": "Shall I speak of candle or basin, or the dance of rose before the morning breeze"
+            },
+            {
+              "verse_number": 3,
+              "hemistich1": "O Love, like a fire-temple you have come in form and figure",
+              "hemistich2": "You have struck the caravan of the heart, grant one moment of safety, O youth"
+            },
+            {
+              "verse_number": 4,
+              "hemistich1": "In fire and in my burning, I pass the night until my day",
+              "hemistich2": "O my blessed victor, by the face of that sun of morning light"
+            },
+            {
+              "verse_number": 5,
+              "hemistich1": "I dance around his moon, I greet him without lips",
+              "hemistich2": "I strike myself to the ground, before him who calls the prayer"
+            },
+            {
+              "verse_number": 6,
+              "hemistich1": "Rose-garden and orchard of the world, eye and lamp of the world",
+              "hemistich2": "Also pain and brand of the world, when you set foot in cruelty"
+            },
+            {
+              "verse_number": 7,
+              "hemistich1": "I come to pledge my soul, you say 'don't give trouble, go away'",
+              "hemistich2": "I serve until I am accepted, you say 'O fool, come'"
+            },
+            {
+              "verse_number": 8,
+              "hemistich1": "Imagination has become companion with the fiery lovers",
+              "hemistich2": "May your form not be absent one moment from before our eyes"
+            },
+            {
+              "verse_number": 9,
+              "hemistich1": "O heart, what has become of your composure and what has become of your work and burden",
+              "hemistich2": "What is this that binds your sleep in the morning and in the evening"
+            },
+            {
+              "verse_number": 10,
+              "hemistich1": "The heart said: the beauty of his face and those magical narcissus eyes of his",
+              "hemistich2": "And those hyacinth eyebrows of his and those sweet ruby lips - what a tale!"
+            },
+            {
+              "verse_number": 11,
+              "hemistich1": "O Love, before everyone you have many names and titles",
+              "hemistich2": "Last night I made another name for you: pain without cure"
+            },
+            {
+              "verse_number": 12,
+              "hemistich1": "O splendor of my soul from you, like a wheel I turn from you",
+              "hemistich2": "Send wheat, O soul, so that the mill does not become idle"
+            },
+            {
+              "verse_number": 13,
+              "hemistich1": "I will not draw another breath, just recite this verse and that's enough",
+              "hemistich2": "This desire has melted my soul, be gentle with us, O our Lord"
+            }
+          ]
+        },
+        "translation_notes": [
+          {
+            "verse": 1,
+            "note": "هنگ could mean 'time' or 'manner/way' - translated as 'time' here"
+          },
+          {
+            "verse": 2,
+            "note": "لگن typically means basin/bowl, possibly referring to a reflecting pool or ceremonial vessel"
+          },
+          {
+            "verse": 4,
+            "note": "شمس الضحی literally means 'sun of the morning light' - a common epithet in Islamic literature"
+          },
+          {
+            "verse": 5,
+            "note": "صلا refers to the call to prayer (adhan)"
+          },
+          {
+            "verse": 10,
+            "note": "Persian poetry conventionally describes beauty using cypress (tall stature), narcissus (eyes), hyacinth (curly hair/eyebrows), ruby (lips)"
+          },
+          {
+            "verse": 12,
+            "note": "The metaphor of mill and wheat refers to spiritual sustenance and continuous divine remembrance"
+          },
+          {
+            "verse": 13,
+            "note": "ربنا is Arabic meaning 'Our Lord' - a Quranic expression"
+          }
+        ],
+        "uncertain_passages": [
+          {
+            "verse": 2,
+            "phrase": "لگن",
+            "issue": "Could refer to different types of vessels",
+            "alternatives": [
+              "basin",
+              "bowl",
+              "mirror"
+            ]
+          },
+          {
+            "verse": 4,
+            "phrase": "فرخ پیروز",
+            "issue": "Could be titles or epithets",
+            "alternatives": [
+              "blessed victor",
+              "fortunate triumphant one"
+            ]
+          },
+          {
+            "verse": 7,
+            "phrase": "تا واروم",
+            "issue": "Meaning unclear",
+            "alternatives": [
+              "until I am accepted",
+              "until I succeed",
+              "until I am worthy"
+            ]
+          },
+          {
+            "verse": 13,
+            "phrase": "ارفق بنا",
+            "issue": "Arabic phrase structure",
+            "alternatives": [
+              "be gentle with us",
+              "have mercy on us"
+            ]
+          }
+        ],
+        "glossary_terms_used": [
+          "ishq"
+        ]
+      },
+      "refined_translation": {
+        "refined_translation": {
+          "verses": [
+            {
+              "verse_number": 1,
+              "line1": "Look at that form! Look at that grace—that stature, those cheeks, hands and feet!",
+              "line2": "Look at that radiance! Look at that moment—that full moon wrapped in silk!"
+            },
+            {
+              "verse_number": 2,
+              "line1": "Should I call you cypress or garden? Tulip or jasmine?",
+              "line2": "Should I call you candle or golden basin—or the rose dancing before dawn's breath?"
+            },
+            {
+              "verse_number": 3,
+              "line1": "O Love! You came like a fire-temple taking human form—",
+              "line2": "You ambushed the caravan of my heart! Grant me one moment's peace, O beautiful one!"
+            },
+            {
+              "verse_number": 4,
+              "line1": "In fire, in my burning, I carry the night until my dawn—",
+              "line2": "O my blessed conqueror, by the face of that Sun of morning light!"
+            },
+            {
+              "verse_number": 5,
+              "line1": "I whirl around his moon, I greet him without speaking—",
+              "line2": "I throw myself to the ground before him who calls the prayer!"
+            },
+            {
+              "verse_number": 6,
+              "line1": "Rose-garden of the world! Eye and lamp of the world!",
+              "line2": "And the pain, the scar of the world—when you step into cruelty!"
+            },
+            {
+              "verse_number": 7,
+              "line1": "I come to pledge my soul—you say 'Don't bother me, go away!'",
+              "line2": "I serve until you accept me—you say 'You fool, come here!'"
+            },
+            {
+              "verse_number": 8,
+              "line1": "My imagination has joined the fire-drunk lovers—",
+              "line2": "Don't let your face vanish for one moment from our sight!"
+            },
+            {
+              "verse_number": 9,
+              "line1": "O heart! What happened to your peace? What happened to all your work?",
+              "line2": "What is this that steals your sleep at morning and evening?"
+            },
+            {
+              "verse_number": 10,
+              "line1": "My heart cried: 'The beauty of his face! Those sorcerer narcissus eyes!",
+              "line2": "Those hyacinth eyebrows! Those sweet ruby lips—what a story!'"
+            },
+            {
+              "verse_number": 11,
+              "line1": "O Love! You have countless names and titles for everyone—",
+              "line2": "Last night I gave you a new name: pain without medicine!"
+            },
+            {
+              "verse_number": 12,
+              "line1": "O splendor of my soul—from you! Like a wheel I turn—from you!",
+              "line2": "Send grain, O beloved, so the mill doesn't stand empty!"
+            },
+            {
+              "verse_number": 13,
+              "line1": "I won't draw another breath! Just speak this verse—enough!",
+              "line2": "This longing has melted my soul—be gentle with us, O our Lord!"
+            }
+          ],
+          "full_text": "Look at that form! Look at that grace—that stature, those cheeks, hands and feet! Look at that radiance! Look at that moment—that full moon wrapped in silk! Should I call you cypress or garden? Tulip or jasmine? Should I call you candle or golden basin—or the rose dancing before dawn's breath? O Love! You came like a fire-temple taking human form—You ambushed the caravan of my heart! Grant me one moment's peace, O beautiful one! In fire, in my burning, I carry the night until my dawn—O my blessed conqueror, by the face of that Sun of morning light! I whirl around his moon, I greet him without speaking—I throw myself to the ground before him who calls the prayer! Rose-garden of the world! Eye and lamp of the world! And the pain, the scar of the world—when you step into cruelty! I come to pledge my soul—you say 'Don't bother me, go away!' I serve until you accept me—you say 'You fool, come here!' My imagination has joined the fire-drunk lovers—Don't let your face vanish for one moment from our sight! O heart! What happened to your peace? What happened to all your work? What is this that steals your sleep at morning and evening? My heart cried: 'The beauty of his face! Those sorcerer narcissus eyes! Those hyacinth eyebrows! Those sweet ruby lips—what a story!' O Love! You have countless names and titles for everyone—Last night I gave you a new name: pain without medicine! O splendor of my soul—from you! Like a wheel I turn—from you! Send grain, O beloved, so the mill doesn't stand empty! I won't draw another breath! Just speak this verse—enough! This longing has melted my soul—be gentle with us, O our Lord!"
+        },
+        "stylistic_choices": [
+          {
+            "verse": 1,
+            "choice": "Used exclamatory 'Look at!' repetition",
+            "rationale": "Creates Rumi's urgent, ecstatic tone of witnessing divine beauty"
+          },
+          {
+            "verse": 3,
+            "choice": "Transformed 'fire-temple' into active metaphor",
+            "rationale": "Preserves Zoroastrian reference while making it visceral—Love as temple incarnate"
+          },
+          {
+            "verse": 5,
+            "choice": "Kept 'calls the prayer' literal",
+            "rationale": "Preserves Islamic prayer context (adhan) essential to Rumi's spiritual landscape"
+          },
+          {
+            "verse": 7,
+            "choice": "Direct dialogue with quoted speech",
+            "rationale": "Captures the intimate, conversational dynamic between lover and Beloved"
+          },
+          {
+            "verse": 8,
+            "choice": "'fire-drunk lovers' instead of 'fiery lovers'",
+            "rationale": "More vivid—lovers intoxicated by divine fire, classic Rumi imagery"
+          },
+          {
+            "verse": 11,
+            "choice": "'pain without medicine' for incurable pain",
+            "rationale": "More concrete and desperate—medicine vs. abstract 'cure'"
+          },
+          {
+            "verse": 13,
+            "choice": "Kept 'O our Lord' (rabbana)",
+            "rationale": "Preserves Quranic invocation that ends many suras"
+          }
+        ],
+        "preserved_elements": [
+          "prayer call (adhan)",
+          "fire-temple (Zoroastrian reference)",
+          "Quranic invocation 'O our Lord'",
+          "whirling/turning imagery",
+          "classical Persian garden metaphors",
+          "Islamic prayer prostration"
+        ],
+        "tone_notes": "Achieved Rumi's ecstatic urgency through exclamations, direct address, and embodied language. The poem moves from visual intoxication through spiritual bewilderment to final surrender, maintaining the passionate intimacy of lover speaking to Beloved throughout."
+      },
+      "qa_result": {
+        "confidence": "medium",
+        "semantic_fidelity": {
+          "score": "acceptable",
+          "issues": [
+            "Line 1: 'wrapped in silk' for 'در قبا' - qaba is more like a robe/coat than silk wrapping",
+            "Line 3: 'ambushed' adds aggressive connotation not in 'زده' (struck)",
+            "Line 12: 'grain' for 'گندم' is acceptable but 'wheat' would be more precise"
+          ]
+        },
+        "hallucination_check": {
+          "additions": [
+            "'wrapped in silk' - adds material not specified",
+            "'fire-drunk lovers' - adds 'drunk' concept not in original",
+            "Multiple exclamation points not indicated in Persian meter/structure"
+          ],
+          "omissions": [
+            "Line 2: 'لگن' (basin) becomes 'golden basin' - adds 'golden'",
+            "Generally faithful to content"
+          ]
+        },
+        "islamic_context": {
+          "preserved": true,
+          "issues": []
+        },
+        "terminology": {
+          "consistent": true,
+          "issues": []
+        },
+        "tone": {
+          "sounds_like_rumi": true,
+          "issues": [
+            "Excessive exclamation points make it more breathless than urgent",
+            "Some phrases like 'Don't bother me' sound more casual than the Persian formality"
+          ]
+        },
+        "ambiguity_preservation": {
+          "preserved": true,
+          "issues": []
+        },
+        "overall_issues": [
+          "Translation is energetic and captures Rumi's passion",
+          "Some interpretive additions that weren't in original",
+          "Punctuation choices (excessive exclamation points) affect tone",
+          "Minor semantic drift in a few key terms"
+        ],
+        "suggestions": [
+          "Consider 'robe' instead of 'wrapped in silk' for قبا",
+          "'Struck' rather than 'ambushed' for زده",
+          "Reduce exclamation points for more controlled urgency",
+          "Consider 'wheat' instead of 'grain' for precision"
+        ],
+        "flags_for_human_review": false,
+        "human_review_reason": ""
+      },
+      "final_translation": "Look at that form! Look at that grace—that stature, those cheeks, hands and feet! Look at that radiance! Look at that moment—that full moon wrapped in silk! Should I call you cypress or garden? Tulip or jasmine? Should I call you candle or golden basin—or the rose dancing before dawn's breath? O Love! You came like a fire-temple taking human form—You ambushed the caravan of my heart! Grant me one moment's peace, O beautiful one! In fire, in my burning, I carry the night until my dawn—O my blessed conqueror, by the face of that Sun of morning light! I whirl around his moon, I greet him without speaking—I throw myself to the ground before him who calls the prayer! Rose-garden of the world! Eye and lamp of the world! And the pain, the scar of the world—when you step into cruelty! I come to pledge my soul—you say 'Don't bother me, go away!' I serve until you accept me—you say 'You fool, come here!' My imagination has joined the fire-drunk lovers—Don't let your face vanish for one moment from our sight! O heart! What happened to your peace? What happened to all your work? What is this that steals your sleep at morning and evening? My heart cried: 'The beauty of his face! Those sorcerer narcissus eyes! Those hyacinth eyebrows! Those sweet ruby lips—what a story!' O Love! You have countless names and titles for everyone—Last night I gave you a new name: pain without medicine! O splendor of my soul—from you! Like a wheel I turn—from you! Send grain, O beloved, so the mill doesn't stand empty! I won't draw another breath! Just speak this verse—enough! This longing has melted my soul—be gentle with us, O our Lord!",
+      "scholarly_notes": "\n**Translation Notes:**\n- Verse 1: هنگ could mean 'time' or 'manner/way' - translated as 'time' here\n- Verse 2: لگن typically means basin/bowl, possibly referring to a reflecting pool or ceremonial vessel\n- Verse 4: شمس الضحی literally means 'sun of the morning light' - a common epithet in Islamic literature\n- Verse 5: صلا refers to the call to prayer (adhan)\n- Verse 10: Persian poetry conventionally describes beauty using cypress (tall stature), narcissus (eyes), hyacinth (curly hair/eyebrows), ruby (lips)\n- Verse 12: The metaphor of mill and wheat refers to spiritual sustenance and continuous divine remembrance\n- Verse 13: ربنا is Arabic meaning 'Our Lord' - a Quranic expression",
+      "confidence": "medium",
+      "needs_review": false,
+      "metadata": {
+        "translated_at": "2026-01-21T23:26:47.614626",
+        "model": "claude-sonnet-4-20250514",
+        "pipeline_version": "1.1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "version": "1.0",
+  "description": "Terminology glossary for Divan-e Kabir translation. Ensures consistency across the corpus.",
+  "terms": [
+    {
+      "persian": "عشق",
+      "transliteration": "ishq",
+      "translation": "Love",
+      "notes": "Divine love, the cosmic force driving creation. Capital L when referring to Love as cosmic principle. Not mere romantic love."
+    },
+    {
+      "persian": "معشوق",
+      "transliteration": "ma'shuq",
+      "translation": "the Beloved",
+      "notes": "Always capital B. Deliberately ambiguous: may refer to God, Shams, or human beloved simultaneously. Never collapse to single meaning."
+    },
+    {
+      "persian": "یار",
+      "transliteration": "yar",
+      "translation": "the Friend",
+      "notes": "Can also be 'the Beloved' depending on context. Capital F when divine."
+    },
+    {
+      "persian": "دوست",
+      "transliteration": "dust",
+      "translation": "the Friend",
+      "notes": "Divine friend. Capital F."
+    },
+    {
+      "persian": "جان",
+      "transliteration": "jan",
+      "translation": "soul",
+      "notes": "The spiritual essence, not just 'life'. Sometimes 'spirit' if context demands."
+    },
+    {
+      "persian": "دل",
+      "transliteration": "del",
+      "translation": "heart",
+      "notes": "Seat of spiritual perception in Sufi thought, not mere emotion or sentimentality."
+    },
+    {
+      "persian": "می",
+      "transliteration": "mey",
+      "translation": "wine",
+      "notes": "Mystical intoxication with divine presence. Not literal alcohol. Context usually makes this clear."
+    },
+    {
+      "persian": "مست",
+      "transliteration": "mast",
+      "translation": "intoxicated",
+      "notes": "Spiritually drunk with divine presence. 'Drunk' also acceptable."
+    },
+    {
+      "persian": "ساقی",
+      "transliteration": "saqi",
+      "translation": "cupbearer",
+      "notes": "The one who pours the wine of divine love. Often refers to the spiritual master or God."
+    },
+    {
+      "persian": "میخانه",
+      "transliteration": "meykhaneh",
+      "translation": "tavern",
+      "notes": "The place of spiritual intoxication. Keep as 'tavern' - the Sufi meaning is understood."
+    },
+    {
+      "persian": "فنا",
+      "transliteration": "fana",
+      "translation": "annihilation",
+      "notes": "Annihilation of ego in the divine. Technical Sufi term. Can use 'fana' with gloss on first occurrence."
+    },
+    {
+      "persian": "بقا",
+      "transliteration": "baqa",
+      "translation": "subsistence",
+      "notes": "Remaining/subsisting in God after fana. Technical Sufi term."
+    },
+    {
+      "persian": "سماع",
+      "transliteration": "sama",
+      "translation": "spiritual audition",
+      "notes": "The whirling ceremony; mystical listening. Keep as 'sama' with gloss, or 'spiritual audition'."
+    },
+    {
+      "persian": "خانقاه",
+      "transliteration": "khanaqah",
+      "translation": "Sufi lodge",
+      "notes": "Keep as 'khanaqah' or 'Sufi lodge'."
+    },
+    {
+      "persian": "نی",
+      "transliteration": "ney",
+      "translation": "reed-flute",
+      "notes": "Symbol of the soul separated from its divine origin. Always 'reed-flute' or 'reed', never just 'flute'."
+    },
+    {
+      "persian": "نیستان",
+      "transliteration": "neyestan",
+      "translation": "reed-bed",
+      "notes": "Where the reed was cut from; symbol of the divine origin."
+    },
+    {
+      "persian": "کعبه",
+      "transliteration": "ka'ba",
+      "translation": "Kaaba",
+      "notes": "The sacred house in Mecca. Always 'Kaaba', never 'cube' or generic."
+    },
+    {
+      "persian": "نماز",
+      "transliteration": "namaz",
+      "translation": "prayer",
+      "notes": "The Islamic salat. Translate as 'prayer' but preserve Islamic context in notes."
+    },
+    {
+      "persian": "رکوع",
+      "transliteration": "ruku",
+      "translation": "bowing",
+      "notes": "Bowing posture in Islamic prayer. Use 'ruku' or 'bowing in prayer'."
+    },
+    {
+      "persian": "سجود",
+      "transliteration": "sujud",
+      "translation": "prostration",
+      "notes": "Prostration in Islamic prayer. Use 'sajda/sujud' or 'prostration in prayer'."
+    },
+    {
+      "persian": "حج",
+      "transliteration": "hajj",
+      "translation": "Hajj",
+      "notes": "Pilgrimage to Mecca. Always 'Hajj', never 'pilgrimage' alone."
+    },
+    {
+      "persian": "قبله",
+      "transliteration": "qibla",
+      "translation": "qibla",
+      "notes": "Direction of prayer (toward Mecca). Keep as 'qibla'."
+    },
+    {
+      "persian": "شمس",
+      "transliteration": "shams",
+      "translation": "Shams",
+      "notes": "Shams al-Din Tabrizi, Rumi's spiritual beloved. Always proper noun. Note: 'shams' also means 'sun' - wordplay often present."
+    },
+    {
+      "persian": "مولانا",
+      "transliteration": "mawlana",
+      "translation": "Mawlana",
+      "notes": "Title meaning 'our master'. Refers to Rumi himself."
+    },
+    {
+      "persian": "درویش",
+      "transliteration": "darvish",
+      "translation": "dervish",
+      "notes": "Sufi mystic/mendicant. Keep as 'dervish'."
+    },
+    {
+      "persian": "صوفی",
+      "transliteration": "sufi",
+      "translation": "Sufi",
+      "notes": "Islamic mystic. Always capitalize."
+    },
+    {
+      "persian": "خرابات",
+      "transliteration": "kharabat",
+      "translation": "ruins",
+      "notes": "The tavern of spiritual ruin; place where ego is destroyed. 'Ruins' or 'tavern of ruin'."
+    },
+    {
+      "persian": "وحدت",
+      "transliteration": "wahdat",
+      "translation": "unity",
+      "notes": "Divine unity (tawhid). The oneness of God and existence."
+    },
+    {
+      "persian": "کثرت",
+      "transliteration": "kathrat",
+      "translation": "multiplicity",
+      "notes": "The apparent multiplicity of creation, contrasted with divine unity."
+    },
+    {
+      "persian": "حال",
+      "transliteration": "hal",
+      "translation": "spiritual state",
+      "notes": "A transient spiritual state given by God. Technical Sufi term."
+    },
+    {
+      "persian": "مقام",
+      "transliteration": "maqam",
+      "translation": "station",
+      "notes": "A permanent spiritual station achieved through effort. Technical Sufi term."
+    },
+    {
+      "persian": "ذکر",
+      "transliteration": "dhikr",
+      "translation": "remembrance",
+      "notes": "Remembrance of God; repetitive prayer. Keep as 'dhikr' or 'remembrance'."
+    },
+    {
+      "persian": "سرو",
+      "transliteration": "sarv",
+      "translation": "cypress",
+      "notes": "Symbol of the beloved's tall, graceful stature. Common Persian poetic image."
+    },
+    {
+      "persian": "بلبل",
+      "transliteration": "bulbul",
+      "translation": "nightingale",
+      "notes": "Symbol of the lover; sings for the rose (beloved)."
+    },
+    {
+      "persian": "گل",
+      "transliteration": "gul",
+      "translation": "rose",
+      "notes": "Symbol of the beloved's beauty. The nightingale's object of love."
+    },
+    {
+      "persian": "آتش",
+      "transliteration": "atash",
+      "translation": "fire",
+      "notes": "Often represents divine love burning away the ego."
+    },
+    {
+      "persian": "خاک",
+      "transliteration": "khak",
+      "translation": "dust/earth",
+      "notes": "Symbol of humility, mortality, or the material world."
+    },
+    {
+      "persian": "باد",
+      "transliteration": "bad",
+      "translation": "wind",
+      "notes": "Often carries messages or represents spirit/breath."
+    },
+    {
+      "persian": "آب",
+      "transliteration": "ab",
+      "translation": "water",
+      "notes": "Life-giving; sometimes represents divine grace."
+    }
+  ]
+}
